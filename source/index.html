@@ -5,15 +5,15 @@
     <title>Погнали?</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="width-wrapper">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo-img" src="https://via.placeholder.com/100x15" width="100" height="15" alt="Погнали?">
+    <header class="header">
+      <div class="wrapper">
+        <a class="header__logo-link">
+          <img class="header__logo-img" src="https://via.placeholder.com/100x15" width="100" height="15" alt="Погнали?">
         </a>
-        <button class="page-header__burger-button page-header__burger-button--close" type="button">
+        <button class="header__burger-button header__burger-button--close" type="button">
           <span class="visuallyhidden">Скрыть меню</span>
         </button>
-        <nav class="page-header__main-nav main-nav">
+        <nav class="header__main-nav main-nav">
           <ul class="main-nav__list pages-list">
             <li class="pages-list__item">
               <a class="pages-list__link" href="#">О сервисе</a>
@@ -31,7 +31,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="page-header__contacts-list contacts-list">
+        <ul class="header__contacts-list contacts-list">
           <li class="contacts-list__item">
             <a class="contacts-list__item-link" href="tel:88005558628">
               <div class="contacts-list__item-icon">
@@ -51,7 +51,7 @@
             </a>
           </li>
         </ul>
-        <ul class="page-header__socials socials-list">
+        <ul class="header__socials socials-list">
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visuallyhidden">Наша страница в Фейсбук</span>
@@ -73,10 +73,10 @@
         </ul>
       </div>
     </header>
-    <main class="page-main">
+    <main class="main">
       <h1 class="visuallyhidden">Сайт поиска попутчиков</h1>
       <section class="promo">
-        <div class="width-wrapper">
+        <div class="wrapper">
           <h2 class="visuallyhidden">Как устроен поик попутчиков?</h2>
           <p class="promo__slogan">В путешествие с крутыми попутчиками!</p>
           <div class="promo__contacts-user-wrapper">
@@ -131,14 +131,14 @@
         </div>
       </section>
       <section class="about">
-        <div class="width-wrapper">
-          <h2 class="about__header main-page-header">О сервисе</h2>
+        <div class="wrapper">
+          <h2 class="about__header main-header">О сервисе</h2>
           <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
           <p class="about__text about__text--special">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </div>
       </section>
       <section class="places">
-        <div class="width-wrapper">
+        <div class="wrapper">
           <h2 class="places__header main-page-header">Направления</h2>
           <p class="places__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           <ul class="places__list places-list">
@@ -189,7 +189,7 @@
         </div>
       </section>
       <section class="people">
-        <div class="width-wrapper">
+        <div class="wrapper">
           <h2 class="people__header main-page-header">Попутчики</h2>
           <p class="people__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
           <p class="people__text people__text--special">Теперь можно легко найти единомышленников!</p>
@@ -285,7 +285,7 @@
         </div>
       </section>
       <section class="price">
-        <div class="width-wrapper">
+        <div class="wrapper">
           <h2 class="price__header main-page-header">Добавьте свой профиль</h2>
           <ul class="price__list">
             <li class="price__list-item">
@@ -330,45 +330,47 @@
         </div>
       </section>
       <section class="subscription">
-        <div class="width-wrapper">
+        <div class="wrapper">
           <!-- next task -->
         </div>
       </section>
       <section class="contacts">
-        <div class="width-wrapper">
+        <div class="wrapper">
           <!-- next task -->
         </div>
       </section>
     </main>
-    <footer class="footer-main">
-      <img class="footer-main__logo-img" src="https://via.placeholder.com/100x15" width="100" height="15" alt="Погнали?">
-      <ul class="footer-main__socials socials-list">
-        <li class="socials-list__item socials-list__item--color">
-          <a class="socials-list__link" href="#">
-            <span class="visuallyhidden">Наша страница в Фейсбук</span>
-            <svg class="socials-list__svg"></svg>
+    <footer class="footer">
+      <div class="wrapper">
+        <img class="footer__logo-img" src="https://via.placeholder.com/100x15" width="100" height="15" alt="Погнали?">
+        <ul class="footer__socials socials-list">
+          <li class="socials-list__item socials-list__item--color">
+            <a class="socials-list__link" href="#">
+              <span class="visuallyhidden">Наша страница в Фейсбук</span>
+              <svg class="socials-list__svg"></svg>
+            </a>
+          </li>
+          <li class="socials-list__item socials-list__item--color">
+            <a class="socials-list__link" href="#">
+              <span class="visuallyhidden">Наша страница в ВК</span>
+              <svg class="socials-list__svg"></svg>
+            </a>
+          </li>
+          <li class="socials-list__item socials-list__item--color">
+            <a class="socials-list__link" href="#">
+              <span class="visuallyhidden">Наша страница в Инстаграм</span>
+              <svg class="socials-list__svg"></svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          <span class="footer__copyright-text">Разработано</span>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="footer__copyright-icon"></svg>
+            <span class="visuallyhidden">Интенсив «Профессиональный HTML и CSS, уровень 2»</span>
           </a>
-        </li>
-        <li class="socials-list__item socials-list__item--color">
-          <a class="socials-list__link" href="#">
-            <span class="visuallyhidden">Наша страница в ВК</span>
-            <svg class="socials-list__svg"></svg>
-          </a>
-        </li>
-        <li class="socials-list__item socials-list__item--color">
-          <a class="socials-list__link" href="#">
-            <span class="visuallyhidden">Наша страница в Инстаграм</span>
-            <svg class="socials-list__svg"></svg>
-          </a>
-        </li>
-      </ul>
-      <p class="footer-main__copyright">
-        <span class="footer-main__copyright-text">Разработано</span>
-        <a class="footer-main__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="footer-main__copyright-icon"></svg>
-          <span class="visuallyhidden">Интенсив «Профессиональный HTML и CSS, уровень 2»</span>
-        </a>
-      </p>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
