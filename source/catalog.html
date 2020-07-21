@@ -78,10 +78,15 @@
       <section class="country-filter">
         <div class="wrapper">
           <h2 class="country-filter__heading">Фильтрация по странам</h2>
-          <button class="country-filter__button country-filter__button--small country-filter__button--close">
+          <!-- After clicking on this button the class "country-filter__button--close" should change to "country-filter__button--open" -->
+          <button class="country-filter__button country-filter__button--close">
+            <!-- If button has class "country-filter__button--open" text of this span should be changed to "Показать фильтр по странам"-->
             <span class="visuallyhidden">Скрыть фильтр по странам</span>
           </button>
-          <div>
+          <!-- Change class "country-filter__lists--open" to "country-filter__lists--close" by default -->
+          <!-- If country-filter__button has class "country-filter__button--close"
+            the class "country-filter__lists--open" should be changed to "country-filter__lists--close" -->
+          <div class="country-filter__lists country-filter__lists--open">
             <ul class="country-filter__continent-list">
               <li class="country-filter__continent-name">
                 <a class="country-filter__continent-link" href="#">Европа</a>
@@ -179,7 +184,7 @@
                 <a class="country-list__item-link" href="#">Австрия</a>
               </li>
             </ul>
-            <button class="country-filter__button country-filter__button--big country-filter__button--close">Свернуть</button>
+            <button class="country-filter__hide-list-button">Свернуть</button>
           </div>
         </div>
       </section>
@@ -189,24 +194,27 @@
           <form class="profile-filters__form" action="https://echo.htmlacademy.ru/courses" method="get">
             <fieldset class="profile-filters__fieldset filter-section">
               <legend class="filter-section__title">Хобби</legend>
+              <!-- After click on this button class "filter-section__button--hide" should be changed to "filter-section__button--hide" -->
               <button class="filter-section__button filter-section__button--show">
-                <span class="visuallyhidden">Скрыть</span>
+                <span class="visuallyhidden">Покзать</span>
                 <svg></svg>
               </button>
-              <ul class="filter-section__input-list">
-                <li class="filter-section__input-item">
+              <!-- If button "filter-section__button" has class "filter-section__button--hide"
+                element "filter-section__part" should have class "filter-section__part--hidden"-->
+              <ul class="filter-section__part filter-section__part--column">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
                     <input class="filter-section__input" type="checkbox">
                     Some label
                   </label>
                 </li>
-                <li class="filter-section__input-item">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
                     <input class="filter-section__input" type="checkbox">
                     Some label
                   </label>
                 </li>
-                <li class="filter-section__input-item">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
                     <input class="filter-section__input" type="checkbox">
                     Some label
@@ -216,51 +224,57 @@
             </fieldset>
             <fieldset class="profile-filters__fieldset filter-section">
               <legend class="filter-section__title">Музыка</legend>
+              <!-- After click on this button class "filter-section__button--hide" should be changed to "filter-section__button--hide" -->
               <button class="filter-section__button filter-section__button--show">
-                <span class="visuallyhidden">Скрыть</span>
+                <span class="visuallyhidden">Покзать</span>
                 <svg></svg>
               </button>
-              <ul class="filter-section__input-list">
-                <li class="filter-section__input-item">
+              <!-- If button "filter-section__button" has class "filter-section__button--hide"
+                list "filter-section__part" should have class "filter-section__part--hidden"-->
+              <ul class="filter-section__part filter-section__part--column">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
-                    <input class="filter-section__input" type="checkbox">
-                    Some label
+                    <input class="filter-section__input" type="checkbox" checked>
+                    Тяжелый рок
                   </label>
                 </li>
-                <li class="filter-section__input-item">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
-                    <input class="filter-section__input" type="checkbox">
-                    Some label
+                    <input class="filter-section__input" type="checkbox" checked>
+                    Русский рэп
                   </label>
                 </li>
-                <li class="filter-section__input-item">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
                     <input class="filter-section__input" type="checkbox">
-                    Some label
+                    Евроденс
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="profile-filters__fieldset filter-section">
               <legend class="filter-section__title">Еда</legend>
+              <!-- After click on this button class "filter-section__button--hide" should be changed to "filter-section__button--hide" -->
               <button class="filter-section__button filter-section__button--show">
-                <span class="visuallyhidden">Скрыть</span>
+                <span class="visuallyhidden">Покзать</span>
                 <svg></svg>
               </button>
-              <ul class="filter-section__input-list">
-                <li class="filter-section__input-item">
+              <!-- If button "filter-section__button" has class "filter-section__button--hide"
+                element "filter-section__part" should have class "filter-section__part--hidden"-->
+              <ul class="filter-section__part filter-section__part--column">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
                     <input class="filter-section__input" type="checkbox">
                     Some label
                   </label>
                 </li>
-                <li class="filter-section__input-item">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
                     <input class="filter-section__input" type="checkbox">
                     Some label
                   </label>
                 </li>
-                <li class="filter-section__input-item">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
                     <input class="filter-section__input" type="checkbox">
                     Some label
@@ -270,38 +284,76 @@
             </fieldset>
             <fieldset class="profile-filters__fieldset filter-section">
               <legend class="filter-section__title">Транспорт</legend>
+              <!-- After click on this button class "filter-section__button--hide" should be changed to "filter-section__button--hide" -->
               <button class="filter-section__button filter-section__button--show">
-                <span class="visuallyhidden">Скрыть</span>
+                <span class="visuallyhidden">Покзать</span>
                 <svg></svg>
               </button>
-              <ul class="filter-section__input-list">
-                <li class="filter-section__input-item">
+              <!-- If button "filter-section__button" has class "filter-section__button--hide"
+                element "filter-section__part" should have class "filter-section__part--hidden"-->
+              <ul class="filter-section__part filter-section__part--row">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
-                    <input class="filter-section__input" type="checkbox">
-                    Some label
+                    <input class="filter-section__input" type="checkbox" checked>
+                    <span class="visuallyhidden">Самолет</span>
                   </label>
                 </li>
-                <li class="filter-section__input-item">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
-                    <input class="filter-section__input" type="checkbox">
-                    Some label
+                    <input class="filter-section__input" type="checkbox" checked>
+                    <span class="visuallyhidden">Авто</span>
                   </label>
                 </li>
-                <li class="filter-section__input-item">
+                <li class="filter-section__input-label-wrapper">
                   <label class="filter-section__label">
                     <input class="filter-section__input" type="checkbox">
-                    Some label
+                    <span class="visuallyhidden">Велосипед</span>
+                  </label>
+                </li>
+                <li class="filter-section__input-label-wrapper">
+                  <label class="filter-section__label">
+                    <input class="filter-section__input" type="checkbox" checked>
+                    <span class="visuallyhidden">Пешком</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="profile-filters__fieldset filter-section">
               <legend class="filter-section__title">Левел</legend>
+              <!-- After click on this button class "filter-section__button--hide" should be changed to "filter-section__button--hide" -->
               <button class="filter-section__button filter-section__button--show">
-                <span class="visuallyhidden">Скрыть</span>
+                <span class="visuallyhidden">Покзать</span>
                 <svg></svg>
               </button>
-
+              <!-- If button "filter-section__button" has class "filter-section__button--hide"
+                list "filter-section__part" should have class "filter-section__part--hidden"-->
+              <div class="filter-section__part range-filter">
+                <ul class="range-filter__min-max-inputs">
+                  <li class="range-filter__min-max-input">
+                    <input class="range-filter__min-input" id="level-min" type="number" placeholder="30">
+                    <label for="level-min">
+                      <span class="visuallyhidden">Минимальное значение уровня</span>
+                    </label>
+                  </li>
+                  <li class="range-filter__min-max-input">
+                    <input class="range-filter__max-input" id="level-max" type="number" placeholder="100">
+                    <label for="level-max">
+                      <span class="visuallyhidden">Максимальное значение уровня</span>
+                    </label>
+                  </li>
+                </ul>
+                <div class="range-filter__range-bar range-bar">
+                    <div class="range-bar__scale">
+                        <div class="range-bar__bar"></div>
+                    </div>
+                    <button class="range-bar__toggle range-bar__toggle--min" type="button">
+                        <span class="visuallyhidden">Левел от</span>
+                    </button>
+                    <button class="range-bar__toggle range-bar__toggle--max" type="button">
+                        <span class="visuallyhidden">Левел до</span>
+                    </button>
+                </div>
+              </div>
             </fieldset>
           </form>
         </div>
