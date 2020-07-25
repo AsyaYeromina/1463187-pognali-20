@@ -1,3 +1,11 @@
-//
+//Importing basic files
 @import "../../node_modules/normalize-scss/sass/normalize";
 @include normalize();
+@import "fonts.scss";
+@import "variables.scss";
+@import "templates.scss";
+@import "common.scss";
+@import "grid.scss";
+// Importing blocks
+@import "blocks/header.scss";
+// Все что нужно разбить по другим файлам
