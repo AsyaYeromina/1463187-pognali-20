@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header header--collapsed">
       <div class="wrapper">
         <a class="header__logo-link">
           <img class="header__logo-img" src="https://via.placeholder.com/100x15" width="100" height="15" alt="Погнали?">
@@ -133,14 +133,14 @@
       </section>
       <section class="about">
         <div class="wrapper">
-          <h2 class="about__header main-header">О сервисе</h2>
+          <h2 class="about__heading main-page-heading">О сервисе</h2>
           <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
           <p class="about__text about__text--special">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </div>
       </section>
       <section class="places">
         <div class="wrapper">
-          <h2 class="places__header main-page-header">Направления</h2>
+          <h2 class="places__heading main-page-heading">Направления</h2>
           <p class="places__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           <ul class="places__list places-list">
             <li class="places-list__item">
@@ -191,7 +191,7 @@
       </section>
       <section class="people">
         <div class="wrapper">
-          <h2 class="people__header main-page-header">Попутчики</h2>
+          <h2 class="people__heading main-page-heading">Попутчики</h2>
           <p class="people__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
           <p class="people__text people__text--special">Теперь можно легко найти единомышленников!</p>
           <ul class="people__list users-list">
@@ -287,58 +287,104 @@
       </section>
       <section class="price">
         <div class="wrapper">
-          <h2 class="price__header main-page-header">Добавьте свой профиль</h2>
-          <ul class="price__list">
-            <li class="price__list-item">
-              <span class="price__item-desc">Базовое размещение</span>
-              <span class="price__item-price">Бесплатно</span>
-              <span class="price__item-number">1</span>
+          <h2 class="price__heading main-page-heading">Добавьте свой профиль</h2>
+          <ul class="price__list price-list">
+            <li class="price-list__item">
+              <span class="price-list__item-desc">Базовое размещение</span>
+              <span class="price-list__item-price">Бесплатно</span>
+              <span class="price-list__item-number">1</span>
             </li>
-            <li class="price__list-item">
-              <span class="price__item-desc">Вывод на первых позициях</span>
-              <span class="price__item-price">99 руб./мес</span>
-              <span class="price__item-number">2</span>
+            <li class="price-list__item">
+              <span class="price-list__item-desc">Вывод на первых позициях</span>
+              <span class="price-list__item-price">99 руб./мес</span>
+              <span class="price-list__item-number">2</span>
             </li>
-            <li class="price__list-item">
-              <span class="price__item-desc">Кастомный цвет карточки</span>
-              <span class="price__item-price">59 руб./мес</span>
-              <span class="price__item-number">3</span>
+            <li class="price-list__item">
+              <span class="price-list__item-desc">Кастомный цвет карточки</span>
+              <span class="price-list__item-price">59 руб./мес</span>
+              <span class="price-list__item-number">3</span>
             </li>
           </ul>
           <a class="price__button-show" href="#">Показать тарифы для бизнеса</a>
           <section class="price__modal special-price">
-            <h2 class="special-price__header main-page-header">Бизнес-тарифы</h2>
-            <ul class="special-price__list price__list">
-              <li class="price__list-item">
-                <span class="price__item-desc">Реклама у блоггера</span>
-                <span class="price__item-price">300 000 руб./пост</span>
+            <h2 class="special-price__heading main-page-heading">Бизнес-тарифы</h2>
+            <ul class="special-price__list price-list">
+              <li class="price-list__item">
+                <span class="price-list__item-desc">Реклама у блоггера</span>
+                <span class="price-list__item-price">300 000 руб./пост</span>
               </li>
-              <li class="price__list-item">
-                <span class="price__item-desc">Накрутка подписчиков</span>
-                <span class="price__item-price">от 1 руб./шт.</span>
+              <li class="price-list__item">
+                <span class="price-list__item-desc">Накрутка подписчиков</span>
+                <span class="price-list__item-price">от 1 руб./шт.</span>
               </li>
-              <li class="price__list-item">
-                <span class="price__item-desc">Лайки от ботов</span>
-                <span class="price__item-price">от 20 коп./лайк</span>
+              <li class="price-list__item">
+                <span class="price-list__item-desc">Лайки от ботов</span>
+                <span class="price-list__item-price">от 20 коп./лайк</span>
               </li>
-              <li class="price__list-item">
-                <span class="price__item-desc">Ваш продакт-плейсмент</span>
-                <span class="price__item-price">Индивидуально</span>
+              <li class="price-list__item">
+                <span class="price-list__item-desc">Ваш продакт-плейсмент</span>
+                <span class="price-list__item-price">Индивидуально</span>
               </li>
             </ul>
             <a class="special-price__button-show" href="#">Закрыть окно</a>
           </section>
         </div>
       </section>
-      <section class="subscription">
+      <section class="registration">
         <div class="wrapper">
-          <!-- next task -->
+          <h2 class="registration__heading main-page-heading">Заинитересовались?</h2>
+          <p class="registration__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a  class="registration__text-link" href="#">авторизуйтесь.</a> </p>
+          <form class="registration__form" action="https://echo.htmlacademy.ru/courses" method="get">
+            <input class="registration__input" type="email" placeholder="E-mail">
+            <button class="registration__input-button" type="submit">
+              <span class="visuallyhidden">Отправить</span>
+            </button>
+          </form>
         </div>
       </section>
       <section class="contacts">
         <div class="wrapper">
-          <!-- next task -->
+          <h2 class="visuallyhidden">Наши контакты</h2>
+          <p class="contacts__text">Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!</p>
+          <ul class="contacts__contacts-list contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__item-link" href="tel:88005558628">
+                <div class="contacts-list__item-icon">
+                  <span class="visuallyhidden">Позвонить нам</span>
+                  <svg width="16" height="15"></svg>
+                </div>
+                <span class="contacts-list__item-text">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">
+                <div class="contacts-list__item-icon">
+                  <span class="visuallyhidden">Написать нам на e-mail</span>
+                  <svg width="18" height="13"></svg>
+                </div>
+                <span class="contacts-list__item-text">mail@htmlacademy.ru</span>
+              </a>
+            </li>
+          </ul>
         </div>
+      </section>
+      <section class="address">
+        <div class="wrapper">
+          <h2 class="visuallyhidden">Наш адрес</h2>
+          <ul class="address__contacts-list contacts-list">
+            <li class="contacts-list__item">
+              <div class="contacts-list__item-icon">
+                <svg width="21" height="21"></svg>
+              </div>
+              <p class="contacts-list__text">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+          <a href="#">Проложить маршрут</a>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="visuallyhidden">Карта</h2>
+        <img class="map-img" src="" alt="Карта с отметкой на адресе ул. Большая Конюшенная, 19/8">
       </section>
     </main>
     <footer class="footer">
