@@ -1,4 +1,35 @@
 // Common styles
 body {
   font-family: "Blogger Sans", "Arial", sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.37;
+  color: $text-color-dark;
+}
+
+img {
+  max-width: 100%;
+  height: auto
+}
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden
+}
+
+.wrapper{
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
