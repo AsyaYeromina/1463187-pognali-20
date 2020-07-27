@@ -15,6 +15,10 @@ img {
   height: auto
 }
 
+* {
+  box-sizing: border-box
+}
+
 .visuallyhidden {
   position: absolute;
   width: 1px;
@@ -30,7 +34,19 @@ img {
 
 // All content wrappers on pages
 .wrapper{
-  max-width: 320px;
+  min-width: calc(320px - 25px - 25px); //25px for paddings
+  width: auto;
   margin: 0 auto;
   padding: 0 25px;
+
+  @media (min-width: 768px) {
+    min-width: calc(768px - 40px - 40px); //40px for paddings
+    width: auto;
+    padding: 0 40px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: calc(1440px - 60px - 60px); //60px for paddings;
+    padding: 0 60px;
+  }
 }
