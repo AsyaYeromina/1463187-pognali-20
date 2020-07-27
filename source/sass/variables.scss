@@ -16,7 +16,7 @@ $main-background-color-light: #edeff6;
 $main-background-color-light2: #f3f4f8;
 $main-background-color-light3: #e6e8f1;
 $button-text-color-dark: #1d2e5b;
-$button-text-color-semi-dark: #132576;
+$contacts-buttons-dark-color: #132576;
 $button-text-color-darker: #161c35;
 $contacts-buttons-dark-color: #121936;
 
@@ -35,22 +35,34 @@ $online-marker-color: #81e31e;
 $offline-marker-color: #f97676;
 
 // Typography
-// // templates for text: simple-text (16px, 300, 1.37)
-// @mixin typography($fs, $fw, $lh){
-//   font-size: $fs;
-//   font-weight: $fw;
-//   line-height: $lh;
-// }
+
+@mixin typography($fs, $fw, $lh){
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
 
 // .classname{
-// 	@include fontz(100px, red, 0);
+// 	@include typography(16px, 300, 1.2);
 // }
 
 
-%tpl-simple-text-320{
+%tpl-simple-text-small{
   font-size: 16px;
   line-height: 1.37;
   font-weight: 300;
+}
+
+%tpl-simple-text-medium{
+  font-size: 28px;
+  line-height: 1.18;
+  font-weight: 300;
+}
+
+%tpl-list-reset{
+  // margin: 0;
+  padding: 0;
+  list-style: none;
 }
 // template for section borer radius and position
 

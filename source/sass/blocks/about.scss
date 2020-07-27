@@ -1,0 +1,17 @@
+.about{
+  background-color: #141B3B;
+  color: #ffffff;
+}
+
+.about__heading{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about__text{
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  @extend %tpl-simple-text-small;
+  margin-bottom: 26px;
+}

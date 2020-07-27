@@ -1,0 +1,15 @@
+.socials-list{
+  @extend %tpl-list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-list__item{
+  background-color: $button-text-color-darker;
+  opacity: 0.2;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}

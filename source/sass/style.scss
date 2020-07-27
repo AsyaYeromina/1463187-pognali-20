@@ -6,6 +6,7 @@
 @import "templates.scss";
 @import "common.scss";
 @import "grid.scss";
+
 // Importing blocks
 
 @import "blocks/about.scss";
@@ -30,8 +31,7 @@
 @import "blocks/user-nav-list.scss";
 @import "blocks/users-list.scss";
 
-// Все что нужно разбить по другим файлам
 
-p{
-  @extend %tpl-simple-text-320;
-  }
+// TODO : Все что нужно разбить по другим файлам позже
+
+

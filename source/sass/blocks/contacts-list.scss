@@ -1,3 +1,35 @@
-.header {
-  background-color: white;
+.contacts-list{
+  @extend %tpl-list-reset;
+}
+
+.contacts-list__item-link {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.contacts-list__item-icon {
+  width: 45px;
+  height: 45px;
+  background-color: $contacts-buttons-dark-color;
+  border-radius: 50%;
+}
+
+.contacts-list__item-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.12;
+  color: $main-background-color-dark;
+  padding-left: 16px;
+}
+
+.promo__contacts .contacts-list__item-text{
+  display: none;
+}
+
+.promo__contacts.contacts-list{
+  display: flex;
+  flex-wrap: wrap;
 }
