@@ -35,6 +35,22 @@ $online-marker-color: #81e31e;
 $offline-marker-color: #f97676;
 
 // Typography
-// templates for text: simple-text (16px, 300, 1.37)
+// // templates for text: simple-text (16px, 300, 1.37)
+// @mixin typography($fs, $fw, $lh){
+//   font-size: $fs;
+//   font-weight: $fw;
+//   line-height: $lh;
+// }
 
+// .classname{
+// 	@include fontz(100px, red, 0);
+// }
+
+
+%tpl-simple-text-320{
+  font-size: 16px;
+  line-height: 1.37;
+  font-weight: 300;
+}
 // template for section borer radius and position
+

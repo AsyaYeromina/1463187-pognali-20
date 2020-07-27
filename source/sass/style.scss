@@ -7,5 +7,31 @@
 @import "common.scss";
 @import "grid.scss";
 // Importing blocks
+
+@import "blocks/about.scss";
+@import "blocks/contacts-list.scss";
+@import "blocks/countries-list.scss";
+@import "blocks/guide-list.scss";
 @import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-page-button.scss";
+@import "blocks/main-page-heading.scss";
+@import "blocks/pages-list.scss";
+@import "blocks/people.scss";
+@import "blocks/places.scss";
+@import "blocks/places-list.scss";
+@import "blocks/price.scss";
+@import "blocks/price-list.scss";
+@import "blocks/promo.scss";
+@import "blocks/socials-list.scss";
+@import "blocks/special-price.scss";
+@import "blocks/travel-type-list.scss";
+@import "blocks/user-card.scss";
+@import "blocks/user-nav-list.scss";
+@import "blocks/users-list.scss";
+
 // Все что нужно разбить по другим файлам
+
+p{
+  @extend %tpl-simple-text-320;
+  }
