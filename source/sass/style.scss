@@ -10,6 +10,8 @@
 // Importing blocks
 
 @import "blocks/about.scss";
+@import "blocks/address.scss";
+@import "blocks/contacts.scss";
 @import "blocks/contacts-list.scss";
 @import "blocks/countries-list.scss";
 @import "blocks/guide-list.scss";
@@ -24,11 +26,13 @@
 @import "blocks/price.scss";
 @import "blocks/price-list.scss";
 @import "blocks/promo.scss";
+@import "blocks/registration.scss";
 @import "blocks/socials-list.scss";
 @import "blocks/special-price.scss";
 @import "blocks/travel-type-list.scss";
 @import "blocks/user-card.scss";
 @import "blocks/user-nav-list.scss";
 @import "blocks/users-list.scss";
+@import "blocks/footer.scss";
 
 // TODO : Все что нужно разбить по другим файлам позже

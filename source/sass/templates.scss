@@ -5,3 +5,16 @@
   font-weight: $fw;
   line-height: $lh;
 }
+
+@mixin pseudo-after-arrow(){
+  content: " ";
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-left: 12px solid $button-text-color-dark;
+	border-bottom: 6px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 22px;
+}
