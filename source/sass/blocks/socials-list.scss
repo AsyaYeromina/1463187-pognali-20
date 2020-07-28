@@ -1,12 +1,13 @@
-.socials-list{
-  @extend %tpl-list-reset;
+.socials-list {
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.socials-list__item{
+.socials-list__item {
   background-color: $button-text-color-darker;
   opacity: 0.2;
   width: 45px;

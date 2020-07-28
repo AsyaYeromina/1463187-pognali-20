@@ -1,8 +1,9 @@
-.user-nav-list{
-  @extend %tpl-list-reset;
+.user-nav-list {
+  padding: 0;
+  list-style: none;
 }
 
-.user-nav-list__link{
+.user-nav-list__link {
   display: block;
   padding: 16px 40px 12px 40px;
   background-color: $main-accent-color;

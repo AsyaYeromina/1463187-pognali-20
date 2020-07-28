@@ -2,10 +2,10 @@
 @import "../../node_modules/normalize-scss/sass/normalize";
 @include normalize();
 @import "fonts.scss";
+@import "grid.scss";
 @import "variables.scss";
 @import "templates.scss";
 @import "common.scss";
-@import "grid.scss";
 
 // Importing blocks
 
@@ -31,7 +31,4 @@
 @import "blocks/user-nav-list.scss";
 @import "blocks/users-list.scss";
 
-
 // TODO : Все что нужно разбить по другим файлам позже
-
-

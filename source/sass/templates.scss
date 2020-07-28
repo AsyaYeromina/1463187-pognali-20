@@ -1,7 +1,7 @@
-%tmplmargin0 {
-  margin: 0;
+//  Templates, mixins
+
+@mixin typography($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
 }
-// example:
-// p{
-// @extend %tplmargin0;
-// }

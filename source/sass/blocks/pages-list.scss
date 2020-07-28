@@ -1,12 +1,13 @@
 .pages-list {
-  @extend %tpl-list-reset;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.pages-list__link{
+.pages-list__link {
   text-decoration: none;
   font-size: 30px;
   font-weight: 500;

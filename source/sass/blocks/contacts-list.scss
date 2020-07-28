@@ -1,5 +1,6 @@
-.contacts-list{
-  @extend %tpl-list-reset;
+.contacts-list {
+  padding: 0;
+  list-style: none;
 }
 
 .contacts-list__item-link {
@@ -25,11 +26,11 @@
   padding-left: 16px;
 }
 
-.promo__contacts .contacts-list__item-text{
+.promo__contacts .contacts-list__item-text {
   display: none;
 }
 
-.promo__contacts.contacts-list{
+.promo__contacts.contacts-list {
   display: flex;
   flex-wrap: wrap;
 }

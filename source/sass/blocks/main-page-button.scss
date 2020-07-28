@@ -1,0 +1,10 @@
+.main-page-button{
+  width: 100%;
+  background-color: $main-accent-color;
+  color: $button-text-color-dark;
+  @include typography(18px, 700, 1);
+  display: block;
+  border-radius: 10px;
+  padding: 25px;
+  text-decoration: none;
+}

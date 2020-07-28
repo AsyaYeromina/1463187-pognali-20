@@ -33,36 +33,3 @@ $text-color-light: #ffffff;
 // Special colors
 $online-marker-color: #81e31e;
 $offline-marker-color: #f97676;
-
-// Typography
-
-@mixin typography($fs, $fw, $lh){
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: $lh;
-}
-
-// .classname{
-// 	@include typography(16px, 300, 1.2);
-// }
-
-
-%tpl-simple-text-small{
-  font-size: 16px;
-  line-height: 1.37;
-  font-weight: 300;
-}
-
-%tpl-simple-text-medium{
-  font-size: 28px;
-  line-height: 1.18;
-  font-weight: 300;
-}
-
-%tpl-list-reset{
-  // margin: 0;
-  padding: 0;
-  list-style: none;
-}
-// template for section borer radius and position
-
