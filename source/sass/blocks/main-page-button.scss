@@ -7,4 +7,9 @@
   border-radius: 10px;
   padding: 25px;
   text-decoration: none;
+  position: relative;
+
+  &::after {
+    @include pseudo-after-arrow();
+  }
 }
