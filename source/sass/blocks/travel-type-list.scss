@@ -1,0 +1,13 @@
+.travel-type-list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.travel-type-list__item{
+  background-color: $text-color-dark;
+  opacity: 0.2;
+  margin: 8px;
+}

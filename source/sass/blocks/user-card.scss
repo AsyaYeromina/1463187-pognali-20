@@ -1,0 +1,70 @@
+.user-card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.user-card__link {
+  display: block;
+  object-fit: cover;
+  text-decoration: none;
+}
+
+.user-card__level {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.user-card__description {
+  background-color: #ffffff;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 26px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+}
+
+.user-card__name {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+
+  &::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}
+.user-card__name--offline::before{
+  background-color: $offline-marker-color;
+}
+
+.user-card__name--online::before{
+  background-color: $online-marker-color;
+}
+
+.user-card__countries {
+  position: absolute;
+  top: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-card__text {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.user-card__travel-type {
+  margin: 0 auto;
+}
