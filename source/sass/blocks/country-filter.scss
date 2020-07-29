@@ -1,0 +1,56 @@
+.country-filter{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: $main-background-color-light4;
+}
+
+.country-filter__heading{
+  @include typography(16px, 700, 1.12);
+  text-transform: uppercase;
+  color: $main-background-color-dark;
+  padding-left: 25px;
+  width: 90%;
+  margin: 0;
+  display: inline-block;
+}
+
+.country-filter__heading--shown{
+  &::after{
+    content: ":";
+    color: $main-background-color-dark;
+    height: 16px;
+    width: 12px;
+    display: inline-block;
+  }
+}
+
+.country-filter__button{
+  padding: 25px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: " ";
+    position: absolute;
+    right: 25%;
+    height: 3px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: $main-background-color-dark;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+// Temporary hidden filter
+.country-filter__lists{
+  display: none;
+}
