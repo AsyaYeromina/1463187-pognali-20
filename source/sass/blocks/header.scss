@@ -2,10 +2,15 @@
   position: relative;
   padding-top: 26px;
   min-height: 72px;
+  background-color: $main-background-color-dark;
 
   @media (min-width: 768px) {
     min-height: 132px;
   }
+}
+
+.header--shown{
+background-color: #ffffff;
 }
 
 .header__burger-button {
@@ -25,7 +30,7 @@
     height: 3px;
     width: 25px;
     border-radius: 2px;
-    background-color: #cccccc;
+    background-color: #ffffff;
   }
 
   &::before {
@@ -39,11 +44,13 @@
 
 .header__burger-button--close {
   &::before {
+    background-color: #cccccc;
     transform: rotate(45deg);
     top: 32px;
   }
 
   &::after {
+    background-color: #cccccc;
     transform: rotate(-45deg);
     top: 32px;
   }

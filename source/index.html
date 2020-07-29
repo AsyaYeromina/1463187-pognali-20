@@ -6,11 +6,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header header--collapsed">
+    <!-- Class "header--shown" should be swiched to "header--collapsed" after click on "header__burger-button" -->
+    <!-- When "header" has class "header--shown", button "header__burger-button" should have class "header__burger-button--close" -->
+    <header class="header header--shown">
       <div class="wrapper">
         <a class="header__logo-link">
           <img class="header__logo-img" src="https://via.placeholder.com/100x15" width="100" height="15" alt="Погнали?">
         </a>
+        <!-- Class "header__burger-button--close" should be toggled after click on button "header__burger-button" -->
         <button class="header__burger-button header__burger-button--close" type="button">
           <span class="visuallyhidden">Скрыть меню</span>
         </button>
