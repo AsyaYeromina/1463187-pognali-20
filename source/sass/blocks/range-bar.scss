@@ -1,0 +1,50 @@
+.range-bar {
+  position: relative;
+}
+
+.range-bar__scale{
+  width: 100%;
+  height: 2px;
+  background-color: rgba($button-text-color-dark, 0.2);
+}
+
+.range-bar__bar{
+  width: auto;
+  height: 100%;
+  margin-left: 30%;
+  background-color: $button-text-color-dark;
+}
+
+.range-bar__toggle{
+  position: absolute;
+  background-color: $button-text-color-dark;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.range-bar__toggle--min {
+  left: 30%;
+  transform: translate(0%, -45%);
+}
+
+.range-bar__toggle--max {
+  left: 100%;
+  transform: translate(-100%, -45%);
+}
+
+.profile-filters__submit-button{
+  background-color: #ffffff;
+  color: $button-text-color-darker;
+  text-transform: uppercase;
+  @include typography(17px, 700, 1);
+  font-family: inherit;
+  border: none;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+}
