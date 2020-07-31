@@ -10,7 +10,7 @@
     <!-- When "header" has class "header--shown", button "header__burger-button" should have class "header__burger-button--close" -->
     <header class="header header--collapsed">
       <div class="wrapper">
-        <a class="header__logo-link">
+        <a class="header__logo-link" href="index.html">
           <img class="header__logo-img" src="https://via.placeholder.com/100x15" width="100" height="15" alt="Погнали?">
         </a>
         <!-- Class "header__burger-button--close" should be toggled after click on button "header__burger-button" -->
@@ -364,25 +364,30 @@
       <section class="profiles">
         <div class="wrapper">
           <h2 class="visuallyhidden">Найденные попутчики</h2>
-          <ul class="profiles__list">
-            <li class="profiles__list-item user-card">
-              <div class="user-card__pic-text-wrapper">
-                <a class="user-card__pic-link" href="#">
-                  <img class="user-card__pic" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Аватар пользователя Таня Фирсова">
+          <ul class="profiles__list users-full-list">
+            <li class="users-full-list__item user-full-card">
+              <div class="user-full-card__pic-text-wrapper">
+                <a class="user-full-card__pic-wrapper" href="#">
+                  <img class="user-full-card__pic" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Аватар пользователя Таня Фирсова">
                 </a>
-                <button class="user-card__like-button">
-                  <span class="visuallyhidden">Лайк</span>
-                  <svg class="user-card__like-icon user-card__like-icon--on" width="13" height="11"></svg>
-                  <span class="user-card__like-number">1,5 м</span>
-                </button>
-                <a class="user-card__name-link" href="#">
-                  <h3 class="user-card__name user-card__name--offline">Таня Фирсова</h3>
+                <div class="user-full-card__button-like-wrapper">
+                  <a class="user-full-card__button" href="#">Позвать!</a>
+                  <div class="user-full-card__like-wrapper">
+                    <button class="user-full-card__like-button">
+                      <span class="visuallyhidden">Лайк</span>
+                      <svg class="user-full-card__like-icon user-full-card__like-icon--on" width="13" height="11"></svg>
+                    </button>
+                    <span class="user-full-card__like-number">1,5 м</span>
+                  </div>
+                </div>
+                <a class="user-full-card__name-wrapper" href="#">
+                  <h3 class="user-full-card__name user-full-card__name--offline">Таня Фирсова</h3>
                 </a>
-                <p class="user-card__text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                <p class="user-full-card__text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               </div>
-              <div class="user-card__countries-wrapper">
-                <span class="user-card__countries-list-title">Хочет посетить</span>
-                <ul class="user-card__countries countries-list">
+              <div class="user-full-card__countries-wrapper">
+                <span class="user-full-card__countries-list-title">Хочет посетить</span>
+                <ul class="user-full-card__countries countries-list">
                   <li class="countries-list__item">
                     <svg class="countries-list__icon" width="26" height="18"></svg>
                     <span class="countries-list__country-name">Шри-Ланка</span>
@@ -397,52 +402,60 @@
                   </li>
                 </ul>
               </div>
-              <div class="user-card__travel-type-level-wrapper">
-                <span class="user-card__travel-type-title">Транспорт</span>
-                <ul class="user-card__travel-type travel-type-list">
-                  <li class="travel-type-list__item travel-type-list__item--color">
-                    <svg class="travel-type-list__icon" width="14" height="16"></svg>
-                    <span class="visuallyhidden">Путешествует на самолете</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                    <svg class="travel-type-list__icon" width="13" height="16"></svg>
-                    <span class="visuallyhidden">Не путешествует на авто</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                    <svg class="travel-type-list__icon" width="15" height="17"></svg>
-                    <span class="visuallyhidden">Не путешествует на велосипеде</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                    <svg class="travel-type-list__icon" width="10" height="11"></svg>
-                    <span class="visuallyhidden">Не путешествует пешком</span>
-                  </li>
-                </ul>
-                <span class="user-card__level-title">Левел</span>
-                <div class="user-card__level user-level">
-                  <span class="user-level__number">99</span>
-                  <span class="visuallyhidden user-level__text">level</span>
+              <div class="user-full-card__travel-type-level-wrapper">
+                <div class="user-full-card__travel-type-wrapper">
+                  <span class="user-full-card__travel-type-title">Транспорт</span>
+                  <ul class="user-full-card__travel-type travel-type-list">
+                    <li class="travel-type-list__item travel-type-list__item--color">
+                      <svg class="travel-type-list__icon" width="14" height="16"></svg>
+                      <span class="visuallyhidden">Путешествует на самолете</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
+                      <svg class="travel-type-list__icon" width="13" height="16"></svg>
+                      <span class="visuallyhidden">Не путешествует на авто</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
+                      <svg class="travel-type-list__icon" width="15" height="17"></svg>
+                      <span class="visuallyhidden">Не путешествует на велосипеде</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
+                      <svg class="travel-type-list__icon" width="10" height="11"></svg>
+                      <span class="visuallyhidden">Не путешествует пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-full-card__level-wrapper">
+                  <span class="user-full-card__level-title">Левел</span>
+                  <div class="user-full-card__level user-level">
+                    <span class="user-level__number">99</span>
+                    <span class="user-level__text">level</span>
+                  </div>
                 </div>
               </div>
-              <a class="user-card__button page-accent-button" href="#">Позвать!</a>
             </li>
-            <li class="profiles__list-item user-card">
-              <div class="user-card__pic-text-wrapper">
-                <a class="user-card__pic-link" href="#">
-                  <img class="user-card__pic" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Аватар пользователя Петя Демин">
+            <li class="users-full-list__item user-full-card">
+              <div class="user-full-card__pic-text-wrapper">
+                <a class="user-full-card__pic-wrapper" href="#">
+                  <img class="user-full-card__pic" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Аватар пользователя Петя Демин">
                 </a>
-                <button class="user-card__like-button">
-                  <span class="visuallyhidden">Лайк</span>
-                  <svg class="user-card__like-icon" width="13" height="11"></svg>
-                  <span class="user-card__like-number">1500</span>
-                </button>
-                <a class="user-card__name-link" href="#">
-                  <h3 class="user-card__name user-card__name--offline">Петя Демин</h3>
+                <div class="user-full-card__button-like-wrapper">
+                  <a class="user-full-card__button" href="#">Позвать!</a>
+                  <div class="user-full-card__like-wrapper">
+                    <button class="user-full-card__like-button">
+                      <span class="visuallyhidden">Лайк</span>
+                      <svg class="user-full-card__like-icon" width="13" height="11"></svg>
+                    </button>
+                    <span class="user-full-card__like-number">1500</span>
+                  </div>
+                </div>
+                <a class="user-full-card__name-wrapper" href="#">
+                  <h3 class="user-full-card__name user-full-card__name--offline">Петя Демин</h3>
                 </a>
-                <p class="user-card__text">#бургер #бар #футбол #концерт #крафт</p>
+                <p class="user-full-card__text">#бургер #бар #футбол #концерт #крафт</p>
               </div>
-              <div class="user-card__countries-wrapper">
-                <span class="user-card__countries-list-title">Хочет посетить</span>
-                <ul class="user-card__countries countries-list">
+              <div class="user-full-card__countries-wrapper">
+                <span class="user-full-card__countries-list-title">Хочет посетить</span>
+                <ul class="user-full-card__countries countries-list">
                   <li class="countries-list__item">
                     <svg class="countries-list__icon" width="26" height="18"></svg>
                     <span class="countries-list__country-name">Бельгия</span>
@@ -453,52 +466,60 @@
                   </li>
                 </ul>
               </div>
-              <div class="user-card__travel-type-level-wrapper">
-                <span class="user-card__travel-type-title">Транспорт</span>
-                <ul class="user-card__travel-type travel-type-list">
-                  <li class="travel-type-list__item travel-type-list__item--color">
-                  <svg class="travel-type-list__icon" width="14" height="16"></svg>
-                    <span class="visuallyhidden">Путешествует на самолете</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color">
-                  <svg class="travel-type-list__icon" width="13" height="16"></svg>
-                    <span class="visuallyhidden">Путешествует на авто</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                  <svg class="travel-type-list__icon" width="15" height="17"></svg>
-                    <span class="visuallyhidden">Не путешествует на велосипеде</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color">
-                  <svg class="travel-type-list__icon" width="10" height="11"></svg>
-                    <span class="visuallyhidden">Путешествует пешком</span>
-                  </li>
-                </ul>
-                <span class="user-card__level-title">Левел</span>
-                <div class="user-card__level user-level">
-                  <span class="user-level__number">80</span>
-                  <span class="visuallyhidden user-level__text">level</span>
+              <div class="user-full-card__travel-type-level-wrapper">
+                <div class="user-full-card__travel-type-wrapper">
+                  <span class="user-full-card__travel-type-title">Транспорт</span>
+                  <ul class="user-full-card__travel-type travel-type-list">
+                    <li class="travel-type-list__item travel-type-list__item--color">
+                      <svg class="travel-type-list__icon" width="14" height="16"></svg>
+                      <span class="visuallyhidden">Путешествует на самолете</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color">
+                      <svg class="travel-type-list__icon" width="13" height="16"></svg>
+                      <span class="visuallyhidden">Путешествует на авто</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
+                      <svg class="travel-type-list__icon" width="15" height="17"></svg>
+                      <span class="visuallyhidden">Не путешествует на велосипеде</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color">
+                      <svg class="travel-type-list__icon" width="10" height="11"></svg>
+                      <span class="visuallyhidden">Путешествует пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-full-card__level-wrapper">
+                  <span class="user-full-card__level-title">Левел</span>
+                  <div class="user-full-card__level user-level">
+                    <span class="user-level__number">80</span>
+                    <span class="user-level__text">level</span>
+                  </div>
                 </div>
               </div>
-              <a class="user-card__button page-accent-button" href="#">Позвать!</a>
             </li>
-            <li class="profiles__list-item user-card">
-              <div class="user-card__pic-text-wrapper">
-                <a class="user-card__pic-link" href="#">
-                  <img class="user-card__pic" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Аватар пользователя Марк Смолов">
+            <li class="users-full-list__item user-full-card">
+              <div class="user-full-card__pic-text-wrapper">
+                <a class="user-full-card__pic-wrapper" href="#">
+                  <img class="user-full-card__pic" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Аватар пользователя Марк Смолов">
                 </a>
-                <button class="user-card__like-button">
-                  <span class="visuallyhidden">Лайк</span>
-                  <svg class="user-card__like-icon" width="13" height="11"></svg>
-                  <span class="user-card__like-number">170</span>
-                </button>
-                <a class="user-card__name-link" href="#">
-                  <h3 class="user-card__name user-card__name--offline">Марк Смолов</h3>
+                <div class="user-full-card__button-like-wrapper">
+                  <a class="user-full-card__button" href="#">Позвать!</a>
+                  <div class="user-full-card__like-wrapper">
+                    <button class="user-full-card__like-button">
+                      <span class="visuallyhidden">Лайк</span>
+                      <svg class="user-full-card__like-icon" width="13" height="11"></svg>
+                    </button>
+                    <span class="user-full-card__like-number">170</span>
+                  </div>
+                </div>
+                <a class="user-full-card__name-wrapper" href="#">
+                  <h3 class="user-full-card__name user-full-card__name--offline">Марк Смолов</h3>
                 </a>
-                <p class="user-card__text">#рэп #тату #хайпбист #кроссовки #суприм</p>
+                <p class="user-full-card__text">#рэп #тату #хайпбист #кроссовки #суприм</p>
               </div>
-              <div class="user-card__countries-wrapper">
-                <span class="user-card__countries-list-title">Хочет посетить</span>
-                <ul class="user-card__countries countries-list">
+              <div class="user-full-card__countries-wrapper">
+                <span class="user-full-card__countries-list-title">Хочет посетить</span>
+                <ul class="user-full-card__countries countries-list">
                   <li class="countries-list__item">
                     <svg class="countries-list__icon" width="26" height="18"></svg>
                     <span class="countries-list__country-name">США</span>
@@ -513,52 +534,60 @@
                   </li>
                 </ul>
               </div>
-              <div class="user-card__travel-type-level-wrapper">
-                <span class="user-card__travel-type-title">Транспорт</span>
-                <ul class="user-card__travel-type travel-type-list">
-                  <li class="travel-type-list__item travel-type-list__item--color">
-                    <svg class="travel-type-list__icon" width="14" height="16"></svg>
-                    <span class="visuallyhidden">Путешествует на самолете</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                    <svg class="travel-type-list__icon" width="13" height="16"></svg>
-                    <span class="visuallyhidden">Не путешествует на авто</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color">
-                    <svg class="travel-type-list__icon" width="15" height="17"></svg>
-                    <span class="visuallyhidden">Путешествует на велосипеде</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                    <svg class="travel-type-list__icon" width="10" height="11"></svg>
-                    <span class="visuallyhidden">Не путешествует пешком</span>
-                  </li>
-                </ul>
-                <span class="user-card__level-title">Левел</span>
-                <div class="user-card__level user-level">
-                  <span class="user-level__number">25</span>
-                  <span class="visuallyhidden user-level__text">level</span>
+              <div class="user-full-card__travel-type-level-wrapper">
+                <div class="user-full-card__travel-type-wrapper">
+                  <span class="user-full-card__travel-type-title">Транспорт</span>
+                  <ul class="user-full-card__travel-type travel-type-list">
+                    <li class="travel-type-list__item travel-type-list__item--color">
+                      <svg class="travel-type-list__icon" width="14" height="16"></svg>
+                      <span class="visuallyhidden">Путешествует на самолете</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
+                      <svg class="travel-type-list__icon" width="13" height="16"></svg>
+                      <span class="visuallyhidden">Не путешествует на авто</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color">
+                      <svg class="travel-type-list__icon" width="15" height="17"></svg>
+                      <span class="visuallyhidden">Путешествует на велосипеде</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
+                      <svg class="travel-type-list__icon" width="10" height="11"></svg>
+                      <span class="visuallyhidden">Не путешествует пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-full-card__level-wrapper">
+                  <span class="user-full-card__level-title">Левел</span>
+                  <div class="user-full-card__level user-level">
+                    <span class="user-level__number">25</span>
+                    <span class="user-level__text">level</span>
+                  </div>
                 </div>
               </div>
-              <a class="user-card__button page-accent-button" href="#">Позвать!</a>
             </li>
-            <li class="profiles__list-item user-card">
-              <div class="user-card__pic-text-wrapper">
-                <a class="user-card__pic-link" href="#">
-                  <img class="user-card__pic" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Аватар пользователя Лариса Роговая">
+            <li class="users-full-list__item user-full-card">
+              <div class="user-full-card__pic-text-wrapper">
+                <a class="user-full-card__pic-wrapper" href="#">
+                  <img class="user-full-card__pic" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Аватар пользователя Лариса Роговая">
                 </a>
-                <button class="user-card__like-button">
-                  <span class="visuallyhidden">Лайк</span>
-                  <svg class="user-card__like-icon" width="13" height="11"></svg>
-                  <span class="user-card__like-number">23</span>
-                </button>
-                <a class="user-card__name-link" href="#">
-                  <h3 class="user-card__name user-card__name--online">Лариса Роговая</h3>
+                <div class="user-full-card__button-like-wrapper">
+                  <a class="user-full-card__button" href="#">Позвать!</a>
+                  <div class="user-full-card__like-wrapper">
+                    <button class="user-full-card__like-button">
+                      <span class="visuallyhidden">Лайк</span>
+                      <svg class="user-full-card__like-icon" width="13" height="11"></svg>
+                    </button>
+                    <span class="user-full-card__like-number">23</span>
+                  </div>
+                </div>
+                <a class="user-full-card__name-wrapper" href="#">
+                  <h3 class="user-full-card__name user-full-card__name--online">Лариса Роговая</h3>
                 </a>
-                <p class="user-card__text">#образование #карьера #учеба #линкедин</p>
+                <p class="user-full-card__text">#образование #карьера #учеба #линкедин</p>
               </div>
-              <div class="user-card__countries-wrapper">
-                <span class="user-card__countries-list-title">Хочет посетить</span>
-                <ul class="user-card__countries countries-list">
+              <div class="user-full-card__countries-wrapper">
+                <span class="user-full-card__countries-list-title">Хочет посетить</span>
+                <ul class="user-full-card__countries countries-list">
                   <li class="countries-list__item">
                     <svg class="countries-list__icon" width="26" height="18"></svg>
                     <span class="countries-list__country-name">Великобритания</span>
@@ -569,33 +598,36 @@
                   </li>
                 </ul>
               </div>
-              <div class="user-card__travel-type-level-wrapper">
-                <span class="user-card__travel-type-title">Транспорт</span>
-                <ul class="user-card__travel-type travel-type-list">
-                  <li class="travel-type-list__item travel-type-list__item--color">
-                    <svg class="travel-type-list__icon" width="14" height="16"></svg>
-                    <span class="visuallyhidden">Путешествует на самолете</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color">
-                    <svg class="travel-type-list__icon" width="13" height="16"></svg>
-                    <span class="visuallyhidden">Путешествует на авто</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                    <svg class="travel-type-list__icon" width="15" height="17"></svg>
-                    <span class="visuallyhidden">Не путешествует на велосипеде</span>
-                  </li>
-                  <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                    <svg class="travel-type-list__icon" width="10" height="11"></svg>
-                    <span class="visuallyhidden">Не путешествует пешком</span>
-                  </li>
-                </ul>
-                <span class="user-card__level-title">Левел</span>
-                <div class="user-card__level user-level">
-                  <span class="user-level__number">50</span>
-                  <span class="visuallyhidden user-level__text">level</span>
+              <div class="user-full-card__travel-type-level-wrapper">
+                <div class="user-full-card__travel-type-wrapper">
+                  <span class="user-full-card__travel-type-title">Транспорт</span>
+                  <ul class="user-full-card__travel-type travel-type-list">
+                    <li class="travel-type-list__item travel-type-list__item--color">
+                      <svg class="travel-type-list__icon" width="14" height="16"></svg>
+                      <span class="visuallyhidden">Путешествует на самолете</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color">
+                      <svg class="travel-type-list__icon" width="13" height="16"></svg>
+                      <span class="visuallyhidden">Путешествует на авто</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
+                      <svg class="travel-type-list__icon" width="15" height="17"></svg>
+                      <span class="visuallyhidden">Не путешествует на велосипеде</span>
+                    </li>
+                    <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
+                      <svg class="travel-type-list__icon" width="10" height="11"></svg>
+                      <span class="visuallyhidden">Не путешествует пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-full-card__level-wrapper">
+                  <span class="user-full-card__level-title">Левел</span>
+                  <div class="user-full-card__level user-level">
+                    <span class="user-level__number">50</span>
+                    <span class="user-level__text">level</span>
+                  </div>
                 </div>
               </div>
-              <a class="user-card__button page-accent-button" href="#">Позвать!</a>
             </li>
           </ul>
           <a class="profiles__more-button" href="#">Показать еще</a>
