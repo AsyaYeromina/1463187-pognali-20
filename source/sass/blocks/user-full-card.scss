@@ -6,39 +6,130 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-}
-.user-full-card__pic-text-wrapper {
-  display: block;
-  object-fit: cover;
-
+  padding-bottom: 80px;
 }
 .user-full-card__pic-wrapper {
+  display: block;
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
 }
-.user-full-card__pic {
-}
+
 .user-full-card__button-like-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .user-full-card__button {
+  color: $button-text-color-darker;
+  @include typography(17px, 700, 1);
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $main-accent-color;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 25px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+  left: 0;
 }
+
 .user-full-card__like-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
 .user-full-card__like-button {
+  width: 30px;
+  height: 30px;
+  background-color: #e2e5f2;
+  border: none;
+  border-radius: 50%;
+  position: relative;
 }
-.visuallyhidden {
+
+.user-full-card__like-button--on {
+  background-color: #f9eaea;
 }
+
 .user-full-card__like-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
+
 .user-full-card__like-number {
+  color: $button-text-color-darker;
+  @include typography(14px, 700, 1.14);
+  text-transform: uppercase;
 }
+
 .user-full-card__name-wrapper {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  width: 100%;
 }
+
 .user-full-card__name {
+  color: $button-text-color-dark;
+  @include typography(20px, 700, 1);
+  width: 50%;
+
+  &::after {
+    content: " ";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: $offline-marker-color;
+  }
 }
+
 .user-full-card__name--online {
+  &::after {
+    background-color: $online-marker-color;
+  }
 }
 .user-full-card__text {
+  text-align: left;
+  @include typography(15px, 400, 1.2);
+  width: 80%;
 }
-.user-full-card__countries-wrapper {
+
+.user-full-card__section-title {
+  text-transform: lowercase;
 }
-.user-full-card__countries-list-title {
+
+//  Before background line:
+  // &::before {
+  //   content: " ";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 1px;
+  //   top: 10px;
+  //   z-index: 0;
+  //   background-color: $main-background-color-light;
+  // }
+
+.user-full-card__travel-type-level-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-full-card__level {
+  color: $button-text-color-dark;
+  width: 45px;
+  height: 45px;
+}
+
+.user-full-card__level .user-level__text{
+  display: none;
 }
