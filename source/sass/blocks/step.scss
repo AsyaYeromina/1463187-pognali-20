@@ -1,5 +1,15 @@
 .step {
   background-color: #ffffff;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 25px;
+}
+
+.step__title, .step__subtitle {
+  margin: 0;
+  @include typography(20px, 700, 1);
+  color: $button-text-color-dark;
+}
+
+.step__fieldset {
+  border: none;
 }
