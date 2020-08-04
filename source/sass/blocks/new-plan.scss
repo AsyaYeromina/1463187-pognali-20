@@ -1,0 +1,66 @@
+.new-plan {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  background-color: #d4d9eb;
+}
+
+.new-plan__heading {
+  margin: 0;
+  color: $button-text-color-dark;
+  @include typography(24px, 700, 1);
+}
+
+.new-plan__step-markers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.new-plan__step-marker-name-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.new-plan__step-marker{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba($button-text-color-dark, 0.3);
+  display: block;
+  margin-right: 15px;
+}
+
+.new-plan__step-marker-name-wrapper:last-child .new-plan__step-marker{
+  margin: 0;
+}
+
+.new-plan__step-marker-name{
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+    @include typography(20px, 400, 1.2);
+    color: rgba(#000000, 0.6);
+    text-transform: uppercase;
+    margin-left: 35px;
+  }
+}
+
+.new-plan__step-marker-name-wrapper--active .new-plan__step-marker{
+  background-color: $button-text-color-dark;
+}
+
+.new-plan__step-marker-name-wrapper--active .new-plan__step-marker-name{
+  color: #000000;
+}
+
+.new-plan__step-list{
+  margin: 0;
+}

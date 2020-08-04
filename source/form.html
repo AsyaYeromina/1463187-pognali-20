@@ -148,11 +148,20 @@
       <section class="new-plan">
         <div class="wrapper">
           <h2 class="new-plan__heading">Добавить план:</h2>
-          <div class="new-plan__step-markers">
-            <span class="new-plan__step-marker new-plan__step-marker--active"></span>
-            <span class="new-plan__step-marker"></span>
-            <span class="new-plan__step-marker"></span>
-          </div>
+          <ul class="new-plan__step-markers">
+            <li class="new-plan__step-marker-name-wrapper new-plan__step-marker-name-wrapper--active">
+              <span class="new-plan__step-marker"></span>
+              <span class="new-plan__step-marker-name">Даты</span>
+            </li>
+            <li class="new-plan__step-marker-name-wrapper">
+              <span class="new-plan__step-marker"></span>
+              <span class="new-plan__step-marker-name">Маршрут</span>
+            </li>
+            <li class="new-plan__step-marker-name-wrapper">
+              <span class="new-plan__step-marker"></span>
+              <span class="new-plan__step-marker-name">Развлечения</span>
+            </li>
+          </ul>
           <form class="new-plan__form" action="https://echo.htmlacademy.ru/courses" method="GET">
             <ol class="new-plan__step-list plan-steps">
               <li class="plan-steps__step step" id="step-1">
