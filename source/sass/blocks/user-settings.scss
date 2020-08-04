@@ -1,0 +1,62 @@
+.user-settings{
+  padding-top: 20px;
+  padding-bottom: 34px;
+}
+
+.user-settings__form{
+  display: grid;
+  // grid settings for each screen
+  // grid gaps
+}
+
+.user-settings__level {
+  width: 100px;
+  height: 100px;
+  border-width: 3px;
+}
+
+.user-settings__download-button {
+  background-color: #dfe3f0;
+  border: none;
+  border-radius: 25px;
+  padding: 16px 20px 12px 20px;
+  color: $button-text-color-darker;
+  text-transform: uppercase;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  @include typography(20px, 500, 0.9);
+}
+
+.user-settings__fieldset {
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  border: 1px solid #CBCED9;
+  padding: 20px;
+}
+
+.user-settings__fieldset-name {
+  @include typography(16px, 700, 1.12);
+  text-transform: uppercase;
+  color: $button-text-color-dark;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.user-settings__tags {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: rgba(#444444, 0.6);
+  resize: none;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  @include typography(16px, 400, 1.12);
+  padding: 0;
+}
+
+.user-settings__transport-list {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
