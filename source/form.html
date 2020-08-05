@@ -490,7 +490,7 @@
                       <div class="country-destinations__icon-wrapper">
                         <svg width="35" height="24"></svg>
                       </div>
-                      <button type="button">
+                      <button class="country-destinations__del-button" type="button">
                         <span class="visuallyhidden">Убрать с маршрута</span>
                       </button>
                     </li>
@@ -502,7 +502,7 @@
                       <div class="country-destinations__icon-wrapper">
                         <svg width="35" height="24"></svg>
                       </div>
-                      <button type="button">
+                      <button class="country-destinations__del-button" type="button">
                         <span class="visuallyhidden">Убрать с маршрута</span>
                       </button>
                     </li>
@@ -512,7 +512,7 @@
                     <li class="country-destinations__row country-destinations__row--empty">
                       <!-- Click on button "country-destinations__choose-button" should toggle class
                         "country-destinations__select-lists-wrapper--hidden" of "country-destinations__select-lists-wrapper" element -->
-                      <button class="country-destinations__choose-button" type="button">
+                      <button class="country-destinations__choose-button country-destinations__choose-button--empty" type="button">
                         Выберите страну
                       </button>
                       <div class="country-destinations__select-lists-wrapper country-destinations__select-lists-wrapper--hidden">
@@ -603,18 +603,24 @@
                         </ul>
                       </div>
                       <span class="country-destinations__marker"></span>
-                      <div class="country-destinations__icon-wrapper country-destinations__icon-wrapper--hidden">
-                        <svg  width="35" height="24"></svg>
-                      </div>
-                      <button type="button">
+                      <button class="country-destinations__del-button" type="button">
                         <span class="visuallyhidden">Убрать с маршрута</span>
                       </button>
                     </li>
+                    <li class="country-destinations__row country-destinations__row--empty">
+                      <!-- Click on button "country-destinations__choose-button" should toggle class
+                        "country-destinations__select-lists-wrapper--hidden" of "country-destinations__select-lists-wrapper" element -->
+                      <button class="country-destinations__choose-button country-destinations__choose-button--empty country-destinations__choose-button--add" type="button">
+                        Добавить страну
+                      </button>
+                      <span class="country-destinations__marker"></span>
+                    </li>
                   </ul>
-                  <button type="button">Добавить страну</button>
                 </fieldset>
-                <a class="step__step-link page-accent-button" href="form.html#step-3">Следующий шаг</a>
-                <a class="step__step-link" href="form.html#step-1">На шаг назад</a>
+                <div class="step__step-link-wrapper">
+                  <a class="step__step-link page-accent-button" href="form.html#step-3">Следующий шаг</a>
+                  <a class="step__step-link" href="form.html#step-1">На шаг назад</a>
+                </div>
               </li>
               <li class="plan-steps__step step" id="step-3">
                 <h3 class="step__title">Шаг 3.</h3>
@@ -628,8 +634,10 @@
                   <svg width="35" height="24"></svg>
                   <textarea class="step__textarea-input" id="second-destination-plan" name="tags" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </fieldset>
-                <button class="step__step-link new-plan__submit-button page-accent-button" type="submit">Отправить</button>
-                <a class="step__step-link" href="form.html#step-2">На шаг назад</a>
+                <div class="step__step-link-wrapper">
+                  <button class="step__step-link new-plan__submit-button page-accent-button" type="submit">Отправить</button>
+                  <a class="step__step-link" href="form.html#step-2">На шаг назад</a>
+                </div>
               </li>
             </ol>
           </form>
