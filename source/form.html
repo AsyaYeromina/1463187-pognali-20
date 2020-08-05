@@ -509,10 +509,10 @@
                     <!-- When country-destinations__row has class "country-destinations__row--empty"
                       div.country-destinations__icon-wrapper should be hidden
                       by adding class "country-destinations__icon-wrapper--hidden" -->
-                    <li class="country-destinations__row country-destinations__row--empty">
+                    <li class="country-destinations__row country-destinations__row--drop-down country-destinations__row--empty">
                       <!-- Click on button "country-destinations__choose-button" should toggle class
                         "country-destinations__select-lists-wrapper--hidden" of "country-destinations__select-lists-wrapper" element -->
-                      <button class="country-destinations__choose-button country-destinations__choose-button--empty" type="button">
+                      <button class="country-destinations__choose-button country-destinations__choose-button--empty country-destinations__choose-button--active" type="button">
                         Выберите страну
                       </button>
                       <div class="country-destinations__select-lists-wrapper country-destinations__select-lists-wrapper--hidden">
@@ -602,8 +602,12 @@
                           </li>
                         </ul>
                       </div>
-                      <span class="country-destinations__marker"></span>
-                      <button class="country-destinations__del-button" type="button">
+                      <!-- When country-destinations__choose-button has modif. "country-destinations__choose-button--active"
+                      element with class "country-destinations__marker" should have class "country-destinations__marker--hidden" -->
+                      <!-- When country-destinations__choose-button has modif. "country-destinations__choose-button--active"
+                        country-destinations__del-button should have class "country-destinations__del-button--hidden" -->
+                      <span class="country-destinations__marker country-destinations__marker--hidden"></span>
+                      <button class="country-destinations__del-button country-destinations__del-button--hidden" type="button">
                         <span class="visuallyhidden">Убрать с маршрута</span>
                       </button>
                     </li>

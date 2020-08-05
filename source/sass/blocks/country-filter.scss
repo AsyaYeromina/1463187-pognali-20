@@ -50,7 +50,37 @@
   }
 }
 
-// Temporary hidden filter
 .country-filter__lists{
-  display: none;
+  padding: 25px;
+}
+
+.country-filter__continent-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.country-filter__continent-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(#192144, 0.3);
+  @include typography(16px, 700, 1.12);
+}
+
+.country-filter__continent-link--active {
+  color: #192144;
+}
+
+.country-filter__hide-list-button {
+  display: block;
+  border-radius: 20px;
+  padding: 12px;
+  background-color: #d6daed;
+  color: $button-text-color-darker;
+  @include typography(16px, 700, 1.25);
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+  font-family: inherit;
 }
