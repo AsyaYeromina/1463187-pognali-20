@@ -627,12 +627,22 @@
                 <p class="step__subtitle">Развлечения</p>
                 <p class="step__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                 <fieldset class="step__fieldset">
-                  <label class="step__textarea-label" for="first-destination-plan">Босния и Герцеговина</label>
-                  <svg width="35" height="24"></svg>
-                  <textarea class="step__textarea-input" id="first-destination-plan" name="tags" placeholder="План действий"></textarea>
-                  <label class="step__textarea-label" for="second-destination-plan">Чехия</label>
-                  <svg width="35" height="24"></svg>
-                  <textarea class="step__textarea-input" id="second-destination-plan" name="tags" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <ul class="step__textarea-list">
+                    <li class="step__textarea-list-item">
+                      <div class="step__textarea-label-icon-wrapper">
+                        <label class="step__textarea-label" for="first-destination-plan">Босния и Герцеговина</label>
+                        <svg class="step__textarea-icon" width="35" height="24"></svg>
+                      </div>
+                      <textarea class="step__textarea-input" id="first-destination-plan" rows="9" name="tags" placeholder="План действий"></textarea>
+                    </li>
+                    <li class="step__textarea-list-item">
+                      <div class="step__textarea-label-icon-wrapper">
+                        <label class="step__textarea-label" for="second-destination-plan">Чехия</label>
+                        <svg class="step__textarea-icon" width="35" height="24"></svg>
+                      </div>
+                      <textarea class="step__textarea-input" id="second-destination-plan" rows="9" name="tags" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                    </li>
+                  </ul>
                 </fieldset>
                 <div class="step__step-link-wrapper">
                   <button class="step__step-link new-plan__submit-button page-accent-button" type="submit">Отправить</button>
