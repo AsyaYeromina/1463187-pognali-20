@@ -1,0 +1,85 @@
+.quantity-input {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.quantity-input__title {
+  margin: 0;
+  @include typography(16px, 500, 1);
+  text-transform: uppercase;
+  color: $button-text-color-dark;
+  letter-spacing: 0.09em;
+  margin-bottom: 8px;
+}
+
+.quantity-input__label {
+  @include typography(16px, 500, 1);
+  text-transform: uppercase;
+  color: rgba($button-text-color-dark, 0.3);
+  letter-spacing: 0.07em;
+  margin-bottom: 8px;
+}
+
+.quantity-input__input-buttons-wrapper {
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+}
+
+.quantity-input__button {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background-color: transparent;
+  border: none;
+
+  &::before{
+    content: " ";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: #cccccc;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-45%);
+  }
+}
+
+.quantity-input__button--minus {
+  left: 0;
+  top: 0;
+}
+
+.quantity-input__button--plus {
+  right: 0;
+  top: 0;
+
+  &::after{
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    background-color: #cccccc;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-45%);
+  }
+}
+
+.quantity-input__input {
+  border: none;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  @include typography(16px, 500, 1);
+  color: $button-text-color-dark;
+  font-family: inherit;
+}
+
+.quantity-input__input::placeholder{
+  @include typography(16px, 500, 1);
+  color: $button-text-color-dark;
+}

@@ -4,7 +4,8 @@
   padding: 25px;
 }
 
-.step__title, .step__subtitle {
+.step__title,
+.step__subtitle {
   margin: 0;
   @include typography(20px, 700, 1);
   color: $button-text-color-dark;
@@ -12,4 +13,36 @@
 
 .step__fieldset {
   border: none;
+}
+
+.step__desc {
+  font-weight: 400;
+}
+
+.step__fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.step__input-wrapper {
+  margin-bottom: 20px;
+}
+
+.step__checkbox-wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+// .step__chekbox-input {
+
+// }
+
+.step__chekbox-label {
+  color: $button-text-color-dark;
+  padding-left: 20px;
+}
+
+.step__date-choice {
+  margin-bottom: 20px;
 }
