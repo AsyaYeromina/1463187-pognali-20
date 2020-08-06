@@ -1,0 +1,131 @@
+.step {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.step__title,
+.step__subtitle {
+  margin: 0;
+
+  @include typography(20px, 700, 1);
+  color: $button-text-color-dark;
+}
+
+.step__subtitle {
+  margin-bottom: 20px;
+}
+
+.step__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.step__desc {
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.step__input-wrapper {
+  margin-bottom: 20px;
+}
+
+.step__checkbox-wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.step__chekbox-label {
+  color: $button-text-color-dark;
+  padding-left: 20px;
+}
+
+.step__date-choice {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.step__step-link-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.step__step-link {
+  margin-bottom: 10px;
+  width: 100%;
+  color: $button-text-color-dark;
+
+  @include typography(17px, 700, 1.76);
+  text-transform: uppercase;
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  border: none;
+
+  @media (min-width: 768px) {
+    text-transform: initial;
+
+    @include typography(24px, 700, 1);
+    padding: 20px;
+    padding-right: 60px;
+    width: max-content;
+    max-width: 100%;
+  }
+}
+
+.step__step-link:last-child {
+  margin-bottom: 0;
+}
+
+.step__textarea-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.step__textarea-list-item {
+  margin-bottom: 26px;
+}
+
+.step__textarea-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.step__textarea-label-icon-wrapper {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.step__textarea-label {
+  @include typography(18px, 500, 1);
+  color: $button-text-color-dark;
+  padding-left: 10px;
+  width: 70%;
+  display: block;
+}
+
+.step__textarea-icon {
+  width: 30%;
+}
+
+.step__textarea-input {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  color: #444444;
+  font-family: inherit;
+  line-height: 1.37;
+}
+
+.step__textarea-input::placeholder {
+  color: rgba(#444444, 0.3);
+}

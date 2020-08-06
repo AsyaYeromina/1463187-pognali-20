@@ -1,0 +1,35 @@
+.profile-filters {
+  padding-top: 40px;
+  padding-bottom: 26px;
+}
+
+.profile-filters-wrapper {
+  background-color: $main-accent-color;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.profile-filters__heading {
+  @include typography(22px, 700, 1);
+  color: $button-text-color-dark;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.profile-filters__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-filters__fieldset {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #f3c72b;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.profile-filters__fieldset:last-of-type {
+  margin-bottom: 26px;
+}

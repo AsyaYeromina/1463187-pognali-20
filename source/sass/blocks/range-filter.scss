@@ -1,0 +1,59 @@
+.range-filter__min-max-inputs {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    background-color: #ffffff;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    background-color: #cbced9;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 2;
+  }
+}
+
+.range-filter__min-max-input-wrapper {
+  width: 50%;
+  position: relative;
+}
+
+.range-filter__input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #cbced9;
+  text-align: center;
+  color: $button-text-color-dark;
+  text-overflow: ellipsis;
+}
+
+.range-filter__min-max-input-wrapper:first-child .range-filter__input {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right-color: transparent;
+}
+
+.range-filter__min-max-input-wrapper:last-child .range-filter__input {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

@@ -1,0 +1,14 @@
+.profiles {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.profiles__list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}

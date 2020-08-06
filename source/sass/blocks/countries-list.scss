@@ -1,0 +1,15 @@
+//
+.countries-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.countries-list__country-name {
+  text-transform: uppercase;
+
+  @include typography(15px, 500, 1.07);
+  color: $button-text-color-dark;
+}

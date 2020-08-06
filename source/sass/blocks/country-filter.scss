@@ -1,0 +1,88 @@
+.country-filter {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: $main-background-color-light4;
+}
+
+.country-filter__heading {
+  @include typography(16px, 700, 1.12);
+  text-transform: uppercase;
+  color: $main-background-color-dark;
+  padding-left: 25px;
+  width: 90%;
+  margin: 0;
+  display: inline-block;
+}
+
+.country-filter__heading--shown {
+  &::after {
+    content: ":";
+    color: $main-background-color-dark;
+    height: 16px;
+    width: 12px;
+    display: inline-block;
+  }
+}
+
+.country-filter__button {
+  padding: 25px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: " ";
+    position: absolute;
+    right: 25%;
+    height: 3px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: $main-background-color-dark;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.country-filter__lists {
+  padding: 25px;
+}
+
+.country-filter__continent-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.country-filter__continent-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(#192144, 0.3);
+
+  @include typography(16px, 700, 1.12);
+}
+
+.country-filter__continent-link--active {
+  color: #192144;
+}
+
+.country-filter__hide-list-button {
+  display: block;
+  border-radius: 20px;
+  padding: 12px;
+  background-color: #d6daed;
+  color: $button-text-color-darker;
+
+  @include typography(16px, 700, 1.25);
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+}

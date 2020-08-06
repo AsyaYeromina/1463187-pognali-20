@@ -1,0 +1,12 @@
+.plan-steps {
+  padding: 0;
+  list-style: none;
+}
+
+.plan-steps__step {
+  margin-bottom: 10px;
+}
+
+.plan-steps__step:last-child {
+  margin-bottom: 0;
+}

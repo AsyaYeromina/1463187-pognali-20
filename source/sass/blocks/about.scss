@@ -1,0 +1,26 @@
+.about {
+  background-color: #141b3b;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 82px;
+}
+
+.about__heading {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.about__text {
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 26px;
+
+  @include typography(16px, 300, 1.37);
+}
+
+.about__text--special {
+  font-weight: 700;
+}

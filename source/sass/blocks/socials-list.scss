@@ -1,0 +1,15 @@
+.socials-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-list__item {
+  background-color: #cccccc;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}

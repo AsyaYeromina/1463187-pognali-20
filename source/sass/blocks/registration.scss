@@ -1,0 +1,58 @@
+.registration {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background-color: $main-background-color-dark;
+  color: $text-color-light;
+}
+
+.registration__heading {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.registration__text {
+  padding-left: 36px;
+  padding-right: 36px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.registration__text-link {
+  color: $main-accent-color;
+}
+
+.registration__form {
+  position: relative;
+}
+
+.registration__input {
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+
+  @include typography(18px, 700, 1);
+  font-family: "Blogger Sans", "Arial", sans-serif;
+}
+
+.registration__input::placeholder {
+  @include typography(18px, 700, 1);
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  color: rgba($text-color-dark, 0.3);
+}
+
+.registration__input-button {
+  position: absolute;
+  transform: translateX(-100%);
+  border: none;
+  background-color: $main-accent-color;
+  border-radius: 10px;
+  height: 100%;
+  width: 60px;
+  cursor: pointer;
+}
+
+.registration__input-button::after {
+  @include pseudo-after-arrow();
+}

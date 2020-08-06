@@ -1,0 +1,62 @@
+.user-plan {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  background-color: #dfe3f0;
+}
+
+.user-plan__heading {
+  margin: 0;
+  color: $button-text-color-dark;
+
+  @include typography(24px, 700, 1);
+  margin-bottom: 30px;
+}
+
+.user-plan__list {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  color: $button-text-color-dark;
+  font-weight: 700;
+}
+
+.user-plan__list-item {
+  padding: 25px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.user-plan__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.user-plan__list-item-heading {
+  margin: 0;
+
+  @include typography(16px, 700, 1);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.user-plan__companions,
+.user-plan__dates {
+  display: block;
+  text-transform: uppercase;
+
+  @include typography(14px, 500, 1);
+  margin-bottom: 6px;
+}
+
+.user-plan__dates {
+  margin-bottom: 26px;
+}
+
+.user-plan__plan-link {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(#000000, 0.3);
+
+  @include typography(14px, 500, 1);
+}

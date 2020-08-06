@@ -1,0 +1,68 @@
+.promo {
+  background-color: $button-text-color-darker;
+  background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  color: $text-color-light;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.promo__slogan {
+  @include typography(36px, 700, 1.11);
+  margin: 0;
+  text-align: center;
+}
+
+.promo__contacts {
+  margin: 0;
+}
+
+.promo__user-list {
+  margin: 0;
+}
+
+.promo__contacts-user-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.promo__user-list .user-nav-list__link {
+  padding: 12px 38px 8px 38px;
+}
+
+.promo__contacts .contacts-list__item-icon {
+  width: 40px;
+  height: 40px;
+
+  &:nth-child(1) {
+    background-color: $main-accent-color-dark3;
+  }
+
+  &:nth-child(2) {
+    background-color: $main-accent-color-dark2;
+  }
+}
+
+.promo__blockquote {
+  margin: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+  width: 80%;
+  margin-bottom: 26px;
+}
+
+.promo__blockquote-text {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.promo__blockquote-author {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.promo__guide-list {
+  margin: 0;
+}

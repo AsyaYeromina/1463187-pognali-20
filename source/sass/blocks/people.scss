@@ -1,0 +1,29 @@
+.people {
+  background-color: $main-background-color-dark;
+  // background-image: url(../../img/)
+  background-repeat: no-repeat;
+  color: $text-color-light;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.people__heading {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.people__text {
+  margin: 0;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  width: 90%;
+}
+
+.people__text--special {
+  font-weight: 700;
+}
+
+.people__list {
+  margin: 0;
+  margin-bottom: 10px;
+}

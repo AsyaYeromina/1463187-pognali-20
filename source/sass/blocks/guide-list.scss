@@ -1,0 +1,52 @@
+.guide-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guide-list__item {
+  width: 100%;
+  color: $button-text-color-darker;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.guide-list__item:nth-child(4n + 1) {
+  background-color: $main-accent-color-dark3;
+}
+
+.guide-list__item:nth-child(4n + 2) {
+  background-color: $main-accent-color-dark2;
+}
+
+.guide-list__item:nth-child(4n + 3) {
+  background-color: $main-accent-color-dark1;
+}
+
+.guide-list__item:nth-child(4n + 4) {
+  background-color: $main-accent-color;
+}
+
+.guide-list__item:nth-child(n + 2) {
+  margin-top: -16px;
+}
+
+.guide-list__item:last-child {
+  padding-bottom: 20px;
+}
+
+.guide-list__text {
+  width: 70%;
+  font-weight: bold;
+  margin: 0;
+}
+
+.guide-list__number {
+  color: #ffffff;
+}

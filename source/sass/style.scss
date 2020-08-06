@@ -1,1 +1,63 @@
-// Начните писать стили здесь
+//Importing basic files
+@import "../../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+@import "fonts.scss";
+@import "grid.scss";
+@import "variables.scss";
+@import "templates.scss";
+@import "common.scss";
+
+// Importing blocks
+
+@import "blocks/about.scss";
+@import "blocks/address.scss";
+@import "blocks/contacts.scss";
+@import "blocks/contacts-list.scss";
+@import "blocks/countries-list.scss";
+@import "blocks/guide-list.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-page-button.scss";
+@import "blocks/main-page-heading.scss";
+@import "blocks/pages-list.scss";
+@import "blocks/people.scss";
+@import "blocks/places.scss";
+@import "blocks/places-list.scss";
+@import "blocks/price.scss";
+@import "blocks/price-list.scss";
+@import "blocks/promo.scss";
+@import "blocks/registration.scss";
+@import "blocks/socials-list.scss";
+@import "blocks/special-price.scss";
+@import "blocks/travel-type-list.scss";
+@import "blocks/user-card.scss";
+@import "blocks/user-nav-list.scss";
+@import "blocks/users-list.scss";
+@import "blocks/user-level.scss";
+@import "blocks/footer.scss";
+@import "blocks/country-filter.scss";
+@import "blocks/profile-filters.scss";
+@import "blocks/filter-section.scss";
+@import "blocks/range-filter.scss";
+@import "blocks/range-bar.scss";
+@import "blocks/profiles.scss";
+@import "blocks/user-full-card.scss";
+@import "blocks/users-full-list.scss";
+@import "blocks/user-settings.scss";
+@import "blocks/transport-inputs.scss";
+@import "blocks/user-plan.scss";
+@import "blocks/new-plan.scss";
+@import "blocks/plan-steps.scss";
+@import "blocks/step.scss";
+@import "blocks/quantity-input.scss";
+@import "blocks/calendar.scss";
+@import "blocks/page-accent-button.scss";
+@import "blocks/country-destinations.scss";
+@import "blocks/letter-list.scss";
+@import "blocks/country-list.scss";
+@import "blocks/pagination-pages.scss";
+@import "blocks/profiles-pages.scss";
+@import "blocks/pagination-arrows.scss";
+
+
+// TODO : Все что нужно разбить по другим файлам позже
