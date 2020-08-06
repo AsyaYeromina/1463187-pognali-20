@@ -630,17 +630,37 @@
               </div>
             </li>
           </ul>
-          <a class="profiles__more-button" href="#">Показать еще</a>
-          <div class="profiles__pagination">
-            <a class="profiles__pagination-button profiles__pagination-button--previous" href="#">
-              <span class="visuallyhidden">На предыдущую страницу</span>
-              <svg width="20" height="13"></svg>
-            </a>
-            <a class="profiles__pagination-button profiles__pagination-button--next" href="#">
-              <span class="visuallyhidden">На следующую страницу</span>
-              <svg width="20" height="13"></svg>
-            </a>
-          </div>
+          <section class="profiles__pages profiles-pages">
+            <a class="profiles-pages__more-button" href="#">Показать еще</a>
+            <div class="profiles-pages__pagination-wrapper">
+              <ol class="profiles-pages__pagination-list pagination-pages">
+                <li class="pagination-pages__item">
+                  <a class="pagination-pages__item-link" href="">1</a>
+                </li>
+                <li class="pagination-pages__item">
+                  <a class="pagination-pages__item-link" href="">2</a>
+                </li>
+                <li class="pagination-pages__item">
+                  <a class="pagination-pages__item-link" href="">3</a>
+                </li>
+                <li class="pagination-pages__item">
+                  <a class="pagination-pages__item-link" href="">4</a>
+                </li>
+              </ol>
+              <ul class="profiles-pages__pagination-arrows pagination-arrows">
+                <li class="pagination-arrows__item">
+                  <a class="pagination-arrows__item-link pagination-arows__item-link--arrow-previous" href="">
+                    <span class="visuallyhidden">На предыдущую страницу</span>
+                  </a>
+                </li>
+                <li class="pagination-arrows__item">
+                  <a class="pagination-arrows__item-link pagination-arows__item-link--arrow-next" href="">
+                    <span class="visuallyhidden">На следующую страницу</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </section>
     </main>
