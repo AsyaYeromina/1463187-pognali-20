@@ -7,6 +7,7 @@
 .user-plan__heading {
   margin: 0;
   color: $button-text-color-dark;
+
   @include typography(24px, 700, 1);
   margin-bottom: 30px;
 }
@@ -32,14 +33,17 @@
 
 .user-plan__list-item-heading {
   margin: 0;
+
   @include typography(16px, 700, 1);
   margin-bottom: 20px;
   display: inline-block;
 }
 
-.user-plan__companions, .user-plan__dates {
+.user-plan__companions,
+.user-plan__dates {
   display: block;
   text-transform: uppercase;
+
   @include typography(14px, 500, 1);
   margin-bottom: 6px;
 }
@@ -48,10 +52,11 @@
   margin-bottom: 26px;
 }
 
-.user-plan__plan-link{
+.user-plan__plan-link {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(#000000, 0.3);
+
   @include typography(14px, 500, 1);
 }

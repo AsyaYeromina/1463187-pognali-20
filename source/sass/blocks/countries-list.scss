@@ -9,6 +9,7 @@
 
 .countries-list__country-name {
   text-transform: uppercase;
+
   @include typography(15px, 500, 1.07);
   color: $button-text-color-dark;
 }

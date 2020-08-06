@@ -1,10 +1,10 @@
-.country-filter{
+.country-filter {
   padding-top: 40px;
   padding-bottom: 30px;
   background-color: $main-background-color-light4;
 }
 
-.country-filter__heading{
+.country-filter__heading {
   @include typography(16px, 700, 1.12);
   text-transform: uppercase;
   color: $main-background-color-dark;
@@ -14,8 +14,8 @@
   display: inline-block;
 }
 
-.country-filter__heading--shown{
-  &::after{
+.country-filter__heading--shown {
+  &::after {
     content: ":";
     color: $main-background-color-dark;
     height: 16px;
@@ -24,7 +24,7 @@
   }
 }
 
-.country-filter__button{
+.country-filter__button {
   padding: 25px;
   border: none;
   background-color: transparent;
@@ -50,7 +50,7 @@
   }
 }
 
-.country-filter__lists{
+.country-filter__lists {
   padding: 25px;
 }
 
@@ -65,6 +65,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(#192144, 0.3);
+
   @include typography(16px, 700, 1.12);
 }
 
@@ -78,6 +79,7 @@
   padding: 12px;
   background-color: #d6daed;
   color: $button-text-color-darker;
+
   @include typography(16px, 700, 1.25);
   text-transform: uppercase;
   border: none;

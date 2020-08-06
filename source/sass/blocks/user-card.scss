@@ -40,7 +40,7 @@
   display: inline-block;
   color: $button-text-color-dark;
 
-  &::before{
+  &::before {
     content: " ";
     position: absolute;
     top: 50%;
@@ -51,11 +51,12 @@
     border-radius: 50%;
   }
 }
-.user-card__name--offline::before{
+
+.user-card__name--offline::before {
   background-color: $offline-marker-color;
 }
 
-.user-card__name--online::before{
+.user-card__name--online::before {
   background-color: $online-marker-color;
 }
 

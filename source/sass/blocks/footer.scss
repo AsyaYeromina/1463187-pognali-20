@@ -1,20 +1,20 @@
-.footer{
+.footer {
   padding-top: 40px;
   padding-bottom: 10px;
   background-color: #ffffff;
 }
 
-.footer__container{
+.footer__container {
   display: flex;
   flex-direction: column;
 }
 
-.footer__logo-img{
+.footer__logo-img {
   margin-bottom: 40px;
   align-self: center;
 }
 
-.footer__socials{
+.footer__socials {
   margin: 0;
   margin-bottom: 26px;
   align-self: center;
@@ -24,7 +24,7 @@
   background-color: $main-accent-color;
 }
 
-.footer__copyright{
+.footer__copyright {
   margin: 0;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -34,7 +34,7 @@
   position: relative;
 }
 
-.footer__copyright::before{
+.footer__copyright::before {
   content: " ";
   width: 100%;
   height: 1px;
@@ -43,6 +43,6 @@
   top: 0;
 }
 
-.footer__copyright-link{
+.footer__copyright-link {
   background-color: #cccccc;
 }

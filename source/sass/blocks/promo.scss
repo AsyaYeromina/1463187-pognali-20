@@ -1,6 +1,6 @@
 .promo {
   background-color: $button-text-color-darker;
-  background-image: url(../../img/globe-back-mobile@1x.jpg);
+  background-image: url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   color: $text-color-light;
   padding-top: 20px;
@@ -8,7 +8,6 @@
 }
 
 .promo__slogan {
-
   @include typography(36px, 700, 1.11);
   margin: 0;
   text-align: center;

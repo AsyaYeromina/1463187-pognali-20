@@ -31,11 +31,12 @@
   width: 100%;
   border-radius: 10px;
   border: none;
+
   @include typography(18px, 700, 1);
   font-family: "Blogger Sans", "Arial", sans-serif;
 }
 
-.registration__input::placeholder{
+.registration__input::placeholder {
   @include typography(18px, 700, 1);
   font-family: "Blogger Sans", "Arial", sans-serif;
   color: rgba($text-color-dark, 0.3);

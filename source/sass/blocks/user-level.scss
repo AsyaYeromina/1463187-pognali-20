@@ -15,7 +15,7 @@
   color: $button-text-color-dark;
 }
 
-.user-level__text{
+.user-level__text {
   @include typography(14px, 400, 1);
   color: rgba(#000000, 0.1);
   border-top: 1px solid rgba(#000000, 0.1);
@@ -30,12 +30,12 @@
   border-width: 4px;
 }
 
-.user-level--dark .user-level__number{
+.user-level--dark .user-level__number {
   color: $text-color-light;
 }
 
-.user-level--dark .user-level__text{
-  border-top: 1px solid rgba(#FFFFFF, 0.3);
+.user-level--dark .user-level__text {
+  border-top: 1px solid rgba(#ffffff, 0.3);
   color: $text-color-light;
 }
 

@@ -8,7 +8,7 @@
 .price::after {
   content: " ";
   position: absolute;
-  background-image: url(../../img/rates@1x.png);
+  background-image: url("../../img/rates@1x.png");
   width: 100px;
   height: 100px;
   background-size: 100px 100px;
@@ -33,7 +33,7 @@
   margin-bottom: 40px;
 }
 
-.price__button-show{
+.price__button-show {
   display: block;
   padding-left: 25px;
   padding-right: 25px;

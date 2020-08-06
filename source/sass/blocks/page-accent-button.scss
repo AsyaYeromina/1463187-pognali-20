@@ -2,7 +2,6 @@
   width: 100%;
   background-color: $main-accent-color;
   color: $button-text-color-dark;
-  @include typography(17px, 700, 1.76);
   text-transform: uppercase;
   display: block;
   border-radius: 20px;
@@ -11,13 +10,16 @@
   position: relative;
   text-align: center;
 
+  @include typography(17px, 700, 1.76);
+
   @media (min-width: 768px) {
     text-transform: initial;
-    @include typography(24px, 700, 1);
     padding: 20px;
     padding-right: 60px;
     width: max-content;
     max-width: 100%;
+
+    @include typography(24px, 700, 1);
 
     &::after {
       @include pseudo-after-arrow();

@@ -1,6 +1,6 @@
 .about {
   background-color: #141b3b;
-  background-image: url(../../img/about-mobile@1x.png);
+  background-image: url("../../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   color: #ffffff;
   padding-top: 20px;
@@ -21,6 +21,6 @@
   @include typography(16px, 300, 1.37);
 }
 
-.about__text--special{
+.about__text--special {
   font-weight: 700;
 }

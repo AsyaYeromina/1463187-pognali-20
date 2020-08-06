@@ -7,6 +7,7 @@
 .step__title,
 .step__subtitle {
   margin: 0;
+
   @include typography(20px, 700, 1);
   color: $button-text-color-dark;
 }
@@ -17,17 +18,14 @@
 
 .step__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .step__desc {
   font-weight: 400;
   margin: 0;
   margin-bottom: 20px;
-}
-
-.step__fieldset {
-  margin: 0;
-  padding: 0;
 }
 
 .step__input-wrapper {
@@ -59,6 +57,7 @@
   margin-bottom: 10px;
   width: 100%;
   color: $button-text-color-dark;
+
   @include typography(17px, 700, 1.76);
   text-transform: uppercase;
   display: block;
@@ -70,6 +69,7 @@
 
   @media (min-width: 768px) {
     text-transform: initial;
+
     @include typography(24px, 700, 1);
     padding: 20px;
     padding-right: 60px;
@@ -82,7 +82,7 @@
   margin-bottom: 0;
 }
 
-.step__textarea-list{
+.step__textarea-list {
   margin: 0;
   padding: 0;
   list-style: none;

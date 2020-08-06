@@ -2,10 +2,11 @@
   text-align: center;
 }
 
-.profiles-pages__more-button{
+.profiles-pages__more-button {
   text-decoration: none;
   color: $main-background-color-dark;
   text-transform: uppercase;
+
   @include typography(17px, 700, 1.76);
   display: inline-block;
   text-align: center;
@@ -24,11 +25,11 @@
     top: 45%;
   }
 
-  &::after{
+  &::after {
     transform: translateY(-50%) rotate(90deg);
   }
 
-  &::before{
+  &::before {
     transform: translateY(-50%);
   }
 }
@@ -50,7 +51,6 @@
     background-color: $main-background-color-light;
     left: 50%;
   }
-
 }
 
 .profiles-pages__pagination-list {

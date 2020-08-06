@@ -19,6 +19,7 @@
   color: $button-text-color-dark;
   text-transform: uppercase;
   padding: 10px;
+
   @include typography(14px, 500, 1.29);
 }
 

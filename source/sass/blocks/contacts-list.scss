@@ -3,7 +3,7 @@
   list-style: none;
 }
 
-.contacts-list__item{
+.contacts-list__item {
   display: flex;
   align-items: center;
 }
@@ -41,6 +41,6 @@
   flex-wrap: wrap;
 }
 
-.contacts .contacts-list__item-text{
+.contacts .contacts-list__item-text {
   color: $main-accent-color;
 }

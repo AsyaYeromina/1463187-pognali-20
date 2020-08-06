@@ -7,6 +7,7 @@
 
 .quantity-input__title {
   margin: 0;
+
   @include typography(16px, 500, 1);
   text-transform: uppercase;
   color: $button-text-color-dark;
@@ -36,7 +37,7 @@
   background-color: transparent;
   border: none;
 
-  &::before{
+  &::before {
     content: " ";
     position: absolute;
     width: 14px;
@@ -57,7 +58,7 @@
   right: 0;
   top: 0;
 
-  &::after{
+  &::after {
     content: " ";
     position: absolute;
     width: 2px;
@@ -74,12 +75,13 @@
   text-align: center;
   padding: 10px;
   width: 100%;
+
   @include typography(16px, 500, 1);
   color: $button-text-color-dark;
   font-family: inherit;
 }
 
-.quantity-input__input::placeholder{
+.quantity-input__input::placeholder {
   @include typography(16px, 500, 1);
   color: $button-text-color-dark;
 }

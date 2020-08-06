@@ -19,15 +19,16 @@
 }
 
 // .calendar__month-button--previous {
-  // svg
+// svg
 // }
 
 // .calendar__month-button--next {
-  // svg
+// svg
 // }
 
 .calendar__month-name {
   margin: 0;
+
   @include typography(20px, 700, 1);
   color: $button-text-color-dark;
 }
@@ -41,6 +42,7 @@
   width: 100%;
   margin-bottom: 6px;
 }
+
 .calendar__week-day {
   text-align: center;
   color: #444444;
@@ -63,6 +65,7 @@
   height: 100%;
   display: block;
   border: 1px solid #cbced9;
+
   @include typography(14px, 500, 1.29);
   color: $button-text-color-dark;
   background-color: $main-background-color-light;

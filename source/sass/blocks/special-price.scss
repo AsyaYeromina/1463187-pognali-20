@@ -1,26 +1,26 @@
-.special-price{
+.special-price {
   padding-top: 40px;
   border-radius: 20px;
   background-color: #ffffff;
   overflow: hidden;
-  box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.14);
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
 }
 
-.special-price__heading{
+.special-price__heading {
   margin: 0;
   text-align: center;
   margin-bottom: 26px;
 }
 
-.special-price__list{
+.special-price__list {
   margin-bottom: 26px;
 }
 
-.special-price__list .price-list__item{
+.special-price__list .price-list__item {
   border-color: (black, 0.05);
 }
 
-.special-price__button-show{
+.special-price__button-show {
   padding-top: 26px;
   padding-bottom: 26px;
   text-align: center;
