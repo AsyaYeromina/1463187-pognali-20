@@ -3,6 +3,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  counter-reset: numbers;
 }
 
 .guide-list__item {
@@ -13,8 +14,14 @@
   padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
-  font-size: 18px;
+
+  @include typography(18px, 700, 1);
+
+  &::after {
+    counter-increment: numbers;
+    content: counter(numbers);
+    color: #ffffff;
+  }
 }
 
 .guide-list__item:nth-child(4n + 1) {
@@ -47,6 +54,3 @@
   margin: 0;
 }
 
-.guide-list__number {
-  color: #ffffff;
-}
