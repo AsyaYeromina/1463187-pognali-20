@@ -12,7 +12,7 @@
 
   @include typography(17px, 700, 1.76);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     text-transform: initial;
     padding: 20px;
     padding-right: 60px;

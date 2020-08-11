@@ -4,7 +4,7 @@
   min-height: 72px;
   background-color: $main-background-color-dark;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     min-height: 132px;
   }
 }

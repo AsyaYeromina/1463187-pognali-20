@@ -22,7 +22,7 @@
   text-align: left;
   margin-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     text-align: center;
     width: 100%;
   }

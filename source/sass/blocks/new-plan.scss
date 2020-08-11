@@ -18,7 +18,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
   }
@@ -45,7 +45,7 @@
 .new-plan__step-marker-name {
   display: none;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     display: block;
 
     @include typography(20px, 400, 1.2);

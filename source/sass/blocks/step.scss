@@ -67,7 +67,7 @@
   text-align: center;
   border: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     text-transform: initial;
 
     @include typography(24px, 700, 1);
