@@ -5,12 +5,45 @@
   color: $text-color-light;
   padding-top: 20px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width){
+    padding-top: 32px;
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-top: 90px;
+    padding-bottom: 120px;
+  }
+}
+
+.promo__slogan-blockquote-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+  }
 }
 
 .promo__slogan {
   @include typography(36px, 700, 1.11);
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+  width: 90%;
+
+  @media (min-width: $tablet-width) {
+    @include typography(60px, 700, 1.17);
+    width: 60%;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 0;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: left;
+  }
 }
 
 .promo__contacts {
@@ -25,6 +58,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .promo__user-list .user-nav-list__link {
@@ -50,17 +87,35 @@
   padding-left: 25px;
   width: 80%;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .promo__blockquote-text {
   margin: 0;
   margin-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .promo__blockquote-author {
   margin: 0;
   font-style: normal;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .promo__guide-list {

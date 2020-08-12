@@ -4,11 +4,14 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.37;
   color: $text-color-dark;
   background-color: $main-background-color-light;
+
+  @include typography(16px, 300, 1.37);
+
+  @media (min-width: $tablet-width) {
+    @include typography(28px, 300, 1.18);
+  }
 }
 
 img {
