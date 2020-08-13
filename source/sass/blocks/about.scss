@@ -13,6 +13,14 @@
     background-position-x: right;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/about-desktop@1x.png");
+    padding-top: 62px;
+    padding-bottom: 160px;
   }
 }
 
