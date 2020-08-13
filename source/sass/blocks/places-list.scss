@@ -18,10 +18,21 @@
 
 .places-list__link {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .places-list__img {
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    width: 30%;
+  }
 }
 
 .places-list__description-block {
@@ -29,6 +40,10 @@
   border-radius: 10px;
   padding: 25px;
   position: relative;
+
+@media (min-width: $tablet-width) {
+    width: 70%;
+  }
 }
 
 .places-list__svg {
@@ -40,6 +55,10 @@
 
   @include typography(21px, 700, 1);
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .places-list__subtitle {
@@ -47,6 +66,10 @@
 
   @include typography(16px, 500, 1.12);
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .places-list__numbers {
@@ -54,4 +77,9 @@
 
   @include typography(16px, 500, 1.25);
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-left: 26px;
+  }
 }
