@@ -1,26 +1,75 @@
 .about {
-  background-color: #141b3b;
+  background-color: #182044;
   background-image: url("../../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 82px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/about-tablet@1x.png");
+    background-position-x: right;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
 }
 
 .about__heading {
   margin: 0;
   margin-bottom: 26px;
+  margin-left: 26px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+    margin-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 60%;
+    margin-left: 70px;
+  }
 }
 
 .about__text {
   margin: 0;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 26px;
+  padding-right: 26px;
   margin-bottom: 26px;
 
-  @include typography(16px, 300, 1.37);
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    max-width: 50%;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 60%;
+    padding-left: 70px;
+  }
 }
 
 .about__text--special {
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    width: 40%;
+  }
+}
+
+.about__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 40%;
+    margin-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+    margin-left: 70px;
+  }
 }
