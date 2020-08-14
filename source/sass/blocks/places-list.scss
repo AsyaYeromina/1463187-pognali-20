@@ -10,10 +10,14 @@
   overflow: hidden;
   margin-bottom: 10px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+  }
 }
 
 .places-list__item:last-child {
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 
 .places-list__link {
@@ -43,6 +47,7 @@
 
 @media (min-width: $tablet-width) {
     width: 70%;
+    border-radius: 0;
   }
 }
 
