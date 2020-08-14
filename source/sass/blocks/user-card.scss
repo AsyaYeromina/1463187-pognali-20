@@ -5,6 +5,10 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+  }
 }
 
 .user-card:last-child {
@@ -34,6 +38,7 @@
 }
 
 .user-card__name {
+  @include typography(21px, 700, 1);
   margin: 0;
   text-align: center;
   position: relative;
@@ -49,6 +54,15 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include typography(24px, 700, 0.92);
+
+    &::before {
+      width: 8px;
+      height: 8px;
+    }
   }
 }
 
@@ -73,6 +87,11 @@
   padding-right: 20px;
   text-align: center;
   color: $text-color-dark;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 400, 1.15);
+    padding: 0;
+  }
 }
 
 .user-card__travel-type {
