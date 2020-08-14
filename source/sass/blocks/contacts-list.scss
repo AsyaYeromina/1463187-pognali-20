@@ -6,6 +6,10 @@
 .contacts-list__item {
   display: flex;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
+  }
 }
 
 .contacts-list__item-link {
@@ -26,6 +30,11 @@
   @media (min-width: $tablet-width) {
     width: 68px;
     height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
   }
 }
 
