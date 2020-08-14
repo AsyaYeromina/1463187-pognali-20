@@ -1,22 +1,31 @@
 .registration {
-  padding-top: 60px;
+  padding-top: 130px;
   padding-bottom: 20px;
   background-color: $main-background-color-dark;
   color: $text-color-light;
   margin-top: -50px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 62px;
+  }
 }
 
 .registration__heading {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .registration__text {
-  padding-left: 36px;
-  padding-right: 36px;
+  padding-left: 34px;
+  padding-right: 34px;
   text-align: center;
   margin: 0;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .registration__text-link {
@@ -25,22 +34,40 @@
 
 .registration__form {
   position: relative;
+  height: 62px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    height: 80px;
+  }
 }
 
 .registration__input {
-  padding: 20px;
+  padding: 22px;
+  padding-left: 25px;
   width: 100%;
-  border-radius: 10px;
+  height: 100%;
   border: none;
 
   @include typography(18px, 700, 1);
   font-family: "Blogger Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 36px 28px 36px;
+    font-size: 24px;
+  }
 }
 
 .registration__input::placeholder {
   @include typography(18px, 700, 1);
   font-family: "Blogger Sans", "Arial", sans-serif;
   color: rgba($text-color-dark, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .registration__input-button {
@@ -52,6 +79,28 @@
   height: 100%;
   width: 60px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0;
+    width: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.registration__button-text {
+  @include typography(24px, 700, 1);
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  padding-left: 40px;
+  padding-right: 150px;
+  color: $button-text-color-dark;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .registration__input-button::after {
