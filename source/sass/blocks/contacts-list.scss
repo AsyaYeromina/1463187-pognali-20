@@ -22,6 +22,11 @@
   background-color: $contacts-buttons-dark-color2;
   border-radius: 50%;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .contacts-list__item-text {
@@ -30,6 +35,14 @@
   line-height: 1.37;
   color: $main-background-color-dark;
   padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
+  }
 }
 
 .promo__contacts .contacts-list__item-text {

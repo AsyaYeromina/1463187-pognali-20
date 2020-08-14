@@ -3,6 +3,25 @@
   padding-bottom: 30px;
   background-color: $main-background-color-dark;
   color: $text-color-light;
+
+  @include bottom-radius(30px, 30px);
+
+  @media (min-width: $tablet-width) {
+    @include bottom-radius(50px, 50px);
+    padding-bottom: 60px;
+  }
+}
+
+.contacts__content-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 .contacts__text {
@@ -11,4 +30,22 @@
   text-align: center;
   margin: 0;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__contacts-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
