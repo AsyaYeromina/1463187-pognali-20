@@ -10,6 +10,18 @@
   }
 }
 
+.registration__content-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
 .registration__heading {
   margin: 0 auto;
   margin-bottom: 20px;
@@ -25,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 62px;
+    padding: 0;
   }
 }
 
