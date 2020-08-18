@@ -1,6 +1,10 @@
 .profiles {
   padding-top: 30px;
   padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .profiles__list {

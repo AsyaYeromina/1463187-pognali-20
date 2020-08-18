@@ -1,0 +1,13 @@
+.catalog-grid {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 285px;
+    grid-column-gap: 84px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
+
+.catalog-grid__column-main {
+  order: 1;
+}
