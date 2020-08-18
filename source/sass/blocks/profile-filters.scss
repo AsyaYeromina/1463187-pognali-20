@@ -11,13 +11,22 @@
   background-color: $main-accent-color;
   padding: 25px;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding-bottom: 36px;
+  }
 }
 
 .profile-filters__heading {
   @include typography(22px, 700, 1);
+  letter-spacing: 0.02em;
   color: $button-text-color-dark;
   margin: 0;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    font-size: 30px;
+  }
 }
 
 .profile-filters__form {
@@ -25,15 +34,40 @@
   flex-direction: column;
 }
 
-.profile-filters__fieldset {
+.profile-filters__fieldset-wrapper {
+  border: none;
+  border-top: 1px solid #f3c72b;
   padding: 0;
   margin: 0;
-  border-top: 1px solid #f3c72b;
-  position: relative;
-  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    @media (max-width: $tablet-width-only) {
+      padding: 0;
+
+      &:first-child {
+        border-top: 1px solid #f3c72b;
+      }
+
+      &:last-of-type {
+        border-bottom: 1px solid #f3c72b;
+      }
+    }
+  }
+}
+
+.profile-filters__fieldset-wrapper:first-of-type {
+  padding-top: 26px;
+}
+
+.profile-filters__fieldset-wrapper:last-of-type {
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+
+.profile-filters__fieldset {
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.profile-filters__fieldset:last-of-type {
-  margin-bottom: 26px;
-}

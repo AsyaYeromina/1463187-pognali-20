@@ -1,9 +1,20 @@
+.range-filter {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .range-filter__min-max-inputs {
   padding: 0;
   list-style: none;
   display: flex;
-  width: 100%;
   position: relative;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-width: 150px;
+    margin: 0;
+  }
 
   &::before {
     content: " ";
@@ -36,6 +47,10 @@
 }
 
 .range-filter__input {
+  @include typography(14px, 500, 0.93);
+  color: $button-text-color-dark;
+  font-family: inherit;
+  letter-spacing: 0.04em;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -43,8 +58,20 @@
   padding-right: 10px;
   border: 1px solid #cbced9;
   text-align: center;
-  color: $button-text-color-dark;
   text-overflow: ellipsis;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 500, 1);
+  }
+}
+
+.range-filter__input::placeholder {
+  @include typography(14px, 500, 0.93);
+  color: $button-text-color-dark;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 500, 1);
+  }
 }
 
 .range-filter__min-max-input-wrapper:first-child .range-filter__input {
@@ -56,4 +83,11 @@
 .range-filter__min-max-input-wrapper:last-child .range-filter__input {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.range-filter__range-bar {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    order: -1;
+    width: 280px;
+  }
 }
