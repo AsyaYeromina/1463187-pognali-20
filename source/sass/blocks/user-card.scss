@@ -1,6 +1,5 @@
 .user-card {
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
   background-color: #ffffff;
   display: flex;
@@ -21,6 +20,14 @@
   text-decoration: none;
 }
 
+.user-card__pic {
+  border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
 .user-card__level {
   position: absolute;
   top: 25px;
@@ -28,7 +35,7 @@
 }
 
 .user-card__description {
-  background-color: #ffffff;
+  // background-color: #ffffff;
   position: relative;
   padding-top: 32px;
   padding-bottom: 26px;
@@ -77,9 +84,11 @@
 .user-card__countries {
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .user-card__text {
@@ -96,4 +105,7 @@
 
 .user-card__travel-type {
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

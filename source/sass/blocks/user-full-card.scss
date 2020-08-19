@@ -1,6 +1,5 @@
 .user-full-card {
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
   background-color: $user-card-background;
   padding: 20px;
@@ -70,7 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    border-radius: 0;
+    border-radius: 20px 0 0 20px;
     background-color: lightgray;
     // ! temporary color
     width: 285px;
@@ -268,6 +267,7 @@
 .user-full-card__countries {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-direction: row;
@@ -345,6 +345,8 @@
 
 .user-full-card__travel-type {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-direction: column;
