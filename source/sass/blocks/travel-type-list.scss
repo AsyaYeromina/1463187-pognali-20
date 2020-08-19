@@ -3,11 +3,35 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .travel-type-list__item {
-  background-color: $text-color-dark;
-  opacity: 0.2;
-  margin: 8px;
+  background-color: $main-background-color-light;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+
+.travel-type-list__icon {
+  outline: 1px solid lightsteelblue;
+  // ! temporary outline
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
