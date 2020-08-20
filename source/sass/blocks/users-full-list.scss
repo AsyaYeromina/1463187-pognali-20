@@ -8,4 +8,12 @@
 .users-full-list__item {
   margin-bottom: 10px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }

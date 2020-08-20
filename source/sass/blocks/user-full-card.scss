@@ -83,7 +83,6 @@
 
 .user-full-card__button-like-wrapper {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
 
   @media (min-width: $tablet-width) {
@@ -246,15 +245,21 @@
     &::after {
       content: " ";
       position: absolute;
-      width: 120%;
+      width: calc(100% + 40px);
       height: 1px;
       top: 0;
       left: 0;
       transform: translateY(8px);
-      margin-left: -10%;
-      margin-right: -10%;
+      margin-left: -20px;
+      margin-right: -20px;
       z-index: 1;
       background-color: $main-background-color-light;
+
+      @media (max-width: $tablet-width-only) {
+        margin-left: -35px;
+        width: calc(100% + 55px);
+      }
+
     }
   }
 
@@ -295,14 +300,13 @@
     &::after {
       content: " ";
       position: absolute;
-      width: 120%;
+      width: calc(100% + 40px);
       height: 1px;
       top: 0;
       left: 0;
       transform: translateY(8px);
-      margin-left: -10%;
-      margin-right: -10%;
-      z-index: 1;
+      margin-left: -20px;
+      margin-right: -20px;
       background-color: $main-background-color-light;
     }
   }
