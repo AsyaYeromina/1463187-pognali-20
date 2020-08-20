@@ -9,9 +9,12 @@
 }
 
 .user-settings__content-wrapper {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
     position: relative;
   }
 }
