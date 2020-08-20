@@ -41,14 +41,26 @@
 
 .user-level--current {
   padding-top: 18px;
+
+  @media (min-width: $desktop-width) {
+    color: $text-color-light;
+  }
 }
 
 .user-level--current .user-level__number {
   font-size: 38px;
+
+  @media (min-width: $desktop-width) {
+    color: $text-color-light;
+  }
 }
 
 .user-level--current .user-level__text {
   font-size: 18px;
-  color: #444444;
   padding-top: 8px;
+
+  @media (min-width: $desktop-width) {
+    color: $text-color-light;
+    border-top: 2px solid rgba(#ffffff, 0.3);
+  }
 }
