@@ -236,13 +236,27 @@
                         </button>
                       </div>
                       <ul class="calendar__week-days-list">
-                        <li class="calendar__week-day">П</li>
-                        <li class="calendar__week-day">В</li>
-                        <li class="calendar__week-day">С</li>
-                        <li class="calendar__week-day">Ч</li>
-                        <li class="calendar__week-day">П</li>
-                        <li class="calendar__week-day calendar__week-day--week-end">С</li>
-                        <li class="calendar__week-day calendar__week-day--week-end">В</li>
+                        <li class="calendar__week-day">
+                          <span class="calendar__week-day-short">П</span><span class="calendar__week-day-full">т</span>
+                        </li>
+                        <li class="calendar__week-day">
+                          <span class="calendar__week-day-short">В</span><span class="calendar__week-day-full">т</span>
+                        </li>
+                        <li class="calendar__week-day">
+                          <span class="calendar__week-day-short">С</span><span class="calendar__week-day-full">р</span>
+                        </li>
+                        <li class="calendar__week-day">
+                          <span class="calendar__week-day-short">Ч</span><span class="calendar__week-day-full">т</span>
+                        </li>
+                        <li class="calendar__week-day">
+                          <span class="calendar__week-day-short">П</span><span class="calendar__week-day-full">т</span>
+                        </li>
+                        <li class="calendar__week-day calendar__week-day--week-end">
+                          <span class="calendar__week-day-short">С</span><span class="calendar__week-day-full">б</span>
+                        </li>
+                        <li class="calendar__week-day calendar__week-day--week-end">
+                          <span class="calendar__week-day-short">В</span><span class="calendar__week-day-full">с</span>
+                        </li>
                       </ul>
                       <ul class="calendar__days-list">
                         <li class="calendar__day">
@@ -285,6 +299,7 @@
                           <input id="day-7" class="calendar__day-input visuallyhidden" type="checkbox" disabled>
                           <label class="calendar__day-label" for="day-7">
                             1
+                            <span class="calendar__day-label-desc">мар</span>
                           </label>
                         </li>
                         <li class="calendar__day">
@@ -435,6 +450,7 @@
                           <input id="day-32" class="calendar__day-input visuallyhidden" type="checkbox" checked>
                           <label class="calendar__day-label" for="day-32">
                             26
+                            <span class="calendar__day-label--start">Заезд</span>
                           </label>
                         </li>
                         <li class="calendar__day">
@@ -447,6 +463,7 @@
                           <input id="day-34" class="calendar__day-input visuallyhidden" type="checkbox" checked>
                           <label class="calendar__day-label" for="day-34">
                             28
+                            <span class="calendar__day-label--end">Выезд</span>
                           </label>
                         </li>
                         <li class="calendar__day">
@@ -471,6 +488,7 @@
                           <input id="day-38" class="calendar__day-input visuallyhidden" type="checkbox">
                           <label class="calendar__day-label" for="day-38">
                             1
+                            <span class="calendar__day-label-desc">апр</span>
                           </label>
                         </li>
                         <li class="calendar__day">
