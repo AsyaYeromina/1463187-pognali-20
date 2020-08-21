@@ -160,27 +160,38 @@
       <section class="new-plan">
         <div class="wrapper">
           <div class="new-plan__content-wrapper">
-            <h2 class="new-plan__heading">Добавить план:</h2>
-            <ul class="new-plan__step-markers">
-              <li class="new-plan__step-marker-name-wrapper new-plan__step-marker-name-wrapper--active">
-                <span class="new-plan__step-marker"></span>
-                <span class="new-plan__step-marker-name">Даты</span>
-              </li>
-              <li class="new-plan__step-marker-name-wrapper">
-                <span class="new-plan__step-marker"></span>
-                <span class="new-plan__step-marker-name">Маршрут</span>
-              </li>
-              <li class="new-plan__step-marker-name-wrapper">
-                <span class="new-plan__step-marker"></span>
-                <span class="new-plan__step-marker-name">Развлечения</span>
-              </li>
-            </ul>
+            <div class="new-plan__heading-markers-wrapper">
+              <h2 class="new-plan__heading">Добавить план:</h2>
+              <ul class="new-plan__step-markers">
+                <li class="new-plan__step-marker new-plan__step-marker--active">
+                </li>
+                <li class="new-plan__step-marker">
+                </li>
+                <li class="new-plan__step-marker">
+                </li>
+              </ul>
+            </div>
             <form class="new-plan__form" action="https://echo.htmlacademy.ru/courses" method="GET">
               <ol class="new-plan__step-list plan-steps">
                 <li class="plan-steps__step step" id="step-1">
-                  <h3 class="step__title">Шаг 1.</h3>
-                  <p class="step__subtitle">Даты пребывания</p>
-                  <p class="step__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                  <div class="step__description-markers-wrapper">
+                    <div class="sterp__description">
+                      <h3 class="step__title">Шаг 1.</h3>
+                      <p class="step__subtitle">Даты пребывания</p>
+                      <p class="step__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                    </div>
+                    <ul class="step__markers">
+                      <li class="step__marker-item step__marker-item--active">
+                        <span class="step__marker-name">Даты</span>
+                      </li>
+                      <li class="step__marker-item">
+                        <span class="step__marker-name">Маршрут</span>
+                      </li>
+                      <li class="step__marker-item">
+                        <span class="step__marker-name">Развлечения</span>
+                      </li>
+                    </ul>
+                  </div>
                   <fieldset class="step__fieldset">
                     <div class="step__input-wrapper quantity-input">
                       <p class="quantity-input__title">Ищу попутчиков:</p>
@@ -490,9 +501,24 @@
                   <a class="step__step-link page-accent-button" href="form.html#step-2">Следующий шаг</a>
                 </li>
                 <li class="plan-steps__step step" id="step-2">
-                  <h3 class="step__title">Шаг 2.</h3>
-                  <p class="step__subtitle">Маршрут</p>
-                  <p class="step__desc">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                  <div class="step__description-markers-wrapper">
+                    <div class="sterp__description">
+                      <h3 class="step__title">Шаг 2.</h3>
+                      <p class="step__subtitle">Маршрут</p>
+                      <p class="step__desc">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                    </div>
+                    <ul class="step__markers">
+                      <li class="step__marker-item step__marker-item--active">
+                        <span class="step__marker-name">Даты</span>
+                      </li>
+                      <li class="step__marker-item">
+                        <span class="step__marker-name">Маршрут</span>
+                      </li>
+                      <li class="step__marker-item">
+                        <span class="step__marker-name">Развлечения</span>
+                      </li>
+                    </ul>
+                  </div>
                   <fieldset class="step__fieldset">
                     <ul class="step__country-destinations country-destinations">
                       <li class="country-destinations__row country-destinations__row--selected">
@@ -640,9 +666,24 @@
                   </div>
                 </li>
                 <li class="plan-steps__step step" id="step-3">
-                  <h3 class="step__title">Шаг 3.</h3>
-                  <p class="step__subtitle">Развлечения</p>
-                  <p class="step__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                  <div class="step__description-markers-wrapper">
+                    <div class="sterp__description">
+                      <h3 class="step__title">Шаг 3.</h3>
+                      <p class="step__subtitle">Развлечения</p>
+                      <p class="step__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                    </div>
+                    <ul class="step__markers">
+                      <li class="step__marker-item step__marker-item--active">
+                        <span class="step__marker-name">Даты</span>
+                      </li>
+                      <li class="step__marker-item">
+                        <span class="step__marker-name">Маршрут</span>
+                      </li>
+                      <li class="step__marker-item">
+                        <span class="step__marker-name">Развлечения</span>
+                      </li>
+                    </ul>
+                  </div>
                   <fieldset class="step__fieldset">
                     <ul class="step__textarea-list">
                       <li class="step__textarea-list-item">

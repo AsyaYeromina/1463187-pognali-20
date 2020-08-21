@@ -31,6 +31,24 @@
   }
 }
 
+.new-plan__heading-markers-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
+}
+
 .new-plan__step-markers {
   list-style: none;
   margin: 0;
@@ -39,14 +57,8 @@
   flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
-}
-
-.new-plan__step-marker-name-wrapper {
-  display: flex;
-  align-items: center;
 }
 
 .new-plan__step-marker {
@@ -58,29 +70,12 @@
   margin-right: 15px;
 }
 
-.new-plan__step-marker-name-wrapper:last-child .new-plan__step-marker {
+.new-plan__step-marker:last-child {
   margin: 0;
 }
 
-.new-plan__step-marker-name {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-
-    @include typography(20px, 400, 1.2);
-    color: rgba(#000000, 0.6);
-    text-transform: uppercase;
-    margin-left: 35px;
-  }
-}
-
-.new-plan__step-marker-name-wrapper--active .new-plan__step-marker {
+.new-plan__step-marker--active {
   background-color: $button-text-color-dark;
-}
-
-.new-plan__step-marker-name-wrapper--active .new-plan__step-marker-name {
-  color: #000000;
 }
 
 .new-plan__step-list {
