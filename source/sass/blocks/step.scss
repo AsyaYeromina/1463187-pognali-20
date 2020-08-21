@@ -116,24 +116,104 @@
   }
 }
 
-.step__input-wrapper {
-  margin-bottom: 20px;
+.step__fieldset-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+
+    &::before {
+      content: " ";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      background-color: #e1e3e9;
+      left: 0;
+      top: 0;
+      }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding-top: 30px;
+    align-items: center;
+  }
 }
 
-.step__checkbox-wrapper {
+.step__input-wrapper {
+  margin-bottom: 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.step__input-wrapper--companions {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    position: relative;
+
+    &:last-child {
+      padding-bottom: 34px;
+    }
+
+    &:last-child::before {
+      content: " ";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      background-color: #e1e3e9;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+
+.step__input-wrapper--checkbox-wrapper {
   display: flex;
   align-items: baseline;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
 .step__chekbox-label {
+  @include typography(15px, 400, 1);
   color: $button-text-color-dark;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 500, 1);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
 }
 
 .step__date-choice {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .step__step-link-wrapper {
