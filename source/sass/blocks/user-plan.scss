@@ -1,11 +1,16 @@
 .user-plan {
   padding-top: 40px;
-  padding-bottom: 32px;
+  padding-bottom: 80px;
   background-color: #dfe3f0;
   border-radius: 30px 30px 0 0;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 126px;
+  }
+
   @media (min-width: $desktop-width) {
     border-radius: 50px 50px 0 0;
+    padding-bottom: 114px;
   }
 }
 

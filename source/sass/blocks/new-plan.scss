@@ -1,7 +1,20 @@
 .new-plan {
   padding-top: 40px;
-  padding-bottom: 32px;
+  padding-bottom: 92px;
   background-color: #d4d9eb;
+  border-radius: 30px 30px 0 0;
+  margin-top: -50px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 112px;
+    padding-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 50px 50px 0 0;
+    padding-bottom: 120px;
+    padding-top: 56px;
+  }
 }
 
 .new-plan__heading {
@@ -9,6 +22,13 @@
   color: $button-text-color-dark;
 
   @include typography(24px, 700, 1);
+}
+
+.new-plan__content-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .new-plan__step-markers {
