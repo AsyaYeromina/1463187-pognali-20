@@ -2,18 +2,103 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 44px 56px 44px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 160px 106px 100px;
+    border-radius: 50px;
+  }
+}
+
+.step__description-markers-wrapper {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.step__description {
+  @media (min-width: $desktop-width) {
+    width: 60%;
+  }
 }
 
 .step__title,
 .step__subtitle {
-  margin: 0;
-
   @include typography(20px, 700, 1);
   color: $button-text-color-dark;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .step__subtitle {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.step__markers {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+
+  @include typography(20px, 400, 1.2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(#000000, 0.6);
+  margin-right: 46px;
+  padding: 0;
+}
+
+.step__marker-item {
+  list-style: none;
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    content: " ";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $button-text-color-dark;
+    opacity: 0.3;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.step__marker-item--active {
+  color: #000000;
+
+  &::before {
+    opacity: 1;
+  }
+}
+
+.step__marker-name {
+  padding-left: 40px;
 }
 
 .step__fieldset {
@@ -22,10 +107,13 @@
   padding: 0;
 }
 
-.step__desc {
-  font-weight: 400;
+.step__desc-text {
+  @include typography(16px, 400, 1.37);
   margin: 0;
-  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 400, 1.2);
+  }
 }
 
 .step__input-wrapper {
@@ -54,18 +142,18 @@
 }
 
 .step__step-link {
+  @include typography(17px, 700, 1.76);
   margin-bottom: 10px;
   width: 100%;
   color: $button-text-color-dark;
-
-  @include typography(17px, 700, 1.76);
+  font-family: inherit;
+  border: none;
   text-transform: uppercase;
   display: block;
   padding: 6px;
   text-decoration: none;
   position: relative;
   text-align: center;
-  border: none;
 
   @media (min-width: $tablet-width) {
     text-transform: initial;
