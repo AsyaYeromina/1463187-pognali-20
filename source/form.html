@@ -540,38 +540,37 @@
                     </ul>
                   </div>
                   <fieldset class="step__fieldset">
-                    <ul class="step__country-destinations country-destinations">
-                      <li class="country-destinations__row country-destinations__row--selected">
+                    <div class="step__country-destinations country-destinations">
+                      <div class="country-destinations__row country-destinations__row--selected">
                         <button class="country-destinations__choose-button" type="button">
-                          Босния и Герцеговина
+                          <span class="country-destinations__country-name">Босния и Герцеговина</span>
                         </button>
-                        <span class="country-destinations__marker"></span>
                         <div class="country-destinations__icon-wrapper">
                           <svg width="35" height="24"></svg>
                         </div>
                         <button class="country-destinations__del-button" type="button">
                           <span class="visuallyhidden">Убрать с маршрута</span>
                         </button>
-                      </li>
-                      <li class="country-destinations__row country-destinations__row--selected">
+                      </div>
+                      <div class="country-destinations__row country-destinations__row--selected">
                         <button class="country-destinations__choose-button" type="button">
-                          Чехия
+                          <span class="country-destinations__country-name">Чехия</span>
                         </button>
-                        <span class="country-destinations__marker"></span>
                         <div class="country-destinations__icon-wrapper">
                           <svg width="35" height="24"></svg>
                         </div>
                         <button class="country-destinations__del-button" type="button">
                           <span class="visuallyhidden">Убрать с маршрута</span>
                         </button>
-                      </li>
+                      </div>
                       <!-- When country-destinations__row has class "country-destinations__row--empty"
                         div.country-destinations__icon-wrapper should be hidden
                         by adding class "country-destinations__icon-wrapper--hidden" -->
-                      <li class="country-destinations__row country-destinations__row--drop-down country-destinations__row--empty">
+                      <div class="country-destinations__row country-destinations__row--empty country-destinations__row--drop-down ">
                         <!-- Click on button "country-destinations__choose-button" should toggle class
                           "country-destinations__select-lists-wrapper--hidden" of "country-destinations__select-lists-wrapper" element -->
-                        <button class="country-destinations__choose-button country-destinations__choose-button--empty country-destinations__choose-button--active" type="button">
+                        <button class="country-destinations__choose-button country-destinations__choose-button--empty" type="button">
+                          <!-- ! add class "country-destinations__choose-button--active" -->
                           Выберите страну
                         </button>
                         <div class="country-destinations__select-lists-wrapper country-destinations__select-lists-wrapper--hidden">
@@ -665,24 +664,22 @@
                         element with class "country-destinations__marker" should have class "country-destinations__marker--hidden" -->
                         <!-- When country-destinations__choose-button has modif. "country-destinations__choose-button--active"
                           country-destinations__del-button should have class "country-destinations__del-button--hidden" -->
-                        <span class="country-destinations__marker country-destinations__marker--hidden"></span>
                         <button class="country-destinations__del-button country-destinations__del-button--hidden" type="button">
                           <span class="visuallyhidden">Убрать с маршрута</span>
                         </button>
-                      </li>
-                      <li class="country-destinations__row country-destinations__row--empty">
+                      </div>
+                      <div class="country-destinations__row country-destinations__row--empty country-destinations__row--add">
                         <!-- Click on button "country-destinations__choose-button" should toggle class
                           "country-destinations__select-lists-wrapper--hidden" of "country-destinations__select-lists-wrapper" element -->
                         <button class="country-destinations__choose-button country-destinations__choose-button--empty country-destinations__choose-button--add" type="button">
                           Добавить страну
                         </button>
-                        <span class="country-destinations__marker"></span>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </fieldset>
                   <div class="step__step-link-wrapper">
                     <a class="step__step-link page-accent-button" href="form.html#step-3">Следующий шаг</a>
-                    <a class="step__step-link" href="form.html#step-1">На шаг назад</a>
+                    <a class="step__step-link step__step-link--previous" href="form.html#step-1">На шаг назад</a>
                   </div>
                 </li>
                 <li class="plan-steps__step step" id="step-3">
@@ -724,7 +721,7 @@
                   </fieldset>
                   <div class="step__step-link-wrapper">
                     <button class="step__step-link new-plan__submit-button page-accent-button" type="submit">Отправить</button>
-                    <a class="step__step-link" href="form.html#step-2">На шаг назад</a>
+                    <a class="step__step-link step__step-link--previous" href="form.html#step-2">На шаг назад</a>
                   </div>
                 </li>
               </ol>
