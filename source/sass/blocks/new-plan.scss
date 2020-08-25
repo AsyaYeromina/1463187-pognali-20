@@ -25,9 +25,14 @@
 }
 
 .new-plan__content-wrapper {
-  @media (min-width: $tablet-width) {
-    padding-left: 15px;
-    padding-right: 15px;
+  @media (min-width: $tablet-width){
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    padding-right: 2px;
   }
 }
 
@@ -80,4 +85,8 @@
 
 .new-plan__step-list {
   margin: 0;
+}
+
+.new-plan__submit-button {
+  cursor: pointer;
 }

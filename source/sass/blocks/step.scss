@@ -248,6 +248,8 @@
     padding: 20px;
     padding-right: 60px;
     width: max-content;
+    min-width: 286px;
+    text-align: left;
     max-width: 100%;
     margin-bottom: 0;
   }
@@ -258,9 +260,10 @@
 }
 
 .step__step-link--previous {
-  @media screen {
+  @media (min-width: $tablet-width) {
     padding-right: 0;
     padding-left: 30px;
+    min-width: auto;
 
     &::before {
       content: " ";
@@ -282,45 +285,188 @@
   padding: 0;
   list-style: none;
   margin-bottom: 20px;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .step__textarea-list-item {
   margin-bottom: 26px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
+
+  // Vertical line
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: calc(100% + 26px);
+    // height of the element + bottom margin
+    background-color: $button-text-color-dark;
+    top: 0;
+    left: 0;
+    transform: translate(-12px, 12px);
+
+    @media (min-width: $tablet-width) {
+      height: calc(100% + 44px);
+      left: auto;
+      right: 0;
+      top: 14px;
+      transform: translate(50%, 0);
+    }
+
+    @media (min-width: $desktop-width) {
+      right: auto;
+      left: 780px;
+      transform: translate(-50%, 0);
+    }
+  }
 }
 
 .step__textarea-list-item:last-child {
   margin-bottom: 0;
+
+  &::after {
+    display: none;
+  }
 }
 
 .step__textarea-label-icon-wrapper {
   width: 100%;
-  display: flex;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 112px;
+  }
+
+  // Round  marker
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: $button-text-color-dark;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 14px;
+      left: auto;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      right: auto;
+      left: 780px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // Dash before round marker
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: $button-text-color-dark;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .step__textarea-label {
   @include typography(18px, 500, 1);
   color: $button-text-color-dark;
-  padding-left: 10px;
-  width: 70%;
+  padding-left: 12px;
+  width: 80%;
   display: block;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, white 80%);
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include typography(30px, 700, 1);
+    padding: 0;
+  }
 }
 
 .step__textarea-icon {
-  width: 30%;
+  outline: 1px solid lightsteelblue;
+  // !temporary outline
 }
 
 .step__textarea-input {
   width: 100%;
+  height: 220px;
   resize: none;
-  padding: 10px;
+  padding: 12px 34px 20px 14px;
   border-radius: 4px;
   border: 1px solid #cbced9;
   color: #444444;
   font-family: inherit;
   line-height: 1.37;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    height: 142px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 18px 50px 50px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
 }
 
 .step__textarea-input::placeholder {
   color: rgba(#444444, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
