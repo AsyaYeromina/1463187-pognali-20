@@ -134,12 +134,12 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    // padding-top: 26px;
+    padding-top: 26px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    // padding-top: 30px;
+    padding-top: 30px;
     align-items: center;
   }
 }
