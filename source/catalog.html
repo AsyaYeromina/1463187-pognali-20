@@ -82,30 +82,32 @@
       <h1 class="visuallyhidden">Выбор попутчика</h1>
       <section class="country-filter">
         <!-- ! Class country-filter--collapsed is added  after click on country-filter__button -->
-        <div class="wrapper">
-          <h2 class="country-filter__heading">Фильтрация по странам</h2>
-          <!-- After clicking on this button the class "country-filter__button--close" should change to "country-filter__button--open" -->
-          <button class="country-filter__button country-filter__button--close">
-            <span class="country-filter__button-text country-filter__button-text--shown">Свернуть</span>
-            <span class="country-filter__button-text country-filter__button-text--hidden">Показать все</span>
-          </button>
-          <div class="country-filter__lists-wrapper">
+        <div class="wrapper country-filter__content-wrapper">
+          <div class="country-filter__collapsed-wrapper">
+            <h2 class="country-filter__heading">Фильтрация по странам</h2>
+            <!-- After clicking on this button the class "country-filter__button--close" should change to "country-filter__button--open" -->
             <ul class="country-filter__continent-list">
-              <li class="country-filter__continent-name">
+              <li class="country-filter__continent-item">
                 <a class="country-filter__continent-link country-filter__continent-link--active" href="#">Европа</a>
               </li>
-              <li class="country-filter__continent-name">
+              <li class="country-filter__continent-item">
                 <a class="country-filter__continent-link" href="#">Азия</a>
               </li>
-              <li class="country-filter__continent-name">
+              <li class="country-filter__continent-item">
                 <a class="country-filter__continent-link" href="#">Америка</a>
               </li>
-              <li class="country-filter__continent-name">
+              <li class="country-filter__continent-item">
                 <a class="country-filter__continent-link" href="#">Острова</a>
               </li>
             </ul>
+            <button class="country-filter__button country-filter__button--close">
+              <span class="country-filter__button-text country-filter__button-text--shown">Свернуть</span>
+              <span class="country-filter__button-text country-filter__button-text--hidden">Показать все</span>
+            </button>
+          </div>
+          <div class="country-filter__lists-wrapper">
             <ul class="country-filter__letter-list">
-              <li class="country-filter__letter-item">
+              <li class="country-filter__letter-item country-filter__letter-item--selected">
                 <span class="country-filter__letter-for-country-list" href="#">А</span>
                 <ul class="country-filter__country-list">
                   <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Афганистан</a></li>
@@ -414,8 +416,24 @@
                 </ul>
               </li>
             </ul>
+            <div class="country-filter__list-placeholder">
+              <!-- Elements in this div will be changed to "country-filter__country-list" accodring to the clicked letter -->
+              <ul class="country-filter__country-list country-filter__country-list--shown">
+                <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Афганистан</a></li>
+                <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Албания</a></li>
+                <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Алгерия</a></li>
+                <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Андорра</a></li>
+                <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Аргентина</a></li>
+                <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Армения</a></li>
+                <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Австралия</a></li>
+                <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Австрия</a></li>
+                <li class="country-filter__country-item"><a class="country-list__country-link" href="#">Азербайджан</a></li>
+              </ul>
+            </div>
           </div>
-          <button class="country-filter__hide-list-button">Свернуть</button>
+          <button class="country-filter__hide-list-button">
+            <span class="country-filter__hide-list-button-text">Свернуть</span>
+          </button>
         </div>
       </section>
       <div class="wrapper">
