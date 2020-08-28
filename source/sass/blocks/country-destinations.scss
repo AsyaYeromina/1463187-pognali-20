@@ -95,7 +95,6 @@
   font-family: inherit;
   text-transform: uppercase;
   cursor: pointer;
-  overflow: hidden;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -120,6 +119,7 @@
   width: 100%;
   position: relative;
   display: block;
+  overflow: hidden;
 
   &::after {
     content: " ";
@@ -141,7 +141,6 @@
 
 .country-destinations__choose-button--empty {
   width: 220px;
-  overflow: visible;
 
   @media (min-width: $tablet-width) {
     width: 370px;
@@ -387,7 +386,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 730px;
+    width: 75%;
   }
 }
 

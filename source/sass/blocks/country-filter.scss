@@ -144,6 +144,10 @@
   }
 }
 
+.country-filter__lists-wrapper {
+  margin-bottom: 28px;
+}
+
 .country-filter__button-text {
   @include typography(20px, 700, 1);
   color: #192144;
@@ -174,111 +178,6 @@
     visibility: hidden;
     position: absolute;
   }
-}
-
-
-.country-filter__lists-wrapper {
-  padding: 25px;
-  padding-top: 22px;
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-top: 62px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 72px;
-  }
-}
-
-// common list (letters)
-
-.country-filter__letter-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 26px;
-
-  @media (min-width: $tablet-width) {
-    width: 58%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    padding: 0 36px;
-  }
-}
-
-.country-filter__letter-item {
-  cursor: pointer;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
-  }
-}
-
-.country-filter__letter-for-country-list {
-  color: #192144;
-  display: block;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    @include typography(60px, 700, 1);
-    margin-bottom: 36px;
-    opacity: 0.3;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: left;
-    margin-bottom: 30px;
-    opacity: 1;
-  }
-}
-
-.country-filter__letter-item--selected .country-filter__letter-for-country-list {
-  opacity: 1;
-}
-
-// inner list (countries)
-
-.country-filter__country-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  @media (max-width: $tablet-width-only) {
-    display: none;
-  }
-}
-
-.country-list__country-link {
-  text-decoration: none;
-  color: inherit;
-
-  @media (min-width: $tablet-width) {
-    @include typography(20px, 400, 1.5);
-  }
-}
-
-.country-filter__list-placeholder {
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 30%;
-    padding-left: 100px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.country-filter__country-list--shown {
-  display: block;
 }
 
 .country-filter__hide-list-button {
