@@ -5,6 +5,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+  }
 }
 
 .pages-list__link {
@@ -14,4 +18,8 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: $button-text-color-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }

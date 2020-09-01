@@ -13,6 +13,19 @@
   background-color: #ffffff;
 }
 
+.header__logo-wrapper {
+  width: 100px;
+  height: 15px;
+  display: block;
+  outline: 1px solid paleturquoise;
+  // ! temporary outline
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 42px;
+  }
+}
+
 .header__burger-button {
   position: absolute;
   top: 0;
@@ -20,6 +33,12 @@
   padding: 36px;
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 26px;
+  }
 
   &::before,
   &::after {
@@ -59,6 +78,11 @@
 .header__modal-wrapper {
   padding-top: 70px;
   padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
 }
 
 .header__contacts-list {
