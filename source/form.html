@@ -569,11 +569,12 @@
                       <div class="country-destinations__row country-destinations__row--empty country-destinations__row--drop-down ">
                         <!-- Click on button "country-destinations__choose-button" should toggle class
                           "country-destinations__select-lists-wrapper--hidden" of "country-destinations__select-lists-wrapper" element -->
-                        <button class="country-destinations__choose-button country-destinations__choose-button--empty country-destinations__choose-button--active" type="button">
+                        <button class="country-destinations__choose-button country-destinations__choose-button--empty" type="button">
+                          <!-- ! -------------------  "country-destinations__choose-button--active" -->
                           Выберите страну
                         </button>
-                        <div class="country-destinations__select-lists-wrapper letter-countries-lists letter-countries-lists--mini">
-                          <!-- class " country-destinations__select-lists-wrapper--hidden" is added after click on country-destinations__choose-button -->
+                        <div class="country-destinations__select-lists-wrapper letter-countries-lists letter-countries-lists--mini country-destinations__select-lists-wrapper--hidden">
+                          <!-- ! class " country-destinations__select-lists-wrapper--hidden" is added after click on country-destinations__choose-button -->
                           <ul class="letter-countries-lists__letter-list letter-countries-lists__letter-list--mini">
                             <li class="letter-countries-lists__letter-item letter-countries-lists__letter-item--selected letter-countries-lists__letter-item--mini">
                               <span class="letter-countries-lists__letter-for-country-list" href="#">А</span>

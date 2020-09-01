@@ -22,11 +22,11 @@
       position: absolute;
       top: 0;
       z-index: 1;
-      left: 390px;
+      left: 75%;
     }
 
     @media (min-width: $desktop-width) {
-      left: 770px;
+      // left: 770px;
       height: 120%;
     }
   }
@@ -55,32 +55,10 @@
 }
 
 .country-destinations__row--selected {
-  &::before {
-    content: " ";
-    width: 8px;
-    height: 8px;
-    background-color: $button-text-color-dark;
-    border-radius: 50%;
-    position: absolute;
-    left: 168px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-
-    @media (min-width: $tablet-width) {
-      left: 390px;
-      width: 14px;
-      height: 14px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 770px;
-    }
-  }
 }
 
 .country-destinations__choose-button {
-  width: 168px;
+  width: 70%;
   height: 100%;
   text-align: left;
   border: 1px solid #cbced9;
@@ -98,19 +76,33 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 370px;
     font-size: 20px;
     line-height: 1;
     padding-left: 26px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 730px;
-  }
+  &::before {
+    content: " ";
+    width: 8px;
+    height: 8px;
+    background-color: $button-text-color-dark;
+    border-radius: 50%;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 
-  // &::after {
-  //   down arrow icon
-  // }
+    @media (min-width: $tablet-width) {
+      left: 108%;
+      width: 14px;
+      height: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 108%;
+    }
+  }
 }
 
 .country-destinations__country-name {
@@ -140,47 +132,40 @@
 }
 
 .country-destinations__choose-button--empty {
-  width: 220px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 370px;
+    width: 70%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 730px;
-  }
-}
 
-.country-destinations__row--add {
+  }
+
   &::before {
-    content: " ";
-    width: 6px;
-    height: 6px;
+    // content: " ";
+    // width: 6px;
+    // height: 6px;
     border: 1px solid #cbced9;
     background-color: transparent;
     border-radius: 50%;
-    position: absolute;
-    left: 168px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+    // position: absolute;
+    left: 70%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    // z-index: 10;
 
     @media (min-width: $tablet-width) {
-      left: 390px;
-      width: 12px;
-      height: 12px;
+      // left: 390px;
+      left: 108%;
+      // width: 12px;
+      // height: 12px;
       background-color: #ffffff;
     }
 
     @media (min-width: $desktop-width) {
-      left: 770px;
+      // left: 770px;
     }
-  }
-}
-
-.country-destinations__row--add {
-  &::before {
-    background-color: $main-background-color-light;
   }
 }
 
@@ -189,28 +174,8 @@
   border: none;
   position: relative;
 
-  &::before,
-  &::after {
-    content: " ";
-    position: absolute;
-    width: 14px;
-    height: 2px;
-    background-color: #afb0b5;
-    border-radius: 1px;
-    top: 50%;
-    right: 16px;
-  }
-
-  &::after {
-    transform: rotate(90deg);
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before,
-    &::after {
-      width: 20px;
-      right: 26px;
-    }
+  &::before {
+    background-color: $main-background-color-light;
   }
 }
 
@@ -231,68 +196,68 @@
 }
 
 .country-destinations__row--drop-down .country-destinations__choose-button {
-  &::before {
-    content: " ";
-    width: 6px;
-    height: 6px;
-    border: 1px solid #cbced9;
-    background-color: transparent;
-    border-radius: 50%;
-    position: absolute;
-    left: 168px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+  // &::before {
+  //   content: " ";
+  //   width: 6px;
+  //   height: 6px;
+  //   border: 1px solid #cbced9;
+  //   background-color: transparent;
+  //   border-radius: 50%;
+  //   position: absolute;
+  //   left: 168px;
+  //   top: 50%;
+  //   transform: translate(-50%, -50%);
+  //   z-index: 10;
 
-    @media (min-width: $tablet-width) {
-      left: 390px;
-      width: 12px;
-      height: 12px;
-      background-color: #ffffff;
-    }
+  //   @media (min-width: $tablet-width) {
+  //     left: 390px;
+  //     width: 12px;
+  //     height: 12px;
+  //     background-color: #ffffff;
+  //   }
 
-    @media (min-width: $desktop-width) {
-      left: 770px;
-    }
-  }
+  //   @media (min-width: $desktop-width) {
+  //     left: 770px;
+  //   }
+  // }
   // &::after {
   //   close button cross icon
   // }
 }
 
 // .country-destinations__row--drop-down .country-destinations__choose-button--active {
-  // &::before,
-  // &::after {
-  //   content: " ";
-  //   position: absolute;
-  //   width: 10px;
-  //   height: 1px;
-  //   background-color: #ffffff;
-  //   border-radius: 1px;
-  //   top: 50%;
-  //   right: 20px;
-  //   left: auto;
-  //   border: none;
-  // }
+// &::before,
+// &::after {
+//   content: " ";
+//   position: absolute;
+//   width: 10px;
+//   height: 1px;
+//   background-color: #ffffff;
+//   border-radius: 1px;
+//   top: 50%;
+//   right: 20px;
+//   left: auto;
+//   border: none;
+// }
 
-  // &::before {
-  //   transform: rotate(45deg);
-  // }
+// &::before {
+//   transform: rotate(45deg);
+// }
 
-  // &::after {
-  //   transform: rotate(-45deg);
-  // }
+// &::after {
+//   transform: rotate(-45deg);
+// }
 
-  // @media (min-width: $tablet-width) {
-  //   &::before,
-  //   &::after {
-  //     width: 24px;
-  //     right: 30px;
-  //     opacity: 0.5;
-  //   }
-  // }
+// @media (min-width: $tablet-width) {
+//   &::before,
+//   &::after {
+//     width: 24px;
+//     right: 30px;
+//     opacity: 0.5;
+//   }
+// }
 
-  //  ! insert closing cross svg
+//  ! insert closing cross svg
 // }
 
 .country-destinations__del-button--hidden {
@@ -302,13 +267,12 @@
 }
 
 .country-destinations__icon-wrapper {
-  width: 52px;
+  width: 30%;
   height: 100%;
   border: 1px solid #cbced9;
   border-radius: 4px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
     border: none;
   }
 }
@@ -349,9 +313,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
     background-color: transparent;
-    transform: translate(0, 0);
+    top: 50%;
+    transform: translate(0, -50%);
 
     &::before,
     &::after {
@@ -416,6 +380,6 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 38px;
-    border-left: 1px solid rgba(#D6D9E6, 0.5);
+    border-left: 1px solid rgba(#d6d9e6, 0.5);
   }
 }
