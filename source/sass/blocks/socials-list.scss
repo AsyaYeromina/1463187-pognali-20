@@ -12,4 +12,9 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
 }
