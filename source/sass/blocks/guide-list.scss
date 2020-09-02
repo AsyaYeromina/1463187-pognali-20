@@ -87,10 +87,12 @@
 
     &:nth-last-child(n+1){
       margin-right: -5%;
+      padding-right: calc(5% + 32px);
     }
 
     &:last-child {
       width: 25%;
+      padding-right: 32px;
     }
   }
 
