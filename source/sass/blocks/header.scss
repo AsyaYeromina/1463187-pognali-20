@@ -19,12 +19,14 @@
     background-color: #161c36;
     min-height: 110px;
     padding-bottom: 26px;
+    border-radius: 0;
   }
 }
 
 .header--collapsed {
   background-color: #161c36;
   padding-bottom: 26px;
+  border-radius: 0;
 
   @media (min-width: $tablet-width) {
     background-color: #182044;
@@ -54,7 +56,21 @@
 }
 
 .header--big {
+  border-radius: 0;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0 0 50px 50px;
+    padding-bottom: 0;
+  }
+}
+
+.header--big.header--collapsed {
   padding-bottom: 0;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 50px 50px;
+  }
 }
 
 .header__logo-btn-nav-wrapper {
@@ -303,6 +319,18 @@
     padding-left: 64px;
     padding-right: 64px;
   }
+}
+
+.header .header__page-heading-wrapper {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.header--collapsed .header__page-heading-wrapper {
+  display: block;
 }
 
 .header__page-heading {
