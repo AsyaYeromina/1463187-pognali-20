@@ -16,4 +16,9 @@
   line-height: 1.18;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+    padding: 16px 40px;
+  }
 }

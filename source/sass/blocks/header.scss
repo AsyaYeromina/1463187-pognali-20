@@ -5,11 +5,13 @@
   min-height: 72px;
   background-color: $main-background-color-dark;
   background-color: #ffffff;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
     min-height: 132px;
     padding-top: 40px;
     padding-bottom: 90px;
+    border-radius: 0 0 50px 50px;
   }
 
   @media (min-width: $desktop-width) {
