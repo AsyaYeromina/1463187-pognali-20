@@ -1,7 +1,6 @@
 .letter-countries-lists {
   padding: 0 25px;
 
-
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 62px;
@@ -93,6 +92,7 @@
     border-right: 1px solid #cbced9;
     border-bottom: 1px solid #cbced9;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
   }
@@ -110,7 +110,7 @@
   }
 }
 
-.letter-countries-lists__letter-item--selected{
+.letter-countries-lists__letter-item--selected {
   @media (max-width: $mobile-width-only) {
     background-color: $main-background-color-light;
     color: $button-text-color-dark;
@@ -159,12 +159,6 @@
   @media (min-width: $desktop-width) {
     text-align: left;
     margin-bottom: 30px;
-  }
-}
-
-.letter-countries-lists__letter-list--mini .letter-countries-lists__letter-item--selected {
-  @media (max-width: $mobile-width-only) {
-
   }
 }
 
@@ -241,5 +235,3 @@
     display: block;
   }
 }
-
-

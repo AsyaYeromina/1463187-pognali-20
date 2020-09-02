@@ -4,7 +4,6 @@
   background-color: $main-background-color-light4;
   border-radius: 0 0 30px 30px;
 
-
   @media (min-width: $desktop-width) {
     background-color: #edeff6;
     border-radius: 0 0 50px 50px;
@@ -21,7 +20,7 @@
   background-color: $main-background-color-light4;
 }
 
-.country-filter__collapsed-wrapper{
+.country-filter__collapsed-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -91,8 +90,8 @@
 }
 
 .country-filter__continent-item {
-  margin-right: 28px;
   @include typography(16px, 700, 1.12);
+  margin-right: 28px;
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 10px;

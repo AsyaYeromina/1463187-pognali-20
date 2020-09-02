@@ -8,14 +8,14 @@
   padding-top: 20px;
   padding-bottom: 40px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     padding-top: 32px;
     padding-bottom: 90px;
     background-image: url("../../img/globe-back-tablet@1x.jpg");
     background-position: 50% 80%;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     padding-top: 90px;
     padding-bottom: 124px;
     background-image: url("../../img/globe-back-desktop@1x.jpg");

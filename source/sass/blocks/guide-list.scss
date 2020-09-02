@@ -46,9 +46,8 @@
     }
   }
 
-
   // Styles for tablet and desktop
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 24px;
     width: 50%;
     padding: 32px;
@@ -58,24 +57,23 @@
   // Positioning for tablef width only
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-
     flex-direction: column;
     justify-content: space-between;
     min-height: 140px;
     padding-bottom: 20px;
 
     &:nth-child(1),
-    &:nth-child(2){
+    &:nth-child(2) {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
     }
 
-    &:nth-last-child(-n+2){
+    &:nth-last-child(-n + 2) {
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
     }
 
-    &:nth-child(odd){
+    &:nth-child(odd) {
       width: 60%;
       margin-right: -10%;
     }
@@ -85,7 +83,7 @@
     border-radius: 20px;
     width: 30%;
 
-    &:nth-last-child(n+1){
+    &:nth-last-child(n + 1) {
       margin-right: -5%;
       padding-right: calc(5% + 32px);
     }

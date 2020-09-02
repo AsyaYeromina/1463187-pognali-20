@@ -31,7 +31,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     width: 25%;
 
-    &::after{
+    &::after {
       display: none;
     }
   }

@@ -54,9 +54,6 @@
   }
 }
 
-.country-destinations__row--selected {
-}
-
 .country-destinations__choose-button {
   width: 70%;
   height: 100%;
@@ -118,12 +115,7 @@
     position: absolute;
     width: 50%;
     height: 100%;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0) 40%,
-      rgba(255, 255, 255, 1) 80%
-    );
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 1) 80%);
     top: 50%;
     right: 0;
     z-index: 2;
@@ -138,33 +130,15 @@
     width: 70%;
   }
 
-  @media (min-width: $desktop-width) {
-
-  }
-
   &::before {
-    // content: " ";
-    // width: 6px;
-    // height: 6px;
     border: 1px solid #cbced9;
     background-color: transparent;
     border-radius: 50%;
-    // position: absolute;
     left: 70%;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
-    // z-index: 10;
 
     @media (min-width: $tablet-width) {
-      // left: 390px;
       left: 108%;
-      // width: 12px;
-      // height: 12px;
       background-color: #ffffff;
-    }
-
-    @media (min-width: $desktop-width) {
-      // left: 770px;
     }
   }
 }
@@ -195,70 +169,7 @@
   // }
 }
 
-.country-destinations__row--drop-down .country-destinations__choose-button {
-  // &::before {
-  //   content: " ";
-  //   width: 6px;
-  //   height: 6px;
-  //   border: 1px solid #cbced9;
-  //   background-color: transparent;
-  //   border-radius: 50%;
-  //   position: absolute;
-  //   left: 168px;
-  //   top: 50%;
-  //   transform: translate(-50%, -50%);
-  //   z-index: 10;
-
-  //   @media (min-width: $tablet-width) {
-  //     left: 390px;
-  //     width: 12px;
-  //     height: 12px;
-  //     background-color: #ffffff;
-  //   }
-
-  //   @media (min-width: $desktop-width) {
-  //     left: 770px;
-  //   }
-  // }
-  // &::after {
-  //   close button cross icon
-  // }
-}
-
-// .country-destinations__row--drop-down .country-destinations__choose-button--active {
-// &::before,
-// &::after {
-//   content: " ";
-//   position: absolute;
-//   width: 10px;
-//   height: 1px;
-//   background-color: #ffffff;
-//   border-radius: 1px;
-//   top: 50%;
-//   right: 20px;
-//   left: auto;
-//   border: none;
-// }
-
-// &::before {
-//   transform: rotate(45deg);
-// }
-
-// &::after {
-//   transform: rotate(-45deg);
-// }
-
-// @media (min-width: $tablet-width) {
-//   &::before,
-//   &::after {
-//     width: 24px;
-//     right: 30px;
-//     opacity: 0.5;
-//   }
-// }
-
 //  ! insert closing cross svg
-// }
 
 .country-destinations__del-button--hidden {
   @media (max-width: $mobile-width-only) {
@@ -344,19 +255,20 @@
     bottom: 0;
     top: auto;
     transform: translateY(100%);
-    box-shadow: 0px 8px 16px rgba(54, 80, 148, 0.18);
+    box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
     width: 575px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 75%;
+    width: 70%;
   }
 }
 
-.country-destinations__select-lists-wrapper--hidden {
-  display: none;
-}
+// .country-destinations__select-lists-wrapper--hidden {
+//   display: none;
+// ! temporary shown
+// }
 
 .country-destinations__letter-filter {
   width: calc(100% + 1px);

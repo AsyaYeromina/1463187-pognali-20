@@ -19,7 +19,9 @@ img {
   height: auto;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -52,7 +54,6 @@ img {
     // padding: 0 60px;
   }
 }
-
 
 // p{
 //   @extend %tpl-simple-text-320;

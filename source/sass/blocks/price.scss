@@ -7,9 +7,9 @@
   @include bottom-radius(30px, 30px);
 
   @media (min-width: $tablet-width) {
+    @include bottom-radius(50px, 50px);
     background-color: $main-background-color-light;
     padding-bottom: 80px;
-    @include bottom-radius(50px, 50px);
   }
 
   @media (min-width: $desktop-width) {
