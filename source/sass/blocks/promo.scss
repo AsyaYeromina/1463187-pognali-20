@@ -53,6 +53,8 @@
 
 .promo__contacts {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .promo__user-list {

@@ -7,6 +7,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background-color: $main-accent-color-dark1;
 
   &:nth-child(1) {
     background-color: $main-accent-color-dark3;
@@ -55,10 +56,11 @@
   }
 }
 
+.contacts-list__item--main .contacts-list__item-icon,
 .contacts-list__item--big .contacts-list__item-icon {
   width: 45px;
   height: 45px;
-  background-color: $main-background-color-dark;
+  background-color: $contacts-buttons-dark-color2;
 
   @media (min-width: $tablet-width) {
     width: 68px;
@@ -71,12 +73,19 @@
   }
 }
 
+.contacts-list__item--big .contacts-list__item-icon{
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .contacts-list__item--big:first-child .contacts-list__item-icon {
+  .contacts-list__item--main:first-child .contacts-list__item-icon {
     background-color: $main-accent-color-dark3;
   }
 
-  .contacts-list__item--big:nth-child(2) .contacts-list__item-icon {
+  .contacts-list__item--main:nth-child(2) .contacts-list__item-icon {
     background-color: $main-accent-color-dark1;
   }
 }
@@ -97,6 +106,14 @@
   @media (min-width: $desktop-width) {
     padding-left: 30px;
   }
+}
+
+.contacts-list__item--big .contacts-list__item-text {
+  color: $button-text-color-dark;
+}
+
+.contacts-list__item--contrast .contacts-list__item-text {
+  color: $main-accent-color;
 }
 
 .header__contacts-list .contacts-list__item-text {
