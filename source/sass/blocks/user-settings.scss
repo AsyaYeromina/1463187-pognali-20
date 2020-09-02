@@ -6,6 +6,10 @@
     padding-bottom: 60px;
     padding-top: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .user-settings__content-wrapper {
@@ -16,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    padding-top: 60px;
   }
 }
 
