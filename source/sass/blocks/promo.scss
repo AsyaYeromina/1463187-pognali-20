@@ -2,7 +2,8 @@
   background-color: #182044;
   background-image: url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-
+  position: relative;
+  z-index: 10;
   color: $text-color-light;
   padding-top: 20px;
   padding-bottom: 40px;
@@ -18,7 +19,8 @@
     padding-top: 90px;
     padding-bottom: 124px;
     background-image: url("../../img/globe-back-desktop@1x.jpg");
-    background-position: 50% 150%;
+    // background-position: 50% 150%;
+    border-radius: 0 0 50px 50px;
   }
 }
 

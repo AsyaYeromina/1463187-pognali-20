@@ -3,6 +3,8 @@
   padding-bottom: 30px;
   background-color: $main-background-color-dark;
   color: $text-color-light;
+  position: relative;
+  z-index: 7;
 
   @include bottom-radius(30px, 30px);
 

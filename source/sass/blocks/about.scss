@@ -7,19 +7,22 @@
   padding-bottom: 82px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 9;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/about-tablet@1x.png");
     background-position-x: right;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    padding-top: 40px;
+    padding-top: 90px;
     padding-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../../img/about-desktop@1x.png");
-    padding-top: 62px;
+    padding-top: 102px;
     padding-bottom: 160px;
   }
 }

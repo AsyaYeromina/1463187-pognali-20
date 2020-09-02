@@ -2,12 +2,14 @@
   padding-top: 60px;
   padding-bottom: 32px;
   background-color: $main-background-color-light;
+  position: relative;
+  z-index: 8;
 
   @include bottom-radius(30px, 30px);
 
   @media (min-width: $tablet-width) {
     @include bottom-radius(50px, 50px);
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 }
 

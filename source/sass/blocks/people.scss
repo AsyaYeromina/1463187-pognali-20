@@ -3,8 +3,9 @@
   // background-image: url(../../img/)
   background-repeat: no-repeat;
   color: $text-color-light;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 30px;
+  margin-top: -50px;
 
   @include bottom-radius(30px, 30px);
 

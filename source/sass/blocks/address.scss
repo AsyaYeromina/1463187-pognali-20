@@ -2,6 +2,9 @@
   padding-top: 90px;
   padding-bottom: 30px;
   background-color: $main-accent-color;
+  position: relative;
+  z-index: 6;
+  margin-top: -50px;
 
   @include bottom-radius(30px, 30px);
 
