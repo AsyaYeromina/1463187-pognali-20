@@ -32,12 +32,16 @@
 }
 
 .footer__socials {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 26px;
   align-self: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
