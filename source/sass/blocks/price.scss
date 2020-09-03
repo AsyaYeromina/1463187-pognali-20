@@ -19,6 +19,11 @@
 
 .price__content-wrapper {
   padding-left: 25px;
+  padding-right: 25px;
+
+  // @media (min-width: $tablet-width) {
+  //   padding: 0;
+  // }
 
   @media (min-width: $desktop-width) {
     padding-left: 70px;
@@ -34,7 +39,13 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
   }
 }
 
@@ -58,14 +69,15 @@
     @media (min-width: $tablet-width) {
       bottom: 0;
       top: auto;
-      transform: translate(-50%, 70%);
+      transform: translate(-50%, 100%);
     }
 
     @media (min-width: $desktop-width) {
       width: 200px;
       height: 200px;
       background-size: 200px 200px;
-      transform: translate(50%, -20%);
+      bottom: 50%;
+      transform: translate(65%, 50%);
     }
   }
 }
