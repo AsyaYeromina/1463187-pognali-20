@@ -145,6 +145,8 @@
 .letter-countries-lists__letter-for-country-list {
   display: block;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
 
   @media (max-width: $mobile-width-only) {
     @include typography(14px, 500, 1);
