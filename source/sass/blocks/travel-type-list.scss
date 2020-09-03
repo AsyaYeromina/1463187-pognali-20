@@ -1,13 +1,67 @@
 .travel-type-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .travel-type-list__item {
-  background-color: $text-color-dark;
-  opacity: 0.2;
-  margin: 8px;
+  background-color: $main-background-color-light;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.travel-type-list__icon {
+  outline: 1px solid lightsteelblue;
+  // ! temporary outline
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.travel-type-list__icon-desc {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .travel-type-list__item:hover .travel-type-list__icon-desc {
+    display: block;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #101d41;
+    color: $text-color-light;
+    z-index: 10;
+
+    @include typography(20px, 400, 1);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 110%);
+
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-bottom: 8px solid #101d41;
+      border-right: 6px solid transparent;
+      top: 0;
+      right: 50%;
+      transform: translate(50%, -90%);
+    }
+  }
 }

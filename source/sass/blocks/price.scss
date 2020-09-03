@@ -3,17 +3,27 @@
   padding-bottom: 30px;
   background-color: $main-background-color-light3;
   position: relative;
+
+  @include bottom-radius(30px, 30px);
+
+  @media (min-width: $tablet-width) {
+    @include bottom-radius(50px, 50px);
+    background-color: $main-background-color-light;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 180px;
+  }
 }
 
-.price::after {
-  content: " ";
-  position: absolute;
-  background-image: url("../../img/rates@1x.png");
-  width: 100px;
-  height: 100px;
-  background-size: 100px 100px;
-  top: 60px;
-  right: 25px;
+.price__content-wrapper {
+  padding-left: 25px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 .price__heading {
@@ -22,7 +32,7 @@
   text-align: left;
   margin-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     text-align: center;
     width: 100%;
   }
@@ -31,13 +41,76 @@
 .price__list {
   margin: 0;
   margin-bottom: 40px;
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    background-image: url("../../img/rates@1x.png");
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    top: -20px;
+    transform: translateY(-100%);
+    right: 0;
+
+    @media (min-width: $tablet-width) {
+      bottom: 0;
+      top: auto;
+      transform: translate(-50%, 70%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px;
+      transform: translate(50%, -20%);
+    }
+  }
 }
 
 .price__button-show {
   display: block;
-  padding-left: 25px;
-  padding-right: 25px;
   text-decoration: none;
   color: $contacts-buttons-dark-color;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+    position: relative;
+    font-size: 20px;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-color: $main-background-color-light4;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.price__modal {
+  position: absolute;
+  width: 85%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

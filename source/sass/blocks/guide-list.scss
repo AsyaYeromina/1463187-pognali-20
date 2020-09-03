@@ -3,50 +3,110 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  counter-reset: numbers;
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .guide-list__item {
-  width: 100%;
+  // Common styles
   color: $button-text-color-darker;
+
+  &:nth-child(4n + 1) {
+    background-color: $main-accent-color-dark3;
+  }
+
+  &:nth-child(4n + 2) {
+    background-color: $main-accent-color-dark2;
+  }
+
+  &:nth-child(4n + 3) {
+    background-color: $main-accent-color-dark1;
+  }
+
+  &:nth-child(4n + 4) {
+    background-color: $main-accent-color;
+  }
+
+  // Styles & Positioning for mobile
+  @include typography(18px, 700, 1);
+  width: 100%;
   border-radius: 10px;
-  padding: 20px;
-  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
-  font-size: 18px;
-}
+  padding: 24px;
 
-.guide-list__item:nth-child(4n + 1) {
-  background-color: $main-accent-color-dark3;
-}
+  &:nth-child(n + 2) {
+    margin-top: -16px;
 
-.guide-list__item:nth-child(4n + 2) {
-  background-color: $main-accent-color-dark2;
-}
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
 
-.guide-list__item:nth-child(4n + 3) {
-  background-color: $main-accent-color-dark1;
-}
+  // Styles for tablet and desktop
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    width: 50%;
+    padding: 32px;
+    border-radius: 0;
+  }
 
-.guide-list__item:nth-child(4n + 4) {
-  background-color: $main-accent-color;
-}
+  // Positioning for tablef width only
 
-.guide-list__item:nth-child(n + 2) {
-  margin-top: -16px;
-}
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 140px;
+    padding-bottom: 20px;
 
-.guide-list__item:last-child {
-  padding-bottom: 20px;
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    &:nth-child(odd) {
+      width: 60%;
+      margin-right: -10%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px;
+    width: 30%;
+
+    &:nth-last-child(n + 1) {
+      margin-right: -5%;
+      padding-right: calc(5% + 32px);
+    }
+
+    &:last-child {
+      width: 25%;
+      padding-right: 32px;
+    }
+  }
+
+  &::after {
+    counter-increment: numbers;
+    content: counter(numbers);
+    color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+  }
 }
 
 .guide-list__text {
   width: 70%;
   font-weight: bold;
   margin: 0;
-}
-
-.guide-list__number {
-  color: #ffffff;
 }

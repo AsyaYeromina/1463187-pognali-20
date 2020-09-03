@@ -5,6 +5,25 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.pages-list__item {
+  line-height: 1.17;
+  font-size: 30px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 1;
+    margin-right: 34px;
+  }
 }
 
 .pages-list__link {
@@ -14,4 +33,20 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: $button-text-color-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 1;
+    color: $text-color-light;
+  }
+}
+
+.header--fixed .pages-list__link {
+  @media (min-width: $desktop-width) {
+    color: $button-text-color-dark;
+  }
 }

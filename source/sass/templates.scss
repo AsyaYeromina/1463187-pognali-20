@@ -18,3 +18,8 @@
   transform: translateY(-50%);
   right: 22px;
 }
+
+@mixin bottom-radius($bbl, $bbr) {
+  border-bottom-left-radius: $bbl;
+  border-bottom-right-radius: $bbr;
+}

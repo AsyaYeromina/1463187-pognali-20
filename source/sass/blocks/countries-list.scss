@@ -2,14 +2,28 @@
 .countries-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+}
+
+.countries-list__item {
+  margin-right: 25px;
+}
+
+.countries-list__icon {
+  outline: 1px solid lightsteelblue;
+  // ! temporary outline
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 18px;
+  }
 }
 
 .countries-list__country-name {
-  text-transform: uppercase;
-
   @include typography(15px, 500, 1.07);
+  text-transform: uppercase;
   color: $button-text-color-dark;
 }

@@ -1,36 +1,39 @@
 .filter-section {
-  border: none;
   width: 100%;
   position: relative;
-}
 
-.filter-section__title {
-  font-weight: 700;
-  color: $button-text-color-dark;
-  text-transform: uppercase;
-  position: absolute;
-  top: 10px;
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .filter-section__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
   border: none;
   background-color: transparent;
+  font-family: inherit;
+  text-align: left;
   cursor: pointer;
+  width: 100%;
 
   &::after {
     content: " ";
     position: absolute;
     width: 0;
     height: 0;
-    top: 50%;
-    right: 50%;
+    top: 16px;
+    right: 0;
     transform: translate(50%, -50%);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    width: 25%;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -46,10 +49,55 @@
   }
 }
 
+.filter-section__button-text {
+  @include typography(16px, 700, 1.12);
+  color: $button-text-color-dark;
+  text-transform: uppercase;
+  top: 10px;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 500, 1);
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    &::after {
+      content: ":";
+      color: $main-background-color-dark;
+      height: 16px;
+      width: 12px;
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 1.1;
+  }
+}
+
 .filter-section__input-list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+}
+
+.filter-section__input-label-wrapper {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-width: 33.3%;
+  }
+}
+
+.filter-section__label {
+  @include typography(15px, 400, 1.33);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .filter-section__input-list--row {

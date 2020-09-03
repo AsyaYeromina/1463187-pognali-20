@@ -7,8 +7,14 @@
   display: block;
   border-radius: 10px;
   padding: 25px;
+  padding-right: 80px;
   text-decoration: none;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    font-size: 24px;
+  }
 
   &::after {
     @include pseudo-after-arrow();

@@ -2,18 +2,114 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 44px 56px 44px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 160px 106px 160px;
+    border-radius: 50px;
+  }
+}
+
+.step__description-markers-wrapper {
+  position: relative;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
+
+    &::after {
+      content: " ";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      background-color: #e1e3e9;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.step__description {
+  @media (min-width: $desktop-width) {
+    width: 60%;
+  }
 }
 
 .step__title,
 .step__subtitle {
-  margin: 0;
-
   @include typography(20px, 700, 1);
   color: $button-text-color-dark;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .step__subtitle {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.step__markers {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+
+  @include typography(20px, 400, 1.2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(#000000, 0.6);
+  margin-right: 46px;
+  padding: 0;
+}
+
+.step__marker-item {
+  list-style: none;
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    content: " ";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $button-text-color-dark;
+    opacity: 0.3;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.step__marker-item--active {
+  color: #000000;
+
+  &::before {
+    opacity: 1;
+  }
+}
+
+.step__marker-name {
+  padding-left: 40px;
 }
 
 .step__fieldset {
@@ -22,59 +118,140 @@
   padding: 0;
 }
 
-.step__desc {
-  font-weight: 400;
+.step__desc-text {
+  @include typography(16px, 400, 1.37);
   margin: 0;
-  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 400, 1.2);
+  }
+}
+
+.step__fieldset-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding-top: 30px;
+    align-items: center;
+  }
 }
 
 .step__input-wrapper {
   margin-bottom: 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
-.step__checkbox-wrapper {
+.step__input-wrapper--companions {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    position: relative;
+
+    &:last-child {
+      padding-bottom: 34px;
+    }
+
+    &:last-child::before {
+      content: " ";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      background-color: #e1e3e9;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.step__input-wrapper--checkbox-wrapper {
   display: flex;
   align-items: baseline;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
 .step__chekbox-label {
+  @include typography(15px, 400, 1);
   color: $button-text-color-dark;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 500, 1);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
 }
 
 .step__date-choice {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .step__step-link-wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .step__step-link {
+  @include typography(17px, 700, 1.76);
   margin-bottom: 10px;
   width: 100%;
   color: $button-text-color-dark;
-
-  @include typography(17px, 700, 1.76);
+  font-family: inherit;
+  border: none;
   text-transform: uppercase;
   display: block;
   padding: 6px;
   text-decoration: none;
   position: relative;
   text-align: center;
-  border: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     text-transform: initial;
 
     @include typography(24px, 700, 1);
     padding: 20px;
     padding-right: 60px;
     width: max-content;
+    min-width: 286px;
+    text-align: left;
     max-width: 100%;
+    margin-bottom: 0;
   }
 }
 
@@ -82,50 +259,213 @@
   margin-bottom: 0;
 }
 
+.step__step-link--previous {
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 30px;
+    min-width: auto;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 6px solid transparent;
+      border-right: 12px solid $button-text-color-dark;
+      border-bottom: 6px solid transparent;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
 .step__textarea-list {
   margin: 0;
   padding: 0;
   list-style: none;
   margin-bottom: 20px;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .step__textarea-list-item {
   margin-bottom: 26px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
+
+  // Vertical line
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: calc(100% + 26px);
+    // height of the element + bottom margin
+    background-color: $button-text-color-dark;
+    top: 0;
+    left: 0;
+    transform: translate(-12px, 12px);
+
+    @media (min-width: $tablet-width) {
+      height: calc(100% + 44px);
+      left: auto;
+      right: 0;
+      top: 14px;
+      transform: translate(50%, 0);
+    }
+
+    @media (min-width: $desktop-width) {
+      right: auto;
+      left: 780px;
+      transform: translate(-50%, 0);
+    }
+  }
 }
 
 .step__textarea-list-item:last-child {
   margin-bottom: 0;
+
+  &::after {
+    display: none;
+  }
 }
 
 .step__textarea-label-icon-wrapper {
   width: 100%;
-  display: flex;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 112px;
+  }
+
+  // Round  marker
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: $button-text-color-dark;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 14px;
+      left: auto;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      right: auto;
+      left: 780px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // Dash before round marker
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: $button-text-color-dark;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .step__textarea-label {
   @include typography(18px, 500, 1);
   color: $button-text-color-dark;
-  padding-left: 10px;
-  width: 70%;
+  padding-left: 12px;
+  width: 80%;
+  white-space: nowrap;
   display: block;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, white 80%);
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include typography(30px, 700, 1);
+    padding: 0;
+  }
 }
 
 .step__textarea-icon {
-  width: 30%;
+  outline: 1px solid lightsteelblue;
+  // !temporary outline
 }
 
 .step__textarea-input {
   width: 100%;
+  height: 220px;
   resize: none;
-  padding: 10px;
+  padding: 12px 34px 20px 14px;
   border-radius: 4px;
   border: 1px solid #cbced9;
   color: #444444;
   font-family: inherit;
   line-height: 1.37;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    height: 142px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 18px 50px 50px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
 }
 
 .step__textarea-input::placeholder {
   color: rgba(#444444, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }

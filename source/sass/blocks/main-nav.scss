@@ -1,8 +1,8 @@
 .main-nav__list {
   margin-top: 0;
-  margin-bottom: 52px;
-}
+  margin-bottom: 0;
 
-.main-nav__user-list {
-  margin: 0;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

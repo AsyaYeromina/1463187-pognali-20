@@ -1,12 +1,53 @@
 .user-full-card {
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
+  background-color: $user-card-background;
   padding: 20px;
   padding-bottom: 80px;
+  display: grid;
+  grid-row-gap: 16px;
+
+  // Main adaptive grid for card (3 elements)
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-bottom: 26px;
+    grid-row-gap: 20px;
+
+    @media (max-width: $tablet-width-only) {
+      grid-template-columns: 1fr min-content;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr min-content;
+    padding: 46px;
+  }
+}
+
+// Styles for 1st element
+.user-full-card__pic-text-wrapper {
+  // Adaptive grid
+  display: grid;
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 16px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: span 2;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr min-content;
+    grid-column-gap: 62px;
+  }
 }
 
 .user-full-card__pic-wrapper {
@@ -14,18 +55,50 @@
   object-fit: cover;
   width: 70px;
   height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  grid-row: span 2;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    border-radius: 20px;
+    width: 190px;
+    height: 190px;
+    background-color: lightgray;
+    // ! temporary color
+    grid-row: span 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px 0 0 20px;
+    background-color: lightgray;
+    // ! temporary color
+    width: 285px;
+    height: 285px;
+    grid-row: span 3;
+    margin-left: -46px;
+    margin-top: -46px;
+    margin-bottom: -46px;
+  }
 }
 
 .user-full-card__button-like-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    margin-bottom: 6px;
+  }
 }
 
 .user-full-card__button {
-  color: $button-text-color-darker;
-
   @include typography(17px, 700, 1);
+  color: $button-text-color-darker;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $main-accent-color;
@@ -34,17 +107,25 @@
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 25px;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 20px;
-  left: 0;
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .user-full-card__like-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
 }
 
 .user-full-card__like-button {
@@ -54,6 +135,18 @@
   border: none;
   border-radius: 50%;
   position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-120%, -50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .user-full-card__like-button--on {
@@ -62,16 +155,25 @@
 
 .user-full-card__like-icon {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  outline: 1px solid lightsteelblue;
+  // ! temporary outline
 }
 
 .user-full-card__like-number {
-  color: $button-text-color-darker;
-
   @include typography(14px, 700, 1.14);
+  color: $button-text-color-darker;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    padding-left: 6px;
+  }
 }
 
 .user-full-card__name-wrapper {
@@ -82,10 +184,10 @@
 }
 
 .user-full-card__name {
-  color: $button-text-color-dark;
-
   @include typography(20px, 700, 1);
+  color: $button-text-color-dark;
   width: 50%;
+  margin: 0;
 
   &::after {
     content: " ";
@@ -94,6 +196,21 @@
     border-radius: 50%;
     position: absolute;
     background-color: $offline-marker-color;
+    right: 0;
+    top: 0;
+    transform: translateY(100%);
+
+    @media (min-width: $desktop-width) {
+      left: -26px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    font-size: 30px;
+    width: fit-content;
+    min-width: 200px;
+    padding-right: 30px;
   }
 }
 
@@ -104,39 +221,161 @@
 }
 
 .user-full-card__text {
-  text-align: left;
-
   @include typography(15px, 400, 1.2);
+  text-align: left;
   width: 80%;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    grid-column: span 2;
+    margin-top: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
-.user-full-card__section-title {
-  text-transform: lowercase;
+// Adaptive grid for 2d element
+.user-full-card__countries-wrapper {
+  position: relative;
+
+  @media (max-width: $tablet-width-only) {
+    &::after {
+      content: " ";
+      position: absolute;
+      width: calc(100% + 40px);
+      height: 1px;
+      top: 0;
+      left: 0;
+      transform: translateY(8px);
+      margin-left: -20px;
+      margin-right: -20px;
+      z-index: 1;
+      background-color: $main-background-color-light;
+
+      @media (max-width: $tablet-width-only) {
+        margin-left: -35px;
+        width: calc(100% + 55px);
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    order: 2;
+    grid-column: span 2;
+  }
 }
 
-//  Before background line:
-// &::before {
-//   content: " ";
-//   position: absolute;
-//   width: 100%;
-//   height: 1px;
-//   top: 10px;
-//   z-index: 0;
-//   background-color: $main-background-color-light;
-// }
+.user-full-card__countries {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-direction: row;
+  }
+}
+
+.user-full-card__countries-list-title {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-bottom: 20px;
+  }
+}
+
+// Adaptive grid for 3d element
 .user-full-card__travel-type-level-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: " ";
+      position: absolute;
+      width: calc(100% + 40px);
+      height: 1px;
+      top: 0;
+      left: 0;
+      transform: translateY(8px);
+      margin-left: -20px;
+      margin-right: -20px;
+      background-color: $main-background-color-light;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
+}
+
+.user-full-card__travel-type-level-wrapper .user-full-card__section-title {
+  display: block;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-full-card__section-title {
+  @include typography(15px, 400, 1.07);
+  text-transform: lowercase;
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: fit-content;
+  background-color: $user-card-background;
+  z-index: 2;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.user-full-card__travel-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.user-full-card__level-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .user-full-card__level {
   color: $button-text-color-dark;
   width: 45px;
   height: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .user-full-card__level .user-level__text {
-  display: none;
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

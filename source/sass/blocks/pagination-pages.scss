@@ -3,3 +3,22 @@
   list-style: none;
   display: flex;
 }
+
+.pagination-pages__item {
+  height: 50px;
+  min-width: 50px;
+}
+
+.pagination-pages__item-link {
+  @include typography(20px, 700, 2.6);
+  text-decoration: none;
+  color: $button-text-color-dark;
+}
+
+.pagination-pages__item-link--active {
+  background-color: $main-accent-color;
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 25px;
+}

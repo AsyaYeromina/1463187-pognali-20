@@ -1,6 +1,6 @@
 //Importing basic files
-@import "../../node_modules/normalize-scss/sass/normalize";
-@include normalize();
+// @import "../../node_modules/normalize-scss/sass/normalize";
+// @include normalize();
 @import "fonts.scss";
 @import "grid.scss";
 @import "variables.scss";
@@ -8,16 +8,17 @@
 @import "common.scss";
 
 // Importing blocks
-
+@import "blocks/catalog-grid.scss";
+@import "blocks/main-page-button.scss";
 @import "blocks/about.scss";
 @import "blocks/address.scss";
 @import "blocks/contacts.scss";
 @import "blocks/contacts-list.scss";
 @import "blocks/countries-list.scss";
+@import "blocks/countries-icons-list.scss";
 @import "blocks/guide-list.scss";
 @import "blocks/header.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/main-page-button.scss";
 @import "blocks/main-page-heading.scss";
 @import "blocks/pages-list.scss";
 @import "blocks/people.scss";
@@ -53,11 +54,11 @@
 @import "blocks/calendar.scss";
 @import "blocks/page-accent-button.scss";
 @import "blocks/country-destinations.scss";
-@import "blocks/letter-list.scss";
-@import "blocks/country-list.scss";
 @import "blocks/pagination-pages.scss";
 @import "blocks/profiles-pages.scss";
 @import "blocks/pagination-arrows.scss";
+@import "blocks/letter-countries-lists.scss";
+@import "blocks/map.scss";
 
 
 // TODO : Все что нужно разбить по другим файлам позже

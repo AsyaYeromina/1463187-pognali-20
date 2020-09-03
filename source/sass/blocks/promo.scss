@@ -1,20 +1,62 @@
 .promo {
-  background-color: $button-text-color-darker;
+  background-color: #182044;
   background-image: url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
   color: $text-color-light;
   padding-top: 20px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+    padding-bottom: 90px;
+    background-image: url("../../img/globe-back-tablet@1x.jpg");
+    background-position: 50% 80%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 90px;
+    padding-bottom: 124px;
+    background-image: url("../../img/globe-back-desktop@1x.jpg");
+    // background-position: 50% 150%;
+    border-radius: 0 0 50px 50px;
+  }
+}
+
+.promo__slogan-blockquote-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+  }
 }
 
 .promo__slogan {
   @include typography(36px, 700, 1.11);
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+  width: 90%;
+
+  @media (min-width: $tablet-width) {
+    @include typography(60px, 700, 1.17);
+    width: 60%;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 0;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: left;
+  }
 }
 
 .promo__contacts {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .promo__user-list {
@@ -25,23 +67,14 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .promo__user-list .user-nav-list__link {
   padding: 12px 38px 8px 38px;
-}
-
-.promo__contacts .contacts-list__item-icon {
-  width: 40px;
-  height: 40px;
-
-  &:nth-child(1) {
-    background-color: $main-accent-color-dark3;
-  }
-
-  &:nth-child(2) {
-    background-color: $main-accent-color-dark2;
-  }
 }
 
 .promo__blockquote {
@@ -50,17 +83,35 @@
   padding-left: 25px;
   width: 80%;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .promo__blockquote-text {
   margin: 0;
   margin-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .promo__blockquote-author {
   margin: 0;
   font-style: normal;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .promo__guide-list {

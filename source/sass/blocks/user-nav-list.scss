@@ -5,7 +5,8 @@
 
 .user-nav-list__link {
   display: block;
-  padding: 16px 40px 12px 40px;
+  padding: 12px 40px;
+  min-height: 40px;
   background-color: $main-accent-color;
   color: $button-text-color-darker;
   text-decoration: none;
@@ -15,4 +16,9 @@
   line-height: 1.18;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+    padding: 16px 40px;
+  }
 }

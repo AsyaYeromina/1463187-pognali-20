@@ -3,8 +3,46 @@
   // background-image: url(../../img/)
   background-repeat: no-repeat;
   color: $text-color-light;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 30px;
+  margin-top: -50px;
+
+  @include bottom-radius(30px, 30px);
+
+  @media (min-width: $tablet-width) {
+    @include bottom-radius(50px, 50px);
+    padding-bottom: 80px;
+    padding-top: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 134px;
+    padding-top: 134px;
+  }
+}
+
+.people__content-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: start;
+  }
+}
+
+.people__text-wrapper {
+  padding-left: 26px;
+  padding-right: 26px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    padding: 0;
+  }
 }
 
 .people__heading {
@@ -14,16 +52,43 @@
 
 .people__text {
   margin: 0;
-  padding-left: 25px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   width: 90%;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
+}
+
+.people__text:last-child {
+  margin-bottom: 0;
 }
 
 .people__text--special {
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .people__list {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    grid-row: span 2;
+  }
+}
+
+.people__button {
+  @media (min-width: $desktop-width) {
+    width: 45%;
+    align-self: end;
+  }
 }

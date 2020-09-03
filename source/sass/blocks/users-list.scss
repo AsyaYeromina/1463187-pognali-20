@@ -3,9 +3,18 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .users-list__item {
   margin-bottom: 10px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 43%;
+    margin-bottom: 0;
+  }
 }
