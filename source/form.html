@@ -96,10 +96,11 @@
                 <span class="user-level__text">level</span>
               </div>
               <img class="user-settings__user-pic" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Аватар пользователя Петя Демин">
-              <button class="user-settings__download-button" type="button">
+              <input class="visuallyhidden" type="file" id="user-photo" name="user-photo">
+              <label class="user-settings__download-button" for="user-photo">
                 <span class="user-settings__download-text user-settings__download-text--long">Сменить</span>
                 <span class="user-settings__download-text">фото</span>
-              </button>
+              </label>
               <fieldset class="user-settings__fieldset user-settings__fieldset--tags">
                 <legend class="user-settings__fieldset-name">Тэги</legend>
                 <textarea class="user-settings__tags" name="tags">#бургер #бар #футбол #концерт #крафт</textarea>

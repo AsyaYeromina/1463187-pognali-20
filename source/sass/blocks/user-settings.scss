@@ -104,6 +104,7 @@
   color: $button-text-color-darker;
   text-transform: uppercase;
   font-family: "Blogger Sans", "Arial", sans-serif;
+  text-align: center;
 
   @include typography(20px, 500, 0.9);
 
