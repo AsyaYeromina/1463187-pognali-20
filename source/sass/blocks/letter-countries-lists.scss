@@ -86,7 +86,7 @@
 
 .letter-countries-lists__letter-item {
   cursor: pointer;
-  color: #192144;
+  color: $main-background-color-dark;
 
   @media (max-width: $mobile-width-only) {
     border-right: 1px solid #cbced9;
@@ -118,7 +118,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $button-text-color-dark;
-    color: #ffffff;
+    color: $text-color-light;
   }
 }
 
@@ -134,7 +134,7 @@
 
   @media (max-width: $mobile-width-only) {
     background-color: $button-text-color-dark;
-    color: #ffffff;
+    color: $text-color-light;
   }
 
   @media (min-width: $tablet-width) {
@@ -196,7 +196,7 @@
 
 .letter-countries-lists__country-link {
   text-decoration: none;
-  color: #444444;
+  color: $text-color-dark;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {

@@ -83,7 +83,7 @@
   &::after {
     counter-increment: numbers;
     content: counter(numbers);
-    color: #ffffff;
+    color: $text-color-light;
     width: 34px;
     height: 34px;
     display: block;

@@ -40,21 +40,14 @@ img {
 
 // All content wrappers on pages
 .wrapper {
-  width: calc(320px - 50px); //2 * 25px for paddings;
+  width: 270px; // 320px - 2 * 25px for paddings;
   margin: 0 auto;
-  // padding: 0 25px;
 
   @media (min-width: $tablet-width) {
     width: calc(#{$tablet-width} - 80px); //2 * 40px for paddings;
-    // padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: calc(#{$desktop-width} - 120px); //2 * 60px for paddings;
-    // padding: 0 60px;
   }
 }
-
-// p{
-//   @extend %tpl-simple-text-320;
-//   }

@@ -5,7 +5,7 @@
   border-radius: 0 0 30px 30px;
 
   @media (min-width: $desktop-width) {
-    background-color: #edeff6;
+    background-color: $main-background-color-light;
     border-radius: 0 0 50px 50px;
   }
 }
@@ -107,7 +107,7 @@
   @include typography(16px, 700, 1.12);
   text-decoration: none;
   text-transform: uppercase;
-  color: rgba(#192144, 0.3);
+  color: rgba($main-background-color-dark, 0.3);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -116,7 +116,7 @@
 }
 
 .country-filter__continent-link--active {
-  color: #192144;
+  color: $main-background-color-dark;
 }
 
 .country-filter__button {
@@ -149,7 +149,7 @@
 
 .country-filter__button-text {
   @include typography(20px, 700, 1);
-  color: #192144;
+  color: $main-background-color-dark;
   text-transform: uppercase;
   display: block;
 }
