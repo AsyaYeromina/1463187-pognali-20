@@ -36,32 +36,31 @@
   display: none;
 }
 
-@media (min-width: $desktop-width) {
-  .travel-type-list__item:hover .travel-type-list__icon-desc {
-    display: block;
-    padding: 20px;
-    border-radius: 4px;
-    background-color: #101d41;
-    color: $text-color-light;
-    z-index: 10;
+.travel-type-list__item:hover .travel-type-list__icon-desc,
+.travel-type-list__item:focus .travel-type-list__icon-desc {
+  display: block;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #101d41;
+  color: $text-color-light;
+  z-index: 10;
 
-    @include typography(20px, 400, 1);
+  @include typography(20px, 400, 1);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 110%);
+
+  &::before {
+    content: " ";
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 110%);
-
-    &::before {
-      content: " ";
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-left: 6px solid transparent;
-      border-bottom: 8px solid #101d41;
-      border-right: 6px solid transparent;
-      top: 0;
-      right: 50%;
-      transform: translate(50%, -90%);
-    }
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-bottom: 8px solid #101d41;
+    border-right: 6px solid transparent;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -90%);
   }
 }

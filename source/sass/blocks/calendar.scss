@@ -127,8 +127,8 @@
   }
 }
 
-.calendar__day-label--start,
-.calendar__day-label--end {
+.calendar__day-label-text--start,
+.calendar__day-label-text--end {
   @include typography(18px, 400, 1.5);
   display: block;
 
