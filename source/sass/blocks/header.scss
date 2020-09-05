@@ -84,15 +84,13 @@
 
 .header__logo-wrapper {
   width: 100px;
-  height: 15px;
+  height: 19px;
   display: block;
   position: relative;
   margin-bottom: 38px;
-  outline: 1px solid paleturquoise;
-  // ! temporary outline
 
   @media (min-width: $tablet-width) {
-    width: 162px;
+    width: 166px;
     height: 42px;
     margin-bottom: 130px;
   }
@@ -101,6 +99,8 @@
     margin-right: 144px;
     margin-bottom: 0;
     flex-shrink: 0;
+    width: 200px;
+    height: 52px;
 
     &::after {
       content: " ";
@@ -115,12 +115,64 @@
   }
 }
 
+// .header__logo-img{
+// @media (min-width: $tablet-width) {
+//   width: 162px;
+//   height: 42px;
+// }
+// }
+
 .header--fixed .header__logo-wrapper::after {
   background-color: $main-background-color-dark;
 }
 
 .header--collapsed .header__logo-wrapper {
   margin-bottom: 0;
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../../img/logo-mobile-white@1x.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/logo-mobile-white@2x.png");
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    background-image: url("../../img/logo-tablet-white@1x.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/logo-tablet-white@2x.png");
+    }
+  }
+}
+
+.header--collapsed .header__logo-img {
+  @media (max-width: $tablet-width-only) {
+    opacity: 0;
+  }
+}
+
+.header--fixed .header__logo-wrapper {
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/logo-desktop-blue@1x.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/logo-desktop-blue@2x.png");
+    }
+  }
+}
+
+.header--fixed .header__logo-img {
+  @media (max-width: $tablet-width-only) {
+    opacity: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    opacity: 0;
+  }
 }
 
 .header__burger-button {

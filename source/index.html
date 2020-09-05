@@ -9,11 +9,15 @@
   <body class="page__body">
     <!-- Class "header--collapsed" should be toggled after click on "header__burger-button" -->
     <!-- Class "header--fixed" should be added after page scrolling -->
-    <header class="header">
+    <header class="header header--fixed">
       <div class="wrapper">
         <div class="header__logo-btn-nav-wrapper">
           <a class="header__logo-wrapper">
-            <img class="header__logo-img" src="https://via.placeholder.com/100x15" width="100" height="15" alt="Погнали?">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <img class="header__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png" alt="Погнали?">
+            </picture>
           </a>
           <!-- Class "header__burger-button--close" should be toggled after click on button "header__burger-button" -->
           <button class="header__burger-button header__burger-button--close" type="button">
