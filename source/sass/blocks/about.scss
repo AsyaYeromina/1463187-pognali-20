@@ -146,7 +146,8 @@
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    max-width: 55%;
+    max-width: 45%;
+    font-size: 21px;
   }
 
   @media (min-width: $desktop-width) {
