@@ -2,7 +2,6 @@
   background-color: #161c36;
   background-repeat: no-repeat;
   background-image: url("../../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
   background-position: 50% -45%;
   background-size: 100%;
   position: relative;
@@ -12,7 +11,7 @@
   padding-bottom: 40px;
   overflow: hidden;
 
-    // Background "traveller"
+  // Background "traveller"
   &::before {
     content: " ";
     position: absolute;
@@ -31,7 +30,7 @@
     }
   }
 
-// Backgroung color for bottom of the section
+  // Backgroung color for bottom of the section
   @media (max-width: $mobile-width-only) {
     &::after {
       content: " ";
