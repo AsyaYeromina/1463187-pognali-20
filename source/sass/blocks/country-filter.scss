@@ -145,6 +145,11 @@
 
 .country-filter__lists-wrapper {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .country-filter__button-text {

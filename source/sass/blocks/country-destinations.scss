@@ -252,6 +252,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
     bottom: 0;
     top: auto;
     transform: translateY(100%);
