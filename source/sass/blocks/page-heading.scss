@@ -1,0 +1,53 @@
+
+.page-heading {
+  padding-top: 52px;
+  background-color: #161c36;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #182044;
+    padding-top: 134px;
+    // padding-left: 34px;
+    // padding-right: 34px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #161c36;
+    padding-top: 124px;
+    // padding-left: 64px;
+    // padding-right: 64px;
+  }
+}
+
+.page-heading__text {
+  @include typography(36px, 700, 1);
+  margin: 0;
+  color: $text-color-light;
+  position: relative;
+  display: inline-block;
+
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-bottom: 68px;
+  }
+
+  &::after {
+    content: " ";
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: $main-accent-color-dark3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+
+    @media (min-width: $tablet-width) {
+      height: 8px;
+      border-radius: 8px;
+    }
+  }
+}
