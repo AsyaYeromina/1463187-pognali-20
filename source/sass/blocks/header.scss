@@ -4,13 +4,12 @@
   padding-bottom: 38px;
   min-height: 72px;
   background-color: #ffffff;
-  border-radius: 0 0 30px 30px;
+  z-index: 20;
 
   @media (min-width: $tablet-width) {
     min-height: 132px;
     padding-top: 40px;
     padding-bottom: 90px;
-    border-radius: 0 0 50px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,14 +17,12 @@
     background-color: #161c36;
     min-height: 110px;
     padding-bottom: 26px;
-    border-radius: 0;
   }
 }
 
-.header--collapsed {
+.body--header-collapsed .header {
   background-color: #161c36;
   padding-bottom: 26px;
-  border-radius: 0;
 
   @media (min-width: $tablet-width) {
     background-color: #182044;
@@ -36,7 +33,7 @@
   }
 }
 
-.header--fixed {
+.body--header-fixed .header {
   background-color: #ffffff;
   position: fixed;
   width: 100%;
@@ -54,21 +51,13 @@
   }
 }
 
-.header--big {
-  border-radius: 0;
-
-  @media (min-width: $desktop-width) {
-    border-radius: 0 0 50px 50px;
-    padding-bottom: 0;
-  }
-}
-
-.header--big.header--collapsed {
-  padding-bottom: 0;
-  border-radius: 0 0 30px 30px;
-
-  @media (min-width: $tablet-width) {
-    border-radius: 0 0 50px 50px;
+.body--header-modal .header {
+  @media (max-width: $tablet-width-only) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
   }
 }
 
@@ -84,15 +73,13 @@
 
 .header__logo-wrapper {
   width: 100px;
-  height: 15px;
+  height: 19px;
   display: block;
   position: relative;
   margin-bottom: 38px;
-  outline: 1px solid paleturquoise;
-  // ! temporary outline
 
   @media (min-width: $tablet-width) {
-    width: 162px;
+    width: 166px;
     height: 42px;
     margin-bottom: 130px;
   }
@@ -101,6 +88,8 @@
     margin-right: 144px;
     margin-bottom: 0;
     flex-shrink: 0;
+    width: 200px;
+    height: 52px;
 
     &::after {
       content: " ";
@@ -115,12 +104,57 @@
   }
 }
 
-.header--fixed .header__logo-wrapper::after {
+.body--header-fixed .header__logo-wrapper::after {
   background-color: $main-background-color-dark;
 }
 
-.header--collapsed .header__logo-wrapper {
+.body--header-collapsed .header__logo-wrapper {
   margin-bottom: 0;
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../img/logo-mobile-white@1x.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/logo-mobile-white@2x.png");
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    background-image: url("../img/logo-tablet-white@1x.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/logo-tablet-white@2x.png");
+    }
+  }
+}
+
+.body--header-collapsed .header__logo-img {
+  @media (max-width: $tablet-width-only) {
+    opacity: 0;
+  }
+}
+
+.body--header-fixed .header__logo-wrapper {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/logo-desktop-blue@1x.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/logo-desktop-blue@2x.png");
+    }
+  }
+}
+
+.body--header-fixed .header__logo-img {
+  @media (max-width: $tablet-width-only) {
+    opacity: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    opacity: 0;
+  }
 }
 
 .header__burger-button {
@@ -205,7 +239,7 @@
   }
 }
 
-.header--collapsed .header__main-nav {
+.body--header-collapsed .header__main-nav {
   margin: 0;
 }
 
@@ -230,7 +264,7 @@
   }
 }
 
-.header--collapsed .header__contacts-user-nav-wrapper {
+.body--header-collapsed .header__contacts-user-nav-wrapper {
   margin-bottom: 0;
 
   @media (max-width: $mobile-width-only) {
@@ -276,85 +310,26 @@
   }
 }
 
-.header--collapsed .main-nav__user-list {
+.body--header-collapsed .main-nav__user-list {
   @media (max-width: $tablet-width-only) {
     display: none;
   }
 }
 
-.header--collapsed .header__contacts-list {
+.body--header-collapsed .header__contacts-list {
   @media (max-width: $tablet-width-only) {
     display: none;
   }
 }
 
-.header--collapsed .header__socials {
+.body--header-collapsed .header__socials {
   @media (max-width: $tablet-width-only) {
     display: none;
   }
 }
 
-.header--collapsed .pages-list__link {
+.body--header-collapsed .pages-list__link {
   @media (max-width: $tablet-width-only) {
     display: none;
-  }
-}
-
-.header__page-heading-wrapper {
-  padding-top: 52px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 134px;
-    padding-left: 34px;
-    padding-right: 34px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 124px;
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-}
-
-.header .header__page-heading-wrapper {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.header--collapsed .header__page-heading-wrapper {
-  display: block;
-}
-
-.header__page-heading {
-  @include typography(36px, 700, 1);
-  margin: 0;
-  color: $text-color-light;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 12px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    padding-bottom: 68px;
-  }
-
-  &::after {
-    content: " ";
-    width: 100%;
-    height: 5px;
-    border-radius: 5px;
-    background-color: $main-accent-color-dark3;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateY(50%);
-
-    @media (min-width: $tablet-width) {
-      height: 8px;
-      border-radius: 8px;
-    }
   }
 }

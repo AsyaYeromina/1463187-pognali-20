@@ -1,3 +1,9 @@
 .map {
   margin-top: -50px;
+  margin-bottom: -150px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -50px;
+    margin-top: -100px;
+  }
 }

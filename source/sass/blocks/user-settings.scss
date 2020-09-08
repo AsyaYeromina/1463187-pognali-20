@@ -96,6 +96,10 @@
   }
 }
 
+.user-settings__user-pic-file {
+  border-radius: inherit;
+}
+
 .user-settings__download-button {
   background-color: #dfe3f0;
   border: none;
@@ -104,6 +108,7 @@
   color: $button-text-color-darker;
   text-transform: uppercase;
   font-family: "Blogger Sans", "Arial", sans-serif;
+  text-align: center;
 
   @include typography(20px, 500, 0.9);
 
@@ -182,7 +187,7 @@
     letter-spacing: 0.08em;
     position: absolute;
     display: block;
-    background-color: #edeff6;
+    background-color: $main-background-color-light;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -201,7 +206,7 @@
   background-color: transparent;
   border: none;
   width: 100%;
-  color: rgba(#444444, 0.6);
+  color: rgba($text-color-dark, 0.6);
   resize: none;
   font-family: "Blogger Sans", "Arial", sans-serif;
   padding: 0;

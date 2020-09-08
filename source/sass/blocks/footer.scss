@@ -22,10 +22,8 @@
 
 .footer__logo-wrapper {
   margin: 0 auto 40px auto;
-  outline: 1px solid paleturquoise;
   width: 100px;
   height: 15px;
-  //  ! temporary outline
 
   @media (min-width: $tablet-width) {
     margin: 0;

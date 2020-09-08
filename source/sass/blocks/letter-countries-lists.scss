@@ -53,7 +53,6 @@
 
   @media (min-width: $tablet-width) {
     width: 58%;
-    margin-right: 20%;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +85,7 @@
 
 .letter-countries-lists__letter-item {
   cursor: pointer;
-  color: #192144;
+  color: $main-background-color-dark;
 
   @media (max-width: $mobile-width-only) {
     border-right: 1px solid #cbced9;
@@ -118,7 +117,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $button-text-color-dark;
-    color: #ffffff;
+    color: $text-color-light;
   }
 }
 
@@ -134,7 +133,7 @@
 
   @media (max-width: $mobile-width-only) {
     background-color: $button-text-color-dark;
-    color: #ffffff;
+    color: $text-color-light;
   }
 
   @media (min-width: $tablet-width) {
@@ -145,6 +144,8 @@
 .letter-countries-lists__letter-for-country-list {
   display: block;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
 
   @media (max-width: $mobile-width-only) {
     @include typography(14px, 500, 1);
@@ -194,7 +195,7 @@
 
 .letter-countries-lists__country-link {
   text-decoration: none;
-  color: #444444;
+  color: $text-color-dark;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
@@ -211,7 +212,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 25%;
+    width: 30%;
   }
 
   @media (min-width: $desktop-width) {
@@ -225,10 +226,6 @@
     border: 1px solid #cbced9;
     border-top: none;
     border-radius: 0 0 4px 4px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 25%;
   }
 
   @media (min-width: $desktop-width) {

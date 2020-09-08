@@ -97,7 +97,7 @@
   &::after {
     counter-increment: numbers;
     content: counter(numbers);
-    color: #ffffff;
+    color: $text-color-light;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;

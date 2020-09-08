@@ -157,7 +157,7 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   background-color: $button-text-color-dark;
-  color: #ffffff;
+  color: $text-color-light;
   border: none;
   position: relative;
 
@@ -252,6 +252,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
     bottom: 0;
     top: auto;
     transform: translateY(100%);
