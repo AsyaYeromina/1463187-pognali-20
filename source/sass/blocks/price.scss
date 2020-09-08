@@ -57,7 +57,7 @@
   &::after {
     content: " ";
     position: absolute;
-    background-image: url("../../img/rates@1x.png");
+    background-image: url("../img/rates@1x.png");
     width: 100px;
     height: 100px;
     background-size: 100px 100px;
@@ -67,7 +67,7 @@
     right: 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/rates@2x.png");
+      background-image: url("../img/rates@2x.png");
     }
 
     @media (min-width: $tablet-width) {

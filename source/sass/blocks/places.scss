@@ -17,13 +17,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 34px;
     padding-right: 34px;
-    background-image: url("../../img/flags-back@1x.png");
+    background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: 288px 574px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/flags-back@2x.png");
+      background-image: url("../img/flags-back@2x.png");
     }
   }
 }
