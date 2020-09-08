@@ -13,3 +13,37 @@
     height: 62px;
   }
 }
+
+.socials-list__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.socials-list__svg {
+  fill: $main-background-color-dark;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .socials-list__svg--fb {
+    width: 14px;
+    height: 26px;
+  }
+
+  .socials-list__svg--vk {
+    width: 27px;
+    height: 18px;
+  }
+
+  .socials-list__svg--instagram {
+    width: 21px;
+    height: 21px;
+  }
+}
