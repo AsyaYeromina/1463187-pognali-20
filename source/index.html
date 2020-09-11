@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   </head>
-  <body class="page__body body body--header-collapsed">
+  <body class="page__body body">
     <!-- Class "body--header-modal" should be added after JS is loaded -->
     <!-- Class "body--header-collapsed" should be toggled after click on "header__burger-button" -->
     <!-- Class "body--header-fixed" should be added after page scrolling -->
@@ -46,7 +46,9 @@
                 <a class="contacts-list__item-link" href="tel:88005558628">
                   <div class="contacts-list__item-icon">
                     <span class="visuallyhidden">Позвонить нам</span>
-                    <svg width="16" height="15"></svg>
+                    <svg width="16" height="15">
+                      <use xlink:href="img/sprite.svg#contacts-phone"></use>
+                    </svg>
                   </div>
                   <span class="contacts-list__item-text">8 800 555-86-28</span>
                 </a>
@@ -55,7 +57,9 @@
                 <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">
                   <div class="contacts-list__item-icon">
                     <span class="visuallyhidden">Написать нам на e-mail</span>
-                    <svg width="18" height="13"></svg>
+                    <svg width="18" height="13">
+                      <use xlink:href="img/sprite.svg#contacts-mail"></use>
+                    </svg>
                   </div>
                   <span class="contacts-list__item-text">mail@htmlacademy.ru</span>
                 </a>
@@ -72,19 +76,25 @@
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visuallyhidden">Наша страница в Фейсбук</span>
-              <svg class="socials-list__svg" width="11" height="21"></svg>
+              <svg class="socials-list__svg" width="11" height="21">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visuallyhidden">Наша страница в ВК</span>
-              <svg class="socials-list__svg" width="22" height="12"></svg>
+              <svg class="socials-list__svg" width="22" height="12">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visuallyhidden">Наша страница в Инстаграм</span>
-              <svg class="socials-list__svg" width="17" height="17"></svg>
+              <svg class="socials-list__svg" width="17" height="17">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -103,7 +113,9 @@
                   <a class="contacts-list__item-link" href="tel:88005558628">
                     <div class="contacts-list__item-icon">
                       <span class="visuallyhidden">Позвонить нам</span>
-                      <svg width="16" height="16"></svg>
+                      <svg width="16" height="16">
+                        <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+                      </svg>
                     </div>
                   </a>
                 </li>
@@ -111,7 +123,9 @@
                   <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">
                     <div class="contacts-list__item-icon">
                       <span class="visuallyhidden">Написать нам на e-mail</span>
-                      <svg width="16" height="13"></svg>
+                      <svg width="16" height="13">
+                        <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+                      </svg>
                     </div>
                   </a>
                 </li>
@@ -170,7 +184,9 @@
                     <img class="places-list__img" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" alt="Острова в зарослях и океан лазурного цвета">
                   </picture>
                   <div class="places-list__description-block">
-                    <svg class="places-list__svg" width="35" height="24"></svg>
+                    <svg class="places-list__svg" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-thailand"></use>
+                    </svg>
                     <div class="places-list__text">
                       <h3 class="places-list__title">Таиланд</h3>
                       <span class="places-list__subtitle">Джунгли зовут!</span>
@@ -188,7 +204,9 @@
                     <img class="places-list__img" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" alt="Улочки со старыми домами">
                   </picture>
                   <div class="places-list__description-block">
-                    <svg class="places-list__svg" width="35" height="24"></svg>
+                    <svg class="places-list__svg" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-france"></use>
+                    </svg>
                     <div class="places-list__text">
                       <h3 class="places-list__title">Франция</h3>
                       <span class="places-list__subtitle">Трэ бьен, манифик!</span>
@@ -206,7 +224,9 @@
                     <img class="places-list__img" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" alt="Вид на Карлов мост и левый берег Праги">
                   </picture>
                   <div class="places-list__description-block">
-                    <svg class="places-list__svg" width="35" height="24"></svg>
+                    <svg class="places-list__svg" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-czech"></use>
+                    </svg>
                     <div class="places-list__text">
                       <h3 class="places-list__title">Чехия</h3>
                       <span class="places-list__subtitle">Закоулки старой Европы</span>
@@ -243,37 +263,51 @@
                     <h3 class="user-card__name user-card__name--offline">Таня Фирсова</h3>
                     <ul class="user-card__countries countries-icons-list">
                       <li class="countries-icons-list__item">
-                        <svg class="countries-icons-list__icon" width="35" height="25"></svg>
+                        <svg class="countries-icons-list__icon" width="35" height="25">
+                          <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
+                        </svg>
                         <span class="visuallyhidden">Шри-Ланка</span>
                       </li>
                       <li class="countries-icons-list__item">
-                        <svg class="countries-icons-list__icon" width="35" height="25"></svg>
+                        <svg class="countries-icons-list__icon" width="35" height="25">
+                          <use xlink:href="img/sprite.svg#flag-thailand"></use>
+                        </svg>
                         <span class="visuallyhidden">Таиланд</span>
                       </li>
                       <li class="countries-icons-list__item">
-                        <svg class="countries-icons-list__icon" width="35" height="25"></svg>
+                        <svg class="countries-icons-list__icon" width="35" height="25">
+                          <use xlink:href="img/sprite.svg#flag-seychelles"></use>
+                        </svg>
                         <span class="visuallyhidden">Сейшелы</span>
                       </li>
                     </ul>
                     <p class="user-card__text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                     <ul class="user-card__travel-type travel-type-list">
                       <li class="travel-type-list__item">
-                        <svg class="travel-type-list__icon" width="18" height="20"></svg>
+                        <svg class="travel-type-list__icon" width="18" height="20">
+                          <use xlink:href="img/sprite.svg#plane"></use>
+                        </svg>
                         <span class="travel-type-list__icon-desc">Авиаперелет</span>
                         <span class="visuallyhidden">Путешествует на самолете</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="17" height="19"></svg>
+                        <svg class="travel-type-list__icon" width="17" height="19">
+                          <use xlink:href="img/sprite.svg#bus"></use>
+                        </svg>
                         <span class="travel-type-list__icon-desc">Автотранспорт</span>
                         <span class="visuallyhidden">Не путешествует на авто</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="24" height="24"></svg>
+                        <svg class="travel-type-list__icon" width="24" height="24">
+                          <use xlink:href="img/sprite.svg#bike"></use>
+                        </svg>
                         <span class="travel-type-list__icon-desc">Велосипед</span>
                         <span class="visuallyhidden">Не путешествует на велосипеде</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="21" height="23"></svg>
+                        <svg class="travel-type-list__icon" width="21" height="23">
+                          <use xlink:href="img/sprite.svg#run"></use>
+                        </svg>
                         <span class="travel-type-list__icon-desc">Пешком</span>
                         <span class="visuallyhidden">Не путешествует пешком</span>
                       </li>
@@ -295,33 +329,45 @@
                     <h3 class="user-card__name user-card__name--online">Петя Демин</h3>
                     <ul class="user-card__countries countries-icons-list">
                       <li class="countries-icons-list__item">
-                        <svg class="countries-icons-list__icon" width="35" height="25"></svg>
+                        <svg class="countries-icons-list__icon" width="35" height="25">
+                          <use xlink:href="img/sprite.svg#flag-belgium"></use>
+                        </svg>
                         <span class="visuallyhidden">Бельгия</span>
                       </li>
                       <li class="countries-icons-list__item">
-                        <svg class="countries-icons-list__icon" width="35" height="25"></svg>
+                        <svg class="countries-icons-list__icon" width="35" height="25">
+                          <use xlink:href="img/sprite.svg#flag-czech"></use>
+                        </svg>
                         <span class="visuallyhidden">Чехия</span>
                       </li>
                     </ul>
                     <p class="user-card__text">#бургер #бар #футбол #концерт #крафт</p>
                     <ul class="user-card__travel-type travel-type-list">
                       <li class="travel-type-list__item">
-                        <svg class="travel-type-list__icon" width="18" height="20"></svg>
+                        <svg class="travel-type-list__icon" width="18" height="20">
+                          <use xlink:href="img/sprite.svg#plane"></use>
+                        </svg>
                         <span class="travel-type-list__icon-desc">Авиаперелет</span>
                         <span class="visuallyhidden">Путешествует на самолете</span>
                       </li>
                       <li class="travel-type-list__item">
-                        <svg class="travel-type-list__icon" width="17" height="19"></svg>
+                        <svg class="travel-type-list__icon" width="17" height="19">
+                          <use xlink:href="img/sprite.svg#bus"></use>
+                        </svg>
                         <span class="travel-type-list__icon-desc">Автотранспорт</span>
                         <span class="visuallyhidden">Путешествует на авто</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="24" height="24"></svg>
+                        <svg class="travel-type-list__icon" width="24" height="24">
+                          <use xlink:href="img/sprite.svg#bike"></use>
+                        </svg>
                         <span class="travel-type-list__icon-desc">Велосипед</span>
                         <span class="visuallyhidden">Не путешествует на велосипеде</span>
                       </li>
                       <li class="travel-type-list__item">
-                        <svg class="travel-type-list__icon" width="21" height="23"></svg>
+                        <svg class="travel-type-list__icon" width="21" height="23">
+                          <use xlink:href="img/sprite.svg#run"></use>
+                        </svg>
                         <span class="travel-type-list__icon-desc">Пешком</span>
                         <span class="visuallyhidden">Путешествует пешком</span>
                       </li>
@@ -409,7 +455,9 @@
                 <a class="contacts-list__item-link" href="tel:88005558628">
                   <div class="contacts-list__item-icon">
                     <span class="visuallyhidden">Позвонить нам</span>
-                    <svg width="16" height="15"></svg>
+                    <svg width="16" height="15">
+                      <use xlink:href="img/sprite.svg#contacts-phone"></use>
+                    </svg>
                   </div>
                   <span class="contacts-list__item-text">8 800 555-86-28</span>
                 </a>
@@ -418,7 +466,9 @@
                 <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">
                   <div class="contacts-list__item-icon">
                     <span class="visuallyhidden">Написать нам на e-mail</span>
-                    <svg width="18" height="13"></svg>
+                    <svg width="18" height="13">
+                      <use xlink:href="img/sprite.svg#contacts-mail"></use>
+                    </svg>
                   </div>
                   <span class="contacts-list__item-text">mail@htmlacademy.ru</span>
                 </a>
@@ -434,7 +484,9 @@
             <ul class="address__contacts-list contacts-list contacts-list--big">
               <li class="contacts-list__item contacts-list__item--big">
                 <div class="contacts-list__item-icon">
-                  <svg width="21" height="21"></svg>
+                  <svg width="21" height="21">
+                    <use xlink:href="img/sprite.svg#contacts-location"></use>
+                  </svg>
                 </div>
                 <span class="contacts-list__item-text">ул. Большая Конюшенная,&nbsp;19/8</span>
               </li>
@@ -473,26 +525,34 @@
           <li class="socials-list__item socials-list__item--color">
             <a class="socials-list__link" href="#">
               <span class="visuallyhidden">Наша страница в Фейсбук</span>
-              <svg class="socials-list__svg" width="11" height="21"></svg>
+              <svg class="socials-list__svg" width="11" height="21">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-list__item socials-list__item--color">
             <a class="socials-list__link" href="#">
               <span class="visuallyhidden">Наша страница в ВК</span>
-              <svg class="socials-list__svg" width="22" height="12"></svg>
+              <svg class="socials-list__svg" width="22" height="12">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-list__item socials-list__item--color">
             <a class="socials-list__link" href="#">
               <span class="visuallyhidden">Наша страница в Инстаграм</span>
-              <svg class="socials-list__svg" width="17" height="17"></svg>
+              <svg class="socials-list__svg" width="17" height="17">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
             </a>
           </li>
         </ul>
         <p class="footer__copyright">
           <span class="footer__copyright-text">Разработано</span>
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="footer__copyright-icon" width="27" height="33"></svg>
+            <svg class="footer__copyright-icon" width="27" height="33">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
             <span class="visuallyhidden">Интенсив «Профессиональный HTML и CSS, уровень 2»</span>
           </a>
         </p>
