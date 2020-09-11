@@ -65,20 +65,14 @@
   }
 }
 
-.page-heading__link-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-}
-
 .page-heading__link {
   @include typography (20px, 700, 1);
   text-transform: uppercase;
   text-decoration: none;
   color: $text-color-light;
   margin-right: 28px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

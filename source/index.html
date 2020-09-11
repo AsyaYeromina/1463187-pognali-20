@@ -236,7 +236,7 @@
                 </a>
               </li>
             </ul>
-            <a class="places__button main-page-button" href="#">Показать все</a>
+            <a class="places__button main-page-button" href="form.html">Показать все</a>
           </div>
         </div>
       </section>
@@ -376,7 +376,7 @@
                 </a>
               </li>
             </ul>
-            <a class="people__button main-page-button" href="#">Показать всех</a>
+            <a class="people__button main-page-button" href="catalog.html">Показать всех</a>
           </div>
         </div>
       </section>
@@ -433,7 +433,7 @@
           <div class="registration__content-wrapper">
             <h2 class="registration__heading main-page-heading">Заинитересовались?</h2>
             <p class="registration__text">Зарегистрируйтесь, это&nbsp;быстро и&nbsp;бесплатно! <br>Уже зарегистрированы? Тогда скорее
-              <a class="registration__text-link" href="#"> авторизуйтесь.</a>
+              <a class="registration__text-link" href="authorization.html"> авторизуйтесь.</a>
             </p>
             <form class="registration__form" action="https://echo.htmlacademy.ru/courses" method="get">
               <input class="registration__input" type="email" placeholder="E-mail">
@@ -491,22 +491,21 @@
                 <span class="contacts-list__item-text">ул. Большая Конюшенная,&nbsp;19/8</span>
               </li>
             </ul>
-            <a class="address__link" href="#">Проложить маршрут</a>
+            <a class="address__link" href="https://www.google.com/maps/dir//%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%96%D1%8F,+191186/@59.938437,30.3215024,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4696310fca145cc1:0x42b32648d8238007!2m2!1d30.3230474!2d59.9387165!3e0">Проложить маршрут</a>
           </div>
         </div>
       </section>
       <section class="map">
         <h2 class="visuallyhidden">Карта</h2>
-        <div>
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" alt="Карта с отметкой на адресе ул. Большая Конюшенная, 19/8">
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6206304047107!2d30.32150244626055!3d59.93843701433859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODY!5e0!3m2!1suk!2sua!4v1599821809041!5m2!1suk!2sua" width="768" height="424" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+        <picture class="map__img">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-with-marker-desktop@1x.webp 1x, img/map-with-marker-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-with-marker-tablet@1x.webp 1x, img/map-with-marker-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-with-marker-mobile@1x.webp 1x, img/map-with-marker-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/map-with-marker-desktop@1x.jpg 1x, img/map-with-marker-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-with-marker-tablet@1x.jpg 1x, img/map-with-marker-tablet@2x.jpg 2x">
+          <img class="map__img" src="img/map-with-marker-mobile@1x.jpg" srcset="img/map-with-marker-mobile@2x.jpg" alt="Карта с отметкой на адресе ул. Большая Конюшенная, 19/8">
         </picture>
-      </div>
       </section>
     </main>
     <footer class="footer">

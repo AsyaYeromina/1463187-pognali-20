@@ -153,17 +153,6 @@
   background-color: #f9eaea;
 }
 
-.user-full-card__like-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  outline: 1px solid lightsteelblue;
-  // ! temporary outline
-}
-
 .user-full-card__like-number {
   @include typography(14px, 700, 1.14);
   color: $button-text-color-darker;
