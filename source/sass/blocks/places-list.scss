@@ -46,6 +46,17 @@
 
 .places-list__svg {
   position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25px, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+    left: auto;
+    right: 0;
+    transform: translate(50%, 17px);
+  }
 }
 
 .places-list__title {
@@ -72,12 +83,20 @@
 
 .places-list__numbers {
   color: $button-text-color-darker;
-
-  @include typography(16px, 500, 1.25);
+  position: relative;
   opacity: 0.3;
+  @include typography(16px, 500, 1.25);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding-left: 26px;
+  }
+}
+
+.places-list__numbers svg {
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 20px;
   }
 }

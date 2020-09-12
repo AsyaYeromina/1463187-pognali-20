@@ -44,6 +44,7 @@
   height: 40px;
   flex-shrink: 0;
   border-radius: 50%;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 68px;
@@ -80,14 +81,79 @@
   }
 }
 
+// Changing color and icons for contacts-list__item--main on desktop
 @media (min-width: $desktop-width) {
   .contacts-list__item--main:first-child .contacts-list__item-icon {
     background-color: $main-accent-color-dark3;
+    background-image: url("../img/topmenu-phone.svg");
+    background-size: 18px 18px;
   }
 
   .contacts-list__item--main:nth-child(2) .contacts-list__item-icon {
     background-color: $main-accent-color-dark1;
+    background-image: url("../img/topmenu-mail.svg");
+    background-size: 16px 14px;
   }
+
+  .contacts-list__item--main .contacts-list__item-icon {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .contacts-list__item--main .contacts-list__item-svg {
+    display: none;
+  }
+}
+
+.contacts-list__item-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  fill: $main-accent-color;
+}
+
+.contacts-list__item--main .contacts-list__item-svg--phone,
+.contacts-list__item--big .contacts-list__item-svg--phone {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 23px;
+  }
+}
+
+.contacts-list__item--big .contacts-list__item-svg--phone {
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 30px;
+  }
+}
+
+.contacts-list__item--main .contacts-list__item-svg--mail,
+.contacts-list__item--big .contacts-list__item-svg--mail {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 19px;
+  }
+}
+
+.contacts-list__item--big .contacts-list__item-svg--mail {
+  @media (min-width: $desktop-width) {
+    width: 36px;
+    height: 25px;
+  }
+}
+
+.contacts-list__item--big .contacts-list__item-svg--location {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 32px;
+  }
+}
+
+.contacts-list--small .contacts-list__item-svg {
+  fill: $button-text-color-darker;
 }
 
 .contacts-list__item-text {

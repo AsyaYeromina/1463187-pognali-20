@@ -3,7 +3,6 @@
 }
 
 .socials-list__item {
-  background-color: #cccccc;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -32,18 +31,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .socials-list__svg--fb {
+  .socials-list__svg--facebook {
     width: 14px;
-    height: 26px;
+    height: 28px;
   }
 
   .socials-list__svg--vk {
-    width: 27px;
-    height: 18px;
+    width: 30px;
+    height: 16px;
   }
 
   .socials-list__svg--instagram {
-    width: 21px;
-    height: 21px;
+    width: 22px;
+    height: 22px;
   }
 }

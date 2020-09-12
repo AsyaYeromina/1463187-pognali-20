@@ -10,10 +10,8 @@
 }
 
 .travel-type-list__item {
-  background-color: $main-background-color-light;
   width: 32px;
   height: 32px;
-  border-radius: 50%;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -22,14 +20,17 @@
 }
 
 .travel-type-list__icon {
-  outline: 1px solid lightsteelblue;
-  // ! temporary outline
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+  fill: $button-text-color-dark;
+}
+
+.travel-type-list__item--disabled .travel-type-list__icon {
+  opacity: 0.15;
 }
 
 .travel-type-list__icon-desc {

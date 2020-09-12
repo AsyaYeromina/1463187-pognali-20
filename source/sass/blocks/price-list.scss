@@ -1,5 +1,4 @@
 .price-list {
-  padding: 0;
   list-style: none;
 
   @media (max-width: $mobile-width-only) {
@@ -8,8 +7,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-left: 80px;
     width: 100%;
     margin-bottom: 66px;
   }
@@ -22,6 +19,21 @@
 .price-list--special {
   @media (min-width: $desktop-width) {
     width: 100%;
+  }
+}
+
+.price-list--basic {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: " ";
+      position: absolute;
+      height: 100%;
+      width: 34px;
+      background-color: $main-background-color-light4;
+      right: 0;
+      top: 0;
+      transform: translateX(20%);
+    }
   }
 }
 
@@ -39,19 +51,6 @@
 
   @media (max-width: $mobile-width-only) {
     display: block;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      content: " ";
-      position: absolute;
-      height: 100%;
-      width: 34px;
-      background-color: $main-background-color-light4;
-      right: 2px;
-      top: 0;
-      transform: translateX(100%);
-    }
   }
 }
 

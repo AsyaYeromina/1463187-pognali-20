@@ -51,3 +51,7 @@ img {
     width: calc(#{$desktop-width} - 120px); //2 * 60px for paddings;
   }
 }
+
+.svg-sprite {
+  display: none;
+}

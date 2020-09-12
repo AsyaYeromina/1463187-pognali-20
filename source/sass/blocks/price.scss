@@ -21,9 +21,9 @@
   padding-left: 25px;
   padding-right: 25px;
 
-  // @media (min-width: $tablet-width) {
-  //   padding: 0;
-  // }
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding-left: 70px;
@@ -51,8 +51,13 @@
 
 .price__list {
   margin: 0;
+  padding: 0;
   margin-bottom: 40px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 25px 0 105px;
+  }
 
   &::after {
     content: " ";
@@ -91,24 +96,37 @@
   text-decoration: none;
   color: $contacts-buttons-dark-color;
   font-weight: 700;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 80px;
     position: relative;
     font-size: 20px;
-
-    &::before {
-      content: " ";
-      position: absolute;
-      width: 68px;
-      height: 68px;
-      border-radius: 50%;
-      background-color: $main-background-color-light4;
-      left: -20px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
   }
+}
+
+.price__button-show-icon {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: $main-background-color-light4;
+}
+
+.price__button-show-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  fill: $contacts-buttons-dark-color;
 }
 
 .price__modal {
