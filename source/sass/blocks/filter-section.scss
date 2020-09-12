@@ -15,6 +15,7 @@
   text-align: left;
   cursor: pointer;
   width: 100%;
+  margin-bottom: 16px;
 
   &::after {
     content: " ";
@@ -87,10 +88,16 @@
 }
 
 .filter-section__input-label-wrapper {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-width: 33.3%;
   }
 }
+
+// .filter-section__input-label-wrapper:last-child {
+//   margin-bottom: 0;
+// }
 
 .filter-section__label {
   @include typography(15px, 400, 1.33);

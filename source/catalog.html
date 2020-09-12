@@ -46,7 +46,7 @@
                 <a class="contacts-list__item-link" href="tel:88005558628">
                   <div class="contacts-list__item-icon">
                     <span class="visuallyhidden">Позвонить нам</span>
-                    <svg width="16" height="15">
+                    <svg class="contacts-list__item-svg contacts-list__item-svg--phone" width="16" height="15">
                       <use xlink:href="#contacts-phone"></use>
                     </svg>
                   </div>
@@ -57,7 +57,7 @@
                 <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">
                   <div class="contacts-list__item-icon">
                     <span class="visuallyhidden">Написать нам на e-mail</span>
-                    <svg width="18" height="13">
+                    <svg class="contacts-list__item-svg contacts-list__item-svg--mail" width="18" height="13">
                       <use xlink:href="#contacts-mail"></use>
                     </svg>
                   </div>
@@ -130,8 +130,14 @@
               </li>
             </ul>
             <button class="country-filter__button country-filter__button--close">
-              <span class="country-filter__button-text country-filter__button-text--shown">Свернуть</span>
-              <span class="country-filter__button-text country-filter__button-text--hidden">Показать все</span>
+              <span class="country-filter__button-text country-filter__button-text--close">Свернуть</span>
+              <svg class="country-filter__button-icon country-filter__button-icon--close" width="16" height="16">
+                <use xlink:href="#filter-close"></use>
+              </svg>
+              <span class="country-filter__button-text country-filter__button-text--show">Показать все</span>
+              <svg class="country-filter__button-icon country-filter__button-icon--show" width="17" height="3">
+                <use xlink:href="#dots"></use>
+              </svg>
             </button>
           </div>
           <div class="country-filter__lists-wrapper letter-countries-lists letter-countries-lists--max">
@@ -871,21 +877,21 @@
                       <!-- If button "filter-section__button" has class "filter-section__button--hide"
                         element "filter-section__input-list" should have class "filter-section__input-list--hidden"-->
                       <ul class="filter-section__input-list filter-section__input-list--column">
-                        <li class="filter-section__input-label-wrapper">
-                          <label class="filter-section__label">
-                            <input class="filter-section__input visuallyhidden" type="checkbox">
+                        <li class="filter-section__input-label-wrapper checkbox-row">
+                          <input class="checkbox-row__input visuallyhidden" type="checkbox" id="sport" name="name" value="value" checked>
+                          <label class="checkbox-row__label" for="sport">
                             Спортзал
                           </label>
                         </li>
-                        <li class="filter-section__input-label-wrapper">
-                          <label class="filter-section__label">
-                            <input class="filter-section__input visuallyhidden" type="checkbox">
+                        <li class="filter-section__input-label-wrapper checkbox-row">
+                          <input class="checkbox-row__input visuallyhidden" type="checkbox" id="vape" name="name" value="value" checked>
+                          <label class="checkbox-row__label" for="vape">
                             Кальян
                           </label>
                         </li>
-                        <li class="filter-section__input-label-wrapper">
-                          <label class="filter-section__label">
-                            <input class="filter-section__input visuallyhidden" type="checkbox">
+                        <li class="filter-section__input-label-wrapper checkbox-row">
+                          <input class="checkbox-row__input visuallyhidden" type="checkbox" id="lazy" name="name" value="value" checked>
+                          <label class="checkbox-row__label" for="lazy">
                             Диван
                           </label>
                         </li>
@@ -902,21 +908,21 @@
                       <!-- If button "filter-section__button" has class "filter-section__button--hide"
                         list "filter-section__input-list" should have class "filter-section__input-list--hidden"-->
                       <ul class="filter-section__input-list filter-section__input-list--column">
-                        <li class="filter-section__input-label-wrapper">
-                          <label class="filter-section__label">
-                            <input class="filter-section__input visuallyhidden" type="checkbox" checked>
+                        <li class="filter-section__input-label-wrapper checkbox-row">
+                          <input class="checkbox-row__input visuallyhidden" type="checkbox" id="rock" name="name" value="value" checked>
+                          <label class="checkbox-row__label" for="rock">
                             Тяжелый рок
                           </label>
                         </li>
-                        <li class="filter-section__input-label-wrapper">
-                          <label class="filter-section__label">
-                            <input class="filter-section__input visuallyhidden" type="checkbox" checked>
+                        <li class="filter-section__input-label-wrapper checkbox-row">
+                          <input class="checkbox-row__input visuallyhidden" type="checkbox" id="rap" name="name" value="value" checked>
+                          <label class="checkbox-row__label" for="rap">
                             Русский рэп
                           </label>
                         </li>
-                        <li class="filter-section__input-label-wrapper">
-                          <label class="filter-section__label">
-                            <input class="filter-section__input visuallyhidden" type="checkbox">
+                        <li class="filter-section__input-label-wrapper checkbox-row">
+                          <input class="checkbox-row__input visuallyhidden" type="checkbox" id="pop" name="name" value="value" checked>
+                          <label class="checkbox-row__label" for="pop">
                             Евроденс
                           </label>
                         </li>
@@ -933,21 +939,21 @@
                       <!-- If button "filter-section__button" has class "filter-section__button--hide"
                         element "filter-section__input-list" should have class "filter-section__input-list--hidden"-->
                       <ul class="filter-section__input-list filter-section__input-list--column">
-                        <li class="filter-section__input-label-wrapper">
-                          <label class="filter-section__label">
-                            <input class="filter-section__input visuallyhidden" type="checkbox">
+                        <li class="filter-section__input-label-wrapper checkbox-row">
+                          <input class="checkbox-row__input visuallyhidden" type="checkbox" id="meat" name="name" value="value" checked>
+                          <label class="checkbox-row__label" for="meat">
                             Мясоед
                           </label>
                         </li>
-                        <li class="filter-section__input-label-wrapper">
-                          <label class="filter-section__label">
-                            <input class="filter-section__input visuallyhidden" type="checkbox">
+                        <li class="filter-section__input-label-wrapper checkbox-row">
+                          <input class="checkbox-row__input visuallyhidden" type="checkbox" id="healthy" name="name" value="value" checked>
+                          <label class="checkbox-row__label" for="healthy">
                             Сидит на ПП
                           </label>
                         </li>
-                        <li class="filter-section__input-label-wrapper">
-                          <label class="filter-section__label">
-                            <input class="filter-section__input visuallyhidden" type="checkbox">
+                        <li class="filter-section__input-label-wrapper checkbox-row">
+                          <input class="checkbox-row__input visuallyhidden" type="checkbox" id="vegan" name="name" value="value" checked>
+                          <label class="checkbox-row__label" for="vegan">
                             Веган-сыроед
                           </label>
                         </li>
@@ -967,7 +973,7 @@
                         <li class="transport-inputs__input-label-wrapper">
                           <label class="transport-inputs__label">
                             <input class="transport-inputs__input visuallyhidden" type="checkbox" checked>
-                            <svg class="transport-input__icon" width="24" height="24">
+                            <svg class="transport-input__icon transport-input__icon--plane" width="15" height="15">
                               <use xlink:href="#plane"></use>
                             </svg>
                             <span class="visuallyhidden">Самолет</span>
@@ -976,7 +982,7 @@
                         <li class="transport-inputs__input-label-wrapper">
                           <label class="transport-inputs__label">
                             <input class="transport-inputs__input visuallyhidden" type="checkbox" checked>
-                            <svg class="transport-input__icon" width="24" height="24">
+                            <svg class="transport-input__icon transport-input__icon--bus" width="17" height="16">
                               <use xlink:href="#bus"></use>
                             </svg>
                             <span class="visuallyhidden">Авто</span>
@@ -985,7 +991,7 @@
                         <li class="transport-inputs__input-label-wrapper">
                           <label class="transport-inputs__label">
                             <input class="transport-inputs__input visuallyhidden" type="checkbox">
-                            <svg class="transport-input__icon" width="24" height="24">
+                            <svg class="transport-input__icon transport-input__icon--bike" width="15" height="12">
                               <use xlink:href="#bike"></use>
                             </svg>
                             <span class="visuallyhidden">Велосипед</span>
@@ -994,7 +1000,7 @@
                         <li class="transport-inputs__input-label-wrapper">
                           <label class="transport-inputs__label">
                             <input class="transport-inputs__input visuallyhidden" type="checkbox" checked>
-                            <svg class="transport-input__icon" width="24" height="24">
+                            <svg class="transport-input__icon transport-input__icon--run" width="13" height="13">
                               <use xlink:href="#run"></use>
                             </svg>
                             <span class="visuallyhidden">Пешком</span>
@@ -1067,6 +1073,9 @@
                     <a class="user-full-card__button" href="#">Позвать!</a>
                     <div class="user-full-card__like-wrapper">
                       <button class="user-full-card__like-button user-full-card__like-button--on">
+                        <svg class="user-full-card__like-svg" width="13" height="11">
+                          <use xlink:href="#heart"></use>
+                        </svg>
                         <span class="visuallyhidden">Лайк</span>
                       </button>
                       <span class="user-full-card__like-number">1,5 м</span>
@@ -1102,28 +1111,28 @@
                     <span class="user-full-card__travel-type-title user-full-card__section-title">Транспорт:</span>
                     <ul class="user-full-card__travel-type travel-type-list">
                       <li class="travel-type-list__item travel-type-list__item--color">
-                        <svg class="travel-type-list__icon" width="14" height="16">
+                        <svg class="travel-type-list__icon travel-type-list__icon--plane" width="14" height="16">
                           <use xlink:href="#plane"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Авиаперелет</span>
                         <span class="visuallyhidden">Путешествует на самолете</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="19" height="20">
+                        <svg class="travel-type-list__icon travel-type-list__icon--bus" width="13" height="16">
                           <use xlink:href="#bus"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Автотранспорт</span>
                         <span class="visuallyhidden">Не путешествует на авто</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="22" height="20">
+                        <svg class="travel-type-list__icon travel-type-list__icon--bike" width="14" height="17">
                           <use xlink:href="#bike"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Велосипед</span>
                         <span class="visuallyhidden">Не путешествует на велосипеде</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="17" height="15">
+                        <svg class="travel-type-list__icon travel-type-list__icon--run" width="12" height="16">
                           <use xlink:href="#run"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Пешком</span>
@@ -1159,6 +1168,9 @@
                     <a class="user-full-card__button" href="#">Позвать!</a>
                     <div class="user-full-card__like-wrapper">
                       <button class="user-full-card__like-button">
+                        <svg class="user-full-card__like-svg" width="13" height="11">
+                          <use xlink:href="#heart"></use>
+                        </svg>
                         <span class="visuallyhidden">Лайк</span>
                       </button>
                       <span class="user-full-card__like-number">1500</span>
@@ -1188,28 +1200,28 @@
                     <span class="user-full-card__travel-type-title user-full-card__section-title">Транспорт:</span>
                     <ul class="user-full-card__travel-type travel-type-list">
                       <li class="travel-type-list__item travel-type-list__item--color">
-                        <svg class="travel-type-list__icon" width="14" height="16">
+                        <svg class="travel-type-list__icon travel-type-list__icon--plane" width="14" height="16">
                           <use xlink:href="#plane"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Авиаперелет</span>
                         <span class="visuallyhidden">Путешествует на самолете</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color">
-                        <svg class="travel-type-list__icon" width="19" height="20">
+                        <svg class="travel-type-list__icon travel-type-list__icon--bus" width="13" height="16">
                           <use xlink:href="#bus"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Автотранспорт</span>
                         <span class="visuallyhidden">Путешествует на авто</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="22" height="20">
+                        <svg class="travel-type-list__icon travel-type-list__icon--bike" width="14" height="17">
                           <use xlink:href="#bike"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Велосипед</span>
                         <span class="visuallyhidden">Не путешествует на велосипеде</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color">
-                        <svg class="travel-type-list__icon" width="17" height="15">
+                        <svg class="travel-type-list__icon travel-type-list__icon--run" width="12" height="16">
                           <use xlink:href="#run"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Пешком</span>
@@ -1245,6 +1257,9 @@
                     <a class="user-full-card__button" href="#">Позвать!</a>
                     <div class="user-full-card__like-wrapper">
                       <button class="user-full-card__like-button">
+                        <svg class="user-full-card__like-svg" width="13" height="11">
+                          <use xlink:href="#heart"></use>
+                        </svg>
                         <span class="visuallyhidden">Лайк</span>
                       </button>
                       <span class="user-full-card__like-number">170</span>
@@ -1280,28 +1295,28 @@
                     <span class="user-full-card__travel-type-title user-full-card__section-title">Транспорт:</span>
                     <ul class="user-full-card__travel-type travel-type-list">
                       <li class="travel-type-list__item travel-type-list__item--color">
-                        <svg class="travel-type-list__icon" width="14" height="16">
+                        <svg class="travel-type-list__icon travel-type-list__icon--plane" width="14" height="16">
                           <use xlink:href="#plane"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Авиаперелет</span>
                         <span class="visuallyhidden">Путешествует на самолете</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="19" height="20">
+                        <svg class="travel-type-list__icon travel-type-list__icon--bus" width="13" height="16">
                           <use xlink:href="#bus"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Автотранспорт</span>
                         <span class="visuallyhidden">Не путешествует на авто</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color">
-                        <svg class="travel-type-list__icon" width="22" height="20">
+                        <svg class="travel-type-list__icon travel-type-list__icon--bike" width="14" height="17">
                           <use xlink:href="#bike"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Велосипед</span>
                         <span class="visuallyhidden">Путешествует на велосипеде</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="17" height="15">
+                        <svg class="travel-type-list__icon travel-type-list__icon--run" width="12" height="16">
                           <use xlink:href="#run"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Пешком</span>
@@ -1337,6 +1352,9 @@
                     <a class="user-full-card__button" href="#">Позвать!</a>
                     <div class="user-full-card__like-wrapper">
                       <button class="user-full-card__like-button">
+                        <svg class="user-full-card__like-svg" width="13" height="11">
+                          <use xlink:href="#heart"></use>
+                        </svg>
                         <span class="visuallyhidden">Лайк</span>
                       </button>
                       <span class="user-full-card__like-number">23</span>
@@ -1366,28 +1384,28 @@
                     <span class="user-full-card__travel-type-title user-full-card__section-title">Транспорт:</span>
                     <ul class="user-full-card__travel-type travel-type-list">
                       <li class="travel-type-list__item travel-type-list__item--color">
-                        <svg class="travel-type-list__icon" width="14" height="16">
+                        <svg class="travel-type-list__icon travel-type-list__icon--plane" width="14" height="16">
                           <use xlink:href="#plane"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Авиаперелет</span>
                         <span class="visuallyhidden">Путешествует на самолете</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color">
-                        <svg class="travel-type-list__icon" width="19" height="20">
+                        <svg class="travel-type-list__icon travel-type-list__icon--bus" width="13" height="16">
                           <use xlink:href="#bus"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Автотранспорт</span>
                         <span class="visuallyhidden">Путешествует на авто</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="22" height="20">
+                        <svg class="travel-type-list__icon travel-type-list__icon--bike" width="14" height="17">
                           <use xlink:href="#bike"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Велосипед</span>
                         <span class="visuallyhidden">Не путешествует на велосипеде</span>
                       </li>
                       <li class="travel-type-list__item travel-type-list__item--color travel-type-list__item--disabled">
-                        <svg class="travel-type-list__icon" width="17" height="15">
+                        <svg class="travel-type-list__icon travel-type-list__icon--run" width="12" height="16">
                           <use xlink:href="#run"></use>
                         </svg>
                         <span class="travel-type-list__icon-desc">Пешком</span>
@@ -1481,7 +1499,9 @@
         <p class="footer__copyright">
           <span class="footer__copyright-text">Разработано</span>
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="footer__copyright-icon" width="27" height="33"></svg>
+            <svg class="footer__copyright-icon" width="27" height="33">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
             <span class="visuallyhidden">Интенсив «Профессиональный HTML и CSS, уровень 2»</span>
           </a>
         </p>
@@ -1732,8 +1752,8 @@
       </symbol><symbol id="triangle-arrow-right" viewBox="0 0 10 14">
       <polygon points="0,14 0,0.1 10,7.1 "/>
       </symbol><symbol id="user" viewBox="0 0 20 20">
-      <g id="icons">
-        <g id="user">
+      <g>
+        <g>
           <ellipse cx="10" cy="6" rx="5" ry="6"/>
           <path d="M19.8,17.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9S7.8,13.6,6.8,13
             c-0.5-0.2-1.2-0.3-1.8,0c-2.2,0.9-3.9,2.4-4.8,4.2C-0.5,18.5,0.6,20,2.1,20h15.8C19.4,20,20.5,18.5,19.8,17.1z"/>

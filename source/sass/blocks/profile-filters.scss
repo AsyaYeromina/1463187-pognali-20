@@ -13,7 +13,11 @@
   border-radius: 20px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    padding-bottom: 36px;
+    padding: 36px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 48px 46px;
   }
 }
 
@@ -58,7 +62,7 @@
 }
 
 .profile-filters__fieldset-wrapper:first-of-type {
-  padding-top: 26px;
+  // padding-top: 26px;
 }
 
 .profile-filters__fieldset-wrapper:last-of-type {

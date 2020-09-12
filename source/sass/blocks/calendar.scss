@@ -24,9 +24,46 @@
   width: 20%;
   background-color: transparent;
   border: none;
+  background-repeat: no-repeat;
+  background-size: 9px 18px;
+  opacity: 0.3;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     height: 86px;
+    background-size: 18px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 16px 28px;
+    width: 30%;
+  }
+}
+
+.calendar__month-button:hover,
+.calendar__month-button:focus {
+  opacity: 0.5;
+}
+
+.calendar__month-button:active {
+  opacity: 0.1;
+}
+
+.calendar__month-button--previous {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 34'%3E%3Cpath d='M3.6 17l14-14.4c.6-.6.6-1.6 0-2.1-.6-.6-1.5-.6-2.1 0L.4 15.9c-.6.6-.6 1.6 0 2.1l15.1 15.5c.3.3.7.4 1 .4s.8-.1 1-.4c.6-.6.6-1.6 0-2.1L3.6 17z'/%3E%3C/svg%3E");
+  background-position: 0 50%;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    background-position: 20% 50%;
+  }
+}
+
+.calendar__month-button--next {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 34'%3E%3Cpath d='M14.4 17L.4 2.6C-.1 2-.1 1 .4.4 1-.2 1.9-.2 2.5.4l15.1 15.5c.6.6.6 1.6 0 2.1L2.5 33.6c-.3.3-.7.4-1 .4s-.8-.1-1-.4c-.6-.6-.6-1.6 0-2.1L14.4 17z'/%3E%3C/svg%3E");
+  background-position: 100% 50%;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    background-position: 80% 50%;
   }
 }
 

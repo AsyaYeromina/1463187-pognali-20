@@ -13,9 +13,16 @@
   width: 32px;
   height: 32px;
   position: relative;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+  }
+}
+
+.travel-type-list__item--color {
+  @media (max-width: $mobile-width-only) {
+    background-color: $main-background-color-light;
   }
 }
 
@@ -28,6 +35,29 @@
   margin: auto;
   fill: $button-text-color-dark;
 }
+
+@media (min-width: $tablet-width) {
+  .travel-type-list__icon--plane{
+    width: 22px;
+    height: 22px;
+  }
+
+  .travel-type-list__icon--bus{
+    width: 19px;
+    height: 20px;
+  }
+
+  .travel-type-list__icon--bike{
+    width: 23px;
+    height: 19px;
+  }
+
+  .travel-type-list__icon--run{
+    width: 17px;
+    height: 19px;
+  }
+}
+
 
 .travel-type-list__item--disabled .travel-type-list__icon {
   opacity: 0.15;

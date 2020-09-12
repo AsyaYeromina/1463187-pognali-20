@@ -179,27 +179,9 @@
       bottom: 0;
     }
   }
-}
-
-.step__input-wrapper--checkbox-wrapper {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 20px;
 
   @media (min-width: $desktop-width) {
     justify-content: flex-end;
-  }
-}
-
-.step__chekbox-label {
-  @include typography(15px, 400, 1);
-  color: $button-text-color-dark;
-  padding-left: 20px;
-
-  @media (min-width: $tablet-width) {
-    @include typography(20px, 500, 1);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
   }
 }
 
@@ -324,7 +306,7 @@
       height: calc(100% + 44px);
       left: auto;
       right: 0;
-      top: 14px;
+      top: 20px;
       transform: translate(50%, 0);
     }
 
@@ -433,8 +415,10 @@
 }
 
 .step__textarea-icon {
-  outline: 1px solid lightsteelblue;
-  // !temporary outline
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
 }
 
 .step__textarea-input {

@@ -135,6 +135,7 @@
   border: none;
   border-radius: 50%;
   position: relative;
+  position: relative;
 
   @media (max-width: $mobile-width-only) {
     position: absolute;
@@ -151,6 +152,34 @@
 
 .user-full-card__like-button--on {
   background-color: #f9eaea;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 11'%3E%3Cpath fill='%23f02323' d='M12 1a3.32 3.32 0 00-4.7 0l-.8.7-.8-.7A3.32 3.32 0 001 1a3.2 3.2 0 000 4.6l.8.8L6.5 11l4.7-4.6.8-.8A3.2 3.2 0 0012 1z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 13px 11px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 20px 18px;
+  }
+}
+
+.user-full-card__like-svg {
+  fill: $main-background-color-dark;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 18px;
+  }
+}
+
+.user-full-card__like-button--on .user-full-card__like-svg {
+  display: none;
 }
 
 .user-full-card__like-number {
@@ -218,6 +247,7 @@
   @media (max-width: $mobile-width-only) {
     grid-column: span 2;
     margin-top: 14px;
+    width: 75%;
   }
 
   @media (min-width: $tablet-width) {

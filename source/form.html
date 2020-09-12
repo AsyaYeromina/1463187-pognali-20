@@ -46,7 +46,7 @@
                 <a class="contacts-list__item-link" href="tel:88005558628">
                   <div class="contacts-list__item-icon">
                     <span class="visuallyhidden">Позвонить нам</span>
-                    <svg width="16" height="15">
+                    <svg class="contacts-list__item-svg contacts-list__item-svg--phone" width="16" height="15">
                       <use xlink:href="#contacts-phone"></use>
                     </svg>
                   </div>
@@ -57,7 +57,7 @@
                 <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">
                   <div class="contacts-list__item-icon">
                     <span class="visuallyhidden">Написать нам на e-mail</span>
-                    <svg width="18" height="13">
+                    <svg class="contacts-list__item-svg contacts-list__item-svg--mail" width="18" height="13">
                       <use xlink:href="#contacts-mail"></use>
                     </svg>
                   </div>
@@ -251,7 +251,7 @@
                           <button class="quantity-input__button quantity-input__button--minus" type="button">
                             <span class="visuallyhidden">-</span>
                           </button>
-                          <input class="quantity-input__input" type="number" id="companions-quantity" min="1" placeholder="2">
+                          <input class="quantity-input__input" type="number" id="companions-quantity" min="1" placeholder="2" required="required">
                           <button class="quantity-input__button quantity-input__button--plus" type="button">
                             <span class="visuallyhidden">+</span>
                           </button>
@@ -264,15 +264,17 @@
                           <button class="quantity-input__button quantity-input__button--minus" type="button">
                             <span class="visuallyhidden">-</span>
                           </button>
-                          <input class="quantity-input__input" type="number" id="days-quantity" min="1" placeholder="2">
+                          <input class="quantity-input__input" type="number" id="days-quantity" min="1" placeholder="2" required="required">
                           <button class="quantity-input__button quantity-input__button--plus" type="button">
                             <span class="visuallyhidden">+</span>
                           </button>
                         </div>
                       </div>
-                      <div class="step__input-wrapper step__input-wrapper--companions step__input-wrapper--checkbox-wrapper">
-                        <input class="step__chekbox-input" type="checkbox" checked>
-                        <label class="step__chekbox-label">Можно с детьми</label>
+                      <div class="step__input-wrapper step__input-wrapper--companions checkbox-row checkbox-row--big">
+                        <input class="checkbox-row__input checkbox-row__input--big visuallyhidden" type="checkbox" id="children" checked>
+                        <label class="checkbox-row__label checkbox-row__label--big" for="children">
+                        Можно с детьми
+                        </label>
                       </div>
                     </div>
                     <div class="step__date-choice calendar">
@@ -596,7 +598,7 @@
                           <span class="country-destinations__country-name">Босния и Герцеговина</span>
                         </button>
                         <div class="country-destinations__icon-wrapper">
-                          <svg width="35" height="24">
+                          <svg class="country-destinations__icon-svg" width="35" height="24">
                             <use xlink:href="#flag-bosnia"></use>
                           </svg>
                         </div>
@@ -609,7 +611,7 @@
                           <span class="country-destinations__country-name">Чехия</span>
                         </button>
                         <div class="country-destinations__icon-wrapper">
-                          <svg width="35" height="24">
+                          <svg class="country-destinations__icon-svg" width="35" height="24">
                             <use xlink:href="#flag-czech"></use>
                           </svg>
                         </div>
@@ -1718,8 +1720,8 @@
       </symbol><symbol id="triangle-arrow-right" viewBox="0 0 10 14">
       <polygon points="0,14 0,0.1 10,7.1 "/>
       </symbol><symbol id="user" viewBox="0 0 20 20">
-      <g id="icons">
-        <g id="user">
+        <g>
+          <g>
           <ellipse cx="10" cy="6" rx="5" ry="6"/>
           <path d="M19.8,17.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9S7.8,13.6,6.8,13
             c-0.5-0.2-1.2-0.3-1.8,0c-2.2,0.9-3.9,2.4-4.8,4.2C-0.5,18.5,0.6,20,2.1,20h15.8C19.4,20,20.5,18.5,19.8,17.1z"/>

@@ -1,0 +1,68 @@
+.checkbox-row {
+  display: flex;
+  align-items: baseline;
+}
+
+.checkbox-row__label {
+  @include typography(15px, 400, 1.33);
+  color: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 400, 1);
+  }
+}
+
+.checkbox-row__label--big {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $button-text-color-dark;
+
+  @media (min-width: $tablet-width) {
+    @include typography(20px, 500, 1);
+  }
+}
+
+.checkbox-row__input + .checkbox-row__label {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-right: 9px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 9px 9px;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+      background-size: 12px 12px;
+    }
+  }
+}
+
+.checkbox-row__input--big + .checkbox-row__label--big {
+  &::before {
+    border: 1px solid #adb5bd;
+    width: 26px;
+    height: 26px;
+    margin-right: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 36px;
+      height: 36px;
+      background-size: 12px 12px;
+    }
+  }
+}
+
+.checkbox-row__input:checked + .checkbox-row__label {
+  &::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%23161c35' d='M12 0L3.8 8 0 4.3v4L3.8 12 12 4z'/%3E%3C/svg%3E");
+  }
+}

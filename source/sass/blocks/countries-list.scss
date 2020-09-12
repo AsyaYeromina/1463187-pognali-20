@@ -6,15 +6,18 @@
 
 .countries-list__item {
   margin-right: 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .countries-list__icon {
-  outline: 1px solid lightsteelblue;
-  // ! temporary outline
   margin-right: 10px;
 
   @media (min-width: $tablet-width) {
     margin-right: 14px;
+    width: 35px;
+    height: 24px;
   }
 
   @media (min-width: $desktop-width) {
