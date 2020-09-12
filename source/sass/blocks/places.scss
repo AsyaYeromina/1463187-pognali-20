@@ -1,6 +1,6 @@
 .places {
-  padding-top: 60px;
-  padding-bottom: 32px;
+  padding-top: 72px;
+  padding-bottom: 34px;
   background-color: $main-background-color-light;
   position: relative;
   z-index: 8;
@@ -8,8 +8,13 @@
   @include bottom-radius(30px, 30px);
 
   @media (min-width: $tablet-width) {
-    @include bottom-radius(50px, 50px);
-    padding-bottom: 60px;
+    @include bottom-radius(60px, 60px);
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+    padding-top: 92px;
   }
 }
 
@@ -40,26 +45,43 @@
 
 .places__heading {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    margin-bottom: 58px;
   }
 }
 
 .places__text {
   width: 90%;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
+  line-height: 1.4;
+
+  @media (min-width: $tablet-width) {
+    line-height: 1.18;
+    margin-bottom: 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 96px;
+  }
 }
 
 .places__list {
   position: relative;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
   z-index: 0;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+
     &::before {
       content: " ";
       position: absolute;
@@ -89,9 +111,9 @@
   .places__content-wrapper {
     padding: 70px;
     display: grid;
-    grid-template-columns: 50% 40%;
-    grid-column-gap: 150px;
-    align-items: start;
+    grid-template-columns: 47.5% 40%;
+    grid-column-gap: 172px;
+    align-items: flex-start;
   }
 
   .places__text-wrapper {
@@ -111,7 +133,7 @@
 
   .places__button {
     align-self: end;
-    width: 60%;
+    width: 58%;
     order: 3;
   }
 }

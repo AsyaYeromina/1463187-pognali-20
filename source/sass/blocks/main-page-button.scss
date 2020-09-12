@@ -10,13 +10,24 @@
   padding-right: 80px;
   text-decoration: none;
   position: relative;
+  padding: 22px 80px 20px 25px;
+
+  &::after {
+    @include pseudo-after-arrow();
+    right: 22px;
+  }
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
     font-size: 24px;
+    padding: 30px 80px 26px 32px;
+
+    &::after {
+      right: 34px;
+    }
   }
 
-  &::after {
-    @include pseudo-after-arrow();
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
