@@ -36,13 +36,19 @@
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  padding: 24px;
+  padding: 22px 24px 38px;
 
   &:nth-child(n + 2) {
     margin-top: -16px;
 
     @media (min-width: $tablet-width) {
       margin: 0;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &:last-child {
+      padding-bottom: 22px;
     }
   }
 
@@ -54,8 +60,7 @@
     border-radius: 0;
   }
 
-  // Positioning for tablef width only
-
+  // Positioning for tablet width only
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-direction: column;
     justify-content: space-between;
@@ -81,15 +86,27 @@
 
   @media (min-width: $desktop-width) {
     border-radius: 20px;
-    width: 30%;
+    padding: 28px 32px 30px;
+
+    &:nth-child(4n + 1) {
+      width: 29%;
+    }
+
+    &:nth-child(4n + 2) {
+      width: 31%;
+    }
+
+    &:nth-child(4n + 3) {
+      width: 31%;
+    }
 
     &:nth-last-child(n + 1) {
       margin-right: -5%;
       padding-right: calc(5% + 32px);
     }
 
-    &:last-child {
-      width: 25%;
+    &:nth-child(4n + 4) {
+      width: 24%;
       padding-right: 32px;
     }
   }
@@ -101,6 +118,10 @@
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
     }
   }
 }

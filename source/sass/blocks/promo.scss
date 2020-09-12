@@ -9,7 +9,6 @@
   color: $text-color-light;
   padding-top: 22px;
   padding-bottom: 40px;
-  overflow: hidden;
 
   // Background "traveller"
   &::before {
@@ -22,7 +21,7 @@
     background-repeat: no-repeat;
     top: 0;
     left: 50%;
-    transform: translate(-40%, 60%);
+    transform: translate(-42%,59%);
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
@@ -62,7 +61,7 @@
       width: 372px;
       height: 450px;
       background-image: url("../img/traveller-illustration-tablet@1x.png");
-      transform: translate(-25%, 65%);
+      transform: translate(-26.5%,60.7%);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/traveller-illustration-tablet@2x.png");
@@ -71,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 90px;
+    padding-top: 84px;
     padding-bottom: 124px;
     background-color: #161c36;
     background-image: url("../img/globe-back-desktop@1x.jpg");
@@ -87,7 +86,7 @@
       width: 430px;
       height: 640px;
       background-image: url("../img/traveller-illustration-desktop@1x.png");
-      transform: translate(-25%, 7%);
+      transform: translate(-27%,-2.5%);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/traveller-illustration-desktop@2x.png");
@@ -104,28 +103,28 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 120px;
+    margin-bottom: 82px;
   }
 }
 
 .promo__slogan {
-  @include typography(36px, 700, 1.11);
+  @include typography(36px, 700, 1.12);
   margin: 0 auto;
   text-align: center;
   width: 90%;
-  margin-bottom: 245px;
+  margin-bottom: 244px;
 
   @media (min-width: $tablet-width) {
     @include typography(60px, 700, 1.17);
     width: 60%;
-    margin-bottom: 90px;
+    margin-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
     margin: 0;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 68px;
+    padding-right: 68px;
     text-align: left;
   }
 }
@@ -143,16 +142,13 @@
 .promo__contacts-user-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 26px;
+  margin: 0 auto 26px auto;
   position: relative;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
-}
-
-.promo__user-list .user-nav-list__link {
-  padding: 12px 38px 8px 38px;
 }
 
 .promo__blockquote {
@@ -160,7 +156,7 @@
   padding-right: 25px;
   padding-left: 25px;
   width: 80%;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -170,15 +166,22 @@
 
   @media (min-width: $desktop-width) {
     width: 25%;
+    padding-top: 12px;
+    padding-left: 44px;
+    padding-right: 20px;
   }
 }
 
 .promo__blockquote-text {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 46px;
+    margin-bottom: 44px;
   }
 }
 
@@ -186,9 +189,11 @@
   margin: 0;
   font-style: normal;
   font-weight: 700;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    line-height: 1.19;
   }
 }
 
