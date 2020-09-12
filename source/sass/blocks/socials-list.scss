@@ -13,6 +13,12 @@
   }
 }
 
+.socials-list--header .socials-list__item {
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+}
+
 .socials-list__link {
   display: block;
   height: 100%;

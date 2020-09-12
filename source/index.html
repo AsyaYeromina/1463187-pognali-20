@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   </head>
-  <body class="page__body body">
+  <body class="page__body body body--header-collapsed">
     <!-- Class "body--header-modal" should be added after JS is loaded -->
     <!-- Class "body--header-collapsed" should be toggled after click on "header__burger-button" -->
     <!-- Class "body--header-fixed" should be added after page scrolling -->
@@ -23,8 +23,7 @@
               <img class="header__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
             </picture>
           </a>
-          <!-- Class "header__burger-button--close" should be toggled after click on button "header__burger-button" -->
-          <button class="header__burger-button header__burger-button--close" type="button">
+          <button class="header__burger-button" type="button">
             <span class="visuallyhidden">Скрыть меню</span>
           </button>
           <nav class="header__main-nav main-nav">
@@ -72,7 +71,7 @@
             </ul>
           </div>
         </div>
-        <ul class="header__socials socials-list">
+        <ul class="header__socials socials-list socials-list--header">
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visuallyhidden">Наша страница в Фейсбук</span>

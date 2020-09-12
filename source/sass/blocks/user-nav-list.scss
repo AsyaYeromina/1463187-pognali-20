@@ -5,7 +5,7 @@
 
 .user-nav-list__link {
   display: block;
-  padding: 12px 40px;
+  padding: 18px 40px 14px 40px;
   min-height: 40px;
   background-color: $main-accent-color;
   color: $button-text-color-darker;
@@ -19,6 +19,9 @@
 
   @media (min-width: $tablet-width) {
     min-height: 50px;
-    padding: 16px 40px;
+    padding: 16px 30px 12px;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    font-size: 20px;
   }
 }
