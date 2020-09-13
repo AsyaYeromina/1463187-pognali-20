@@ -8,7 +8,8 @@
 *.sublime*
 node_modules/
 npm-debug.*
-source/css/*.css
-source/css/*.map
+# source/css/*.css
+# source/css/*.map
 Thumbs.db
 POGNALI-workspace.code-workspace
+build/

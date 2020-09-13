@@ -117,11 +117,10 @@
 }
 
 .places-list__numbers {
+  @include typography(16px, 500, 1.25);
   color: $button-text-color-darker;
   position: relative;
   opacity: 0.3;
-  @include typography(16px, 500, 1.25);
-
 
   @media (max-width: $mobile-width-only) {
     position: absolute;

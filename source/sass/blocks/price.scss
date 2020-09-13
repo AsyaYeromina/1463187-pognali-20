@@ -80,7 +80,7 @@
     @media (min-width: $tablet-width) {
       bottom: 0;
       top: auto;
-      transform: translate(-70%,112%);
+      transform: translate(-70%, 112%);
     }
 
     @media (min-width: $desktop-width) {
@@ -94,7 +94,6 @@
 }
 
 .price__button-show {
-  display: block;
   text-decoration: none;
   color: $contacts-buttons-dark-color;
   font-weight: 700;

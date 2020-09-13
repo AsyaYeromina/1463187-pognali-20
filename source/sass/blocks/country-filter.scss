@@ -23,13 +23,9 @@
     padding: 0 32px;
   }
 
-@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 20px;
   }
-}
-
-.country-filter--collapsed {
-  background-color: $main-background-color-light4;
 }
 
 .country-filter__collapsed-wrapper {
@@ -218,18 +214,15 @@
   }
 }
 
-.country-filter__button-icon--show {
-  @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 6px;
-  }
-}
-
 .country-filter__button-text--show {
   display: none;
 }
 
 .country-filter__button-icon--show {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 6px;
+  }
   display: none;
 }
 
@@ -251,10 +244,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .country-filter--collapsed {
-    padding-bottom: 6px;
-  }
-
   .country-filter--collapsed .country-filter__heading {
     margin-bottom: 0;
   }
@@ -265,6 +254,12 @@
 }
 
 .country-filter--collapsed {
+  background-color: $main-background-color-light4;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 6px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 48px;
   }

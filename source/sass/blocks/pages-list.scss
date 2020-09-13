@@ -7,7 +7,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    align-items: start;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {

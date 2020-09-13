@@ -140,7 +140,6 @@
   @include typography(16px, 500, 1);
   color: $button-text-color-dark;
   font-family: inherit;
-  height: 100%;
   line-height: 2.5;
 
   @media (min-width: $tablet-width) {

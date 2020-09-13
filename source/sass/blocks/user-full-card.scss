@@ -130,7 +130,6 @@
   border: none;
   border-radius: 50%;
   position: relative;
-  position: relative;
 
   @media (max-width: $mobile-width-only) {
     position: absolute;
@@ -383,7 +382,7 @@
 .user-full-card__travel-type {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: flex-start;
   padding-left: 4px;
   margin-top: 16px;
 

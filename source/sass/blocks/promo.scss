@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
     top: 0;
     left: 50%;
-    transform: translate(-42%,59%);
+    transform: translate(-42%, 59%);
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
@@ -61,7 +61,7 @@
       width: 372px;
       height: 450px;
       background-image: url("../img/traveller-illustration-tablet@1x.png");
-      transform: translate(-26.5%,60.7%);
+      transform: translate(-26.5%, 60.7%);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/traveller-illustration-tablet@2x.png");
@@ -86,7 +86,7 @@
       width: 430px;
       height: 640px;
       background-image: url("../img/traveller-illustration-desktop@1x.png");
-      transform: translate(-27%,-2.5%);
+      transform: translate(-27%, -2.5%);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/traveller-illustration-desktop@2x.png");

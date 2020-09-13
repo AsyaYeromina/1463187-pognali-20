@@ -209,7 +209,7 @@
   }
 }
 
-.body--header-collapsed .header__burger-button{
+.body--header-collapsed .header__burger-button {
   &::before,
   &::after {
     right: 50%;
@@ -313,7 +313,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    justify-content: start;
+    justify-content: flex-start;
     padding: 0 60px;
   }
 
