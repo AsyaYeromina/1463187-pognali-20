@@ -1,0 +1,9 @@
+.body--header-modal .main {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 72px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding-top: 132px;
+  }
+}
