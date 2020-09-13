@@ -20,6 +20,12 @@
   }
 }
 
+.header--big {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 18px;
+  }
+}
+
 .body--header-collapsed .header {
   background-color: #161c36;
   padding-bottom: 26px;

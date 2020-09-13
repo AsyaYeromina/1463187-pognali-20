@@ -1,19 +1,21 @@
-
 .page-heading {
-  padding-top: 52px;
+  padding-top: 24px;
   background-color: #161c36;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     background-color: #182044;
-    padding-top: 80px;
-    border-radius: 0 0 50px 50px;
+    padding-top: 90px;
+    border-radius: 0 0 60px 60px;
     padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: #161c36;
-    padding-top: 124px;
+    padding-top: 98px;
+    padding-bottom: 66px;
   }
 }
 
@@ -38,7 +40,7 @@
   margin: 0;
   color: $text-color-light;
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -70,7 +72,8 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $text-color-light;
-  margin-right: 28px;
+  margin-right: 32px;
+  margin-top: 4px;
   position: relative;
   padding: 0 28px;
 

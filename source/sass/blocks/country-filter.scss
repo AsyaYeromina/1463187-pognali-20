@@ -1,8 +1,16 @@
 .country-filter {
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 68px;
+  padding-bottom: 26px;
   background-color: $main-background-color-light4;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 26px 26px;
+  margin-top: -50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    padding-top: 120px;
+    border-radius: 0 0 60px 60px;
+    padding-bottom: 74px;
+  }
 
   @media (min-width: $desktop-width) {
     background-color: $main-background-color-light;
@@ -12,7 +20,11 @@
 
 .country-filter__content-wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0 34px;
+    padding: 0 32px;
+  }
+
+@media (min-width: $desktop-width) {
+    padding: 0 20px;
   }
 }
 
@@ -24,6 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
@@ -82,8 +95,6 @@
       height: 15px;
     }
   }
-
-
 }
 
 .country-filter__continent-list {
@@ -94,7 +105,7 @@
   flex-wrap: wrap;
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     flex-direction: column;
     padding: 0 25px;
     order: 1;
@@ -173,6 +184,11 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -185,7 +201,7 @@
 
 .country-filter__button-text--close {
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 84px;
 }
 
 .country-filter__button-icon {
@@ -244,7 +260,7 @@
 .country-filter__hide-list-button {
   display: block;
   border-radius: 20px;
-  padding: 12px;
+  padding: 12px 30px 8px;
   background-color: #d6daed;
   color: $button-text-color-darker;
 
@@ -257,30 +273,24 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
-    padding: 42px;
+    padding: 36px 56px 38px;
+    margin: 0 auto;
+    width: 99%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 103%;
+    margin-left: -22px;
   }
 }
 
-.country-filter__hide-list-button-text {
-  position: relative;
+.country-filter__hide-list-button-svg {
+  margin-right: 6px;
 
-  &::before,
-  &::after {
-    content: " ";
-    position: absolute;
-    left: -40px;
-    top: 40%;
-    height: 2px;
-    width: 25px;
-    border-radius: 2px;
-    background-color: $main-background-color-dark;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 20px;
+    margin-right: 14px;
+    transform: translate(0, 4px);
   }
 }

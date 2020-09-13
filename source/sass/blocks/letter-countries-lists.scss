@@ -3,11 +3,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 62px;
+    padding-top: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 72px;
+    padding-top: 66px;
   }
 }
 
@@ -53,13 +53,17 @@
 
   @media (min-width: $tablet-width) {
     width: 58%;
+    padding-top: 5px;
+    grid-template-columns: repeat(5, min-content);
+    column-gap: 31px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 0 36px;
+    padding: 0 16px;
     margin-right: 0;
-    grid-gap: 26px;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 6px;
   }
 }
 
@@ -125,6 +129,18 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     opacity: 0.3;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+
+    &:nth-child(n+11) {
+      margin-bottom: 88px;
+    }
+
+    &:nth-child(n+16) {
+      margin-bottom: 48px;
+    }
+  }
 }
 
 .letter-countries-lists--max .letter-countries-lists__letter-item--selected {
@@ -149,12 +165,12 @@
 
   @media (max-width: $mobile-width-only) {
     @include typography(14px, 500, 1);
-    padding: 14px 0;
+    padding: 14px 0 12px 0;
   }
 
   @media (min-width: $tablet-width) {
     @include typography(60px, 700, 1);
-    margin-bottom: 36px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -197,6 +213,7 @@
   text-decoration: none;
   color: $text-color-dark;
   font-weight: 400;
+  line-height: 1.4;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -208,15 +225,21 @@
   width: 100%;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 16px;
+    padding-top: 14px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 30%;
+    width: 28.5%;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.letter-countries-lists__list-placeholder .letter-countries-lists__country-item {
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
   }
 }
 
