@@ -3,16 +3,27 @@
 }
 
 .profiles-pages__more-button {
+  @include typography(17px, 700, 1.76);
   text-decoration: none;
   color: $main-background-color-dark;
   text-transform: uppercase;
-
-  @include typography(17px, 700, 1.76);
   display: inline-block;
   text-align: center;
   position: relative;
   padding-left: 30px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    padding-left: 44px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(-34px);
+    margin-bottom: 72px;
+  }
 
   &::before,
   &::after {
@@ -23,6 +34,11 @@
     background-color: $main-background-color-dark;
     left: 0;
     top: 45%;
+
+    @media (min-width: $tablet-width) {
+      width: 25px;
+      left: -6px;
+    }
   }
 
   &::after {
@@ -39,7 +55,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   padding-left: 35px;
   padding-right: 35px;
   background-color: #ffffff;
@@ -48,6 +64,8 @@
 
   @media (min-width: $tablet-width) {
     height: 100px;
+    padding-left: 30px;
+    padding-right: 0;
   }
 
   &::before {
@@ -80,6 +98,10 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    width: 20%;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 15%;
   }
 }

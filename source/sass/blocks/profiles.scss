@@ -1,9 +1,13 @@
 .profiles {
-  padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 96px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 112px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    padding-bottom: 128px;
   }
 }
 
@@ -14,5 +18,13 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }

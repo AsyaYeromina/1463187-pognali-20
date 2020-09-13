@@ -10,15 +10,13 @@
 }
 
 .travel-type-list__item {
-  width: 32px;
-  height: 32px;
+  width: 31px;
+  height: 31px;
   position: relative;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    width: 34px;
-    height: 34px;
   }
 }
 
