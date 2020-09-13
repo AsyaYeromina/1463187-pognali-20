@@ -1,12 +1,18 @@
 .registration {
-  padding-top: 130px;
-  padding-bottom: 20px;
+  padding-top: 122px;
+  padding-bottom: 10px;
   background-color: $main-background-color-dark;
   color: $text-color-light;
   margin-top: -50px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 62px;
+    padding-bottom: 40px;
+    padding-top: 128px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 158px;
+    padding-bottom: 50px;
   }
 }
 
@@ -17,8 +23,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 72px;
+    padding-right: 74px;
   }
 }
 
@@ -26,6 +32,10 @@
   margin: 0 auto;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .registration__text {
@@ -33,11 +43,15 @@
   padding-right: 34px;
   text-align: center;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 62px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -100,14 +114,15 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+    max-width: 40%;
   }
 }
 
 .registration__button-text {
   @include typography(24px, 700, 1);
   font-family: "Blogger Sans", "Arial", sans-serif;
-  padding-left: 40px;
-  padding-right: 150px;
+  padding-left: 30px;
+  padding-right: 146px;
   color: $button-text-color-dark;
   display: none;
 
@@ -118,4 +133,9 @@
 
 .registration__input-button::after {
   @include pseudo-after-arrow();
+  right: 22px;
+
+  @media (min-width: $tablet-width) {
+    right: 34px;
+  }
 }

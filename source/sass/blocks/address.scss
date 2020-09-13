@@ -1,6 +1,6 @@
 .address {
-  padding-top: 90px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 34px;
   background-color: $main-accent-color;
   position: relative;
   z-index: 6;
@@ -9,37 +9,44 @@
   @include bottom-radius(30px, 30px);
 
   @media (min-width: $tablet-width) {
-    @include bottom-radius(50px, 50px);
+    @include bottom-radius(60px, 60px);
     padding-bottom: 84px;
-    padding-top: 130px;
+    padding-top: 98px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 60px;
+    padding-bottom: 58px;
+    padding-top: 104px;
   }
 }
 
 .address__content-wrapper {
   @media (min-width: $tablet-width) {
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 70px;
-    padding-right: 70px;
+    padding-right: 74px;
   }
 }
 
 .address__contacts-list {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    margin-left: 160px;
+    margin-left: 154px;
   }
 }
 
@@ -54,18 +61,29 @@
   color: $button-text-color-dark;
   width: 100%;
 
+  @include typography (18px, 700, 1);
+
   &::after {
     @include pseudo-after-arrow();
+    right: 20px;
   }
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
-    padding: 28px;
-    padding-left: 36px;
+    padding: 26px 34px 24px 34px;
+    font-size: 24px;
+
+    &::after {
+      right: 32px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
-    font-size: 24px;
+    width: 27.7%;
+    padding: 26px 34px 24px;
+
+    &::after {
+      right: 32px;
+    }
   }
 }

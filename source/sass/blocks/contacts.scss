@@ -9,8 +9,12 @@
   @include bottom-radius(30px, 30px);
 
   @media (min-width: $tablet-width) {
-    @include bottom-radius(50px, 50px);
+    @include bottom-radius(60px, 60px);
     padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 104px;
   }
 }
 
@@ -21,8 +25,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 66px;
+    padding-right: 66px;
   }
 }
 
@@ -31,10 +35,14 @@
   padding-right: 25px;
   text-align: center;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 40px;
   }
 }
