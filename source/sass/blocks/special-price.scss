@@ -1,5 +1,5 @@
 .special-price {
-  padding-top: 40px;
+  padding-top: 32px;
   border-radius: 20px;
   background-color: #ffffff;
   overflow: hidden;
@@ -7,6 +7,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
   }
 }
 
@@ -16,7 +20,7 @@
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 44px;
   }
 }
 
@@ -28,16 +32,23 @@
   @media (min-width: $tablet-width) {
     font-size: 22px;
     padding-left: 90px;
-    padding-right: 90px;
+    padding-right: 92px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 54px;
+    margin-bottom: 50px;
+    padding-left: 56px;
+    padding-right: 56px;
   }
 }
 
 .special-price__list .price-list__item {
   border-color: (black, 0.05);
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 15px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -46,7 +57,7 @@
 }
 
 .special-price__button-close {
-  padding: 26px;
+  padding: 32px 34px 16px;
   text-align: center;
   background-color: $main-background-color-light2;
   display: block;
@@ -59,5 +70,9 @@
     text-transform: none;
     font-size: 24px;
     padding: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 42px;
   }
 }

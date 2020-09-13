@@ -8,11 +8,11 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 66px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 90%;
+    width: 90.5%;
   }
 }
 
@@ -32,7 +32,7 @@
       background-color: $main-background-color-light4;
       right: 0;
       top: 0;
-      transform: translateX(20%);
+      // transform: translateX(20%);
     }
   }
 }
@@ -55,17 +55,14 @@
 }
 
 .price-list__item {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 8px;
   border-top: 1px solid #e1e3e9;
   position: relative;
 
 
   @media (max-width: $mobile-width-only) {
     display: block;
-    padding: 0;
-    padding-top: 14px;
-    padding-bottom: 16px;
     width: 85%;
   }
 
@@ -93,15 +90,15 @@
     font-size: 16px;
     position: absolute;
     right: 0;
-    top: 5%;
-    transform: translate(150%, 0);
+    top: 0;
+    transform: translate(168%, 16%);
 
     @media (min-width: $tablet-width) {
       width: 68px;
       height: 68px;
       font-size: 28px;
       left: 0;
-      transform: translate(-150%, 0);
+      transform: translate(-132%,-4%);
     }
   }
 
@@ -154,14 +151,14 @@
   @media (min-width: $tablet-width) {
     width: 40%;
     text-align: right;
-    padding: 20px 0 20px 34px;
+    padding: 18px 0 20px 32px;
     background-color: $main-background-color-light4;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 160px;
-    padding-left: 154px;
+    padding-right: 128px;
+    padding-left: 128px;
   }
 }
 
@@ -171,7 +168,7 @@
   @media (min-width: $tablet-width) {
     width: 40%;
     text-align: right;
-    padding: 20px 0 20px 34px;
+    padding: 16px 0 16px 32px;
   }
 }
 
@@ -188,6 +185,10 @@
     border-radius: 20px 20px 0 0;
     transform: translateY(-100%);
   }
+
+  @media (min-width: $desktop-width) {
+    height: 50px;
+  }
 }
 
 .price-list__item--basic:last-child .price-list__item-price::after {
@@ -203,15 +204,19 @@
     border-radius: 0 0 20px 20px;
     transform: translateY(100%);
   }
+
+  @media (min-width: $desktop-width) {
+    height: 50px;
+  }
 }
 
 .price-list--basic .price-list__item-price {
   @media (min-width: $tablet-width) {
-    width: 30%;
+    width: 29%;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 44%;
   }
 }
