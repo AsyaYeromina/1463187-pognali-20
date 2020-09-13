@@ -1,6 +1,10 @@
 .profile-filters {
-  padding-top: 40px;
+  padding-top: 22px;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
@@ -9,7 +13,7 @@
 
 .profile-filters-wrapper {
   background-color: $main-accent-color;
-  padding: 25px;
+  padding: 20px;
   border-radius: 20px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -26,9 +30,15 @@
   letter-spacing: 0.02em;
   color: $button-text-color-dark;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    font-size: 30px;
+    margin-bottom: 38px;
+    font-weight: 500;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 30px;
   }
 }
@@ -41,7 +51,7 @@
 .profile-filters__fieldset-wrapper {
   border: none;
   border-top: 1px solid #f3c72b;
-  padding: 0;
+  padding: 0 4px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -59,18 +69,53 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .profile-filters__fieldset-wrapper:first-of-type {
-  // padding-top: 26px;
+  padding-top: 28px;
 }
 
 .profile-filters__fieldset-wrapper:last-of-type {
-  padding-bottom: 26px;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 8px;
+  }
 }
 
 .profile-filters__fieldset {
   padding-top: 10px;
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+  }
+}
+
+.profile-filters__submit-button {
+  background-color: #ffffff;
+  color: $button-text-color-darker;
+  text-transform: uppercase;
+
+  @include typography(17px, 700, 1);
+  font-family: inherit;
+  border: none;
+  padding-top: 14px;
   padding-bottom: 10px;
+  border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
 }

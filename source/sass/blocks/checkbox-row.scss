@@ -1,6 +1,14 @@
 .checkbox-row {
   display: flex;
   align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .checkbox-row__label {
@@ -37,6 +45,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 9px 9px;
+    transform: translate(0, -3px);
 
     @media (min-width: $tablet-width) {
       width: 24px;

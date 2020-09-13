@@ -10,10 +10,16 @@
   list-style: none;
   display: flex;
   position: relative;
+  margin: 0;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-width: 150px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
   }
 
   &::before {
@@ -68,6 +74,7 @@
 .range-filter__input::placeholder {
   @include typography(14px, 500, 0.93);
   color: $button-text-color-dark;
+  transform: translate(10px, 2px);
 
   @media (min-width: $tablet-width) {
     @include typography(20px, 500, 1);
@@ -89,5 +96,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     order: -1;
     width: 280px;
+    margin-left: 16px;
+    // margin-bottom: 20px;
   }
 }

@@ -8,6 +8,23 @@
   }
 }
 
+.filter-section--row {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding-top: 2px;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 26px;
+  }
+}
+
+.filter-section--range {
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
 .filter-section__button {
   border: none;
   background-color: transparent;
@@ -15,26 +32,51 @@
   text-align: left;
   cursor: pointer;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
+  padding: 0;
 
   &::after {
     content: " ";
     position: absolute;
     width: 0;
     height: 0;
-    top: 16px;
-    right: 0;
+    top: 20px;
+    right: 4px;
     transform: translate(50%, -50%);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    width: 25%;
+    width: 18.5%;
 
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.filter-section--row .filter-section__button {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.filter-section--range .filter-section__button {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -83,15 +125,19 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
+    width: 84%;
   }
 }
 
 .filter-section__input-label-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-width: 33.3%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
   }
 }
 
@@ -110,4 +156,14 @@
 .filter-section__input-list--row {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }

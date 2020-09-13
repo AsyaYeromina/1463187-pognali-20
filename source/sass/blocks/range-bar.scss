@@ -13,6 +13,10 @@
   height: 100%;
   margin-left: 30%;
   background-color: $button-text-color-dark;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-left: 25%;
+  }
 }
 
 .range-bar__toggle {
@@ -30,22 +34,13 @@
 .range-bar__toggle--min {
   left: 30%;
   transform: translate(0%, -45%);
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    left: 25%;
+  }
 }
 
 .range-bar__toggle--max {
   left: 100%;
   transform: translate(-100%, -45%);
-}
-
-.profile-filters__submit-button {
-  background-color: #ffffff;
-  color: $button-text-color-darker;
-  text-transform: uppercase;
-
-  @include typography(17px, 700, 1);
-  font-family: inherit;
-  border: none;
-  padding-top: 14px;
-  padding-bottom: 10px;
-  border-radius: 25px;
 }
