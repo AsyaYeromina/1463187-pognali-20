@@ -2,21 +2,21 @@
   background-color: $main-background-color-dark;
   background-repeat: no-repeat;
   color: $text-color-light;
-  padding-top: 100px;
-  padding-bottom: 30px;
+  padding-top: 120px;
+  padding-bottom: 32px;
   margin-top: -50px;
 
   @include bottom-radius(30px, 30px);
 
   @media (min-width: $tablet-width) {
-    @include bottom-radius(50px, 50px);
-    padding-bottom: 80px;
-    padding-top: 140px;
+    @include bottom-radius(60px, 60px);
+    padding-bottom: 88px;
+    padding-top: 192px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 134px;
-    padding-top: 134px;
+    padding-top: 180px;
   }
 }
 
@@ -47,7 +47,7 @@
       width: 285px;
       height: 285px;
       background-image: url("../img/rogovaya-back-desktop@1x.png");
-      transform: translate(115%, -15%);
+      transform: translate(109%,-22%);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/rogovaya-back-desktop@2x.png");
@@ -57,14 +57,16 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 50.5%;
     align-items: start;
+    padding-left: 70px;
+    padding-right: 0;
 
     &::before {
       bottom: 0;
       left: 0;
       top: auto;
-      transform: translate(30%, 20%);
+      transform: translate(46%,19%);
     }
   }
 }
@@ -72,7 +74,7 @@
 .people__text-wrapper {
   padding-left: 26px;
   padding-right: 26px;
-  margin-bottom: 26px;
+  margin-bottom: 54px;
   position: relative;
 
   &::before {
@@ -99,7 +101,7 @@
       width: 143px;
       height: 143px;
       background-image: url("../img/smolov-back-desktop@1x.png");
-      transform: translate(-145%, 70%);
+      transform: translate(-141%,74%);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/smolov-back-desktop@2x.png");
@@ -111,16 +113,20 @@
     &::before {
       top: 0;
       right: 0;
-      transform: translate(-30%, 0%);
+      transform: translate(-41%,2%);
     }
   }
 }
 
 .people__heading {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   position: relative;
   z-index: 0;
+
+  @media (min-width: $tablet-width) {
+  margin-bottom: 56px;
+}
 
   &::after {
     content: " ";
@@ -144,12 +150,13 @@
 
 .people__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   width: 100%;
   position: relative;
 
   @media (min-width: $tablet-width) {
     width: 70%;
+    margin-bottom: 42px;
   }
 }
 
@@ -167,10 +174,10 @@
 
 .people__list {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {

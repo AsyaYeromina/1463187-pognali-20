@@ -7,11 +7,12 @@
 
 .places-list__item {
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -38,7 +39,9 @@
 }
 
 .places-list__link picture {
-  height: 140px;
+  @media (min-width: $tablet-width) {
+    height: 140px;
+  }
 }
 
 .places-list__description-block {
@@ -47,7 +50,7 @@
   padding: 25px;
   padding-bottom: 20px;
   position: relative;
-  margin-top: -16px;
+  margin-top: -18px;
 
   @media (min-width: $tablet-width) {
     width: 70%;

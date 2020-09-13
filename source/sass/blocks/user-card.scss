@@ -30,23 +30,41 @@
 
 .user-card__level {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 17px;
+  left: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
+    left: 23px;
+  }
 }
 
 .user-card__description {
-  // background-color: #ffffff;
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 26px;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-align: center;
+  padding: 20px 25px 16px;
+  display: flex;
+  flex-direction: column;
+  // text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 22px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+  }
 }
 
 .user-card__name {
   @include typography(21px, 700, 1);
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 16px;
   text-align: center;
   position: relative;
   display: inline-block;
@@ -65,19 +83,25 @@
 
   @media (min-width: $tablet-width) {
     @include typography(24px, 700, 0.92);
+    text-align: left;
+    padding-left: 44px;
+    padding-right: 40px;
+    margin: 0;
+    margin-bottom: 24px;
 
     &::before {
       width: 8px;
       height: 8px;
+      left: 22px;
     }
   }
 }
 
-.user-card__name--offline::before {
+.user-card--offline .user-card__name::before {
   background-color: $offline-marker-color;
 }
 
-.user-card__name--online::before {
+.user-card--online .user-card__name::before {
   background-color: $online-marker-color;
 }
 
@@ -85,26 +109,35 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -57%);
   list-style: none;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    transform: translate(-50%,-70%);
+  }
 }
 
 .user-card__text {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0;
+  margin-bottom: 12px;
   text-align: center;
   color: $text-color-dark;
+  line-height: 1.12;
 
   @media (min-width: $tablet-width) {
     @include typography(20px, 400, 1.15);
     padding: 0;
+    margin-bottom: 18px;
   }
 }
 
 .user-card__travel-type {
   margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

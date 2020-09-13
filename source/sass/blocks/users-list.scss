@@ -10,11 +10,15 @@
 }
 
 .users-list__item {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 43%;
+    width: 46%;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45.3%;
   }
 }
