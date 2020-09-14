@@ -1,7 +1,7 @@
 .step {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 25px;
+  padding: 24px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 48px 44px 56px 44px;
@@ -9,16 +9,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 160px 106px 160px;
-    border-radius: 50px;
+    padding: 104px 140px 102px;
+    border-radius: 60px;
   }
 }
 
 .step__description-markers-wrapper {
   position: relative;
   padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 38px;
 
     &::after {
@@ -33,9 +37,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 54px;
+    padding-bottom: 34px;
     display: flex;
     justify-content: space-between;
+
+    &::after {
+      width: 96%;
+    }
   }
 }
 
@@ -61,10 +69,14 @@
 }
 
 .step__subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
   }
 }
 
@@ -77,8 +89,13 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(#000000, 0.6);
-  margin-right: 46px;
   padding: 0;
+  padding-right: 46px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 84px;
+    padding-top: 6px;
+  }
 }
 
 .step__marker-item {
@@ -116,14 +133,25 @@
   border: none;
   margin: 0;
   padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .step__desc-text {
-  @include typography(16px, 400, 1.37);
+  @include typography(16px, 400, 1.38);
   margin: 0;
 
   @media (min-width: $tablet-width) {
     @include typography(20px, 400, 1.2);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95%;
   }
 }
 
@@ -134,26 +162,28 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 26px;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     padding-top: 30px;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
 .step__input-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
+    margin-bottom: 14px;
   }
 }
 
@@ -166,7 +196,8 @@
     position: relative;
 
     &:last-child {
-      padding-bottom: 34px;
+      padding-bottom: 26px;
+      margin-bottom: 25px;
     }
 
     &:last-child::before {
@@ -185,16 +216,30 @@
   }
 }
 
+.step__input-wrapper--companions.checkbox-row--big {
+  @media (min-width: $desktop-width) {
+    margin-right: 36px;
+    width: 30%;
+  }
+}
+
+.step__input-wrapper.quantity-input--days {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
 .step__date-choice {
   margin-bottom: 22px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
+    margin-bottom: 60px;
+    padding-right: 40px;
   }
 }
 
@@ -447,6 +492,7 @@
 
 .step__textarea-input::placeholder {
   color: rgba($text-color-dark, 0.3);
+  // transform: translate(5px, 2px);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

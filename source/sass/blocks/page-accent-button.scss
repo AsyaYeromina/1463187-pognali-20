@@ -5,7 +5,7 @@
   text-transform: uppercase;
   display: block;
   border-radius: 20px;
-  padding: 6px;
+  padding: 8px 10px 4px;
   text-decoration: none;
   position: relative;
   text-align: center;
@@ -14,8 +14,7 @@
 
   @media (min-width: $tablet-width) {
     text-transform: initial;
-    padding: 20px;
-    padding-right: 60px;
+    padding: 28px 40px 28px 34px;
     width: max-content;
     max-width: 100%;
     text-align: left;
@@ -24,6 +23,7 @@
 
     &::after {
       @include pseudo-after-arrow();
+      right: 38px;
     }
   }
 }

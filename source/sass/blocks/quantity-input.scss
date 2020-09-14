@@ -9,6 +9,12 @@
   }
 }
 
+.quantity-input--days {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
 .quantity-input__title {
   margin: 0;
 
@@ -26,7 +32,7 @@
 
   @media (min-width: $desktop-width) {
     letter-spacing: normal;
-    width: 40%;
+    width: 43%;
     margin: 0;
   }
 }
@@ -61,7 +67,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 40%;
+    width: 35%;
     margin-right: 34px;
   }
 }
@@ -153,6 +159,7 @@
   display: block;
   height: 42px;
   line-height: 42px;
+  transform: translate(8px, 2px);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

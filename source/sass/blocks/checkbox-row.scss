@@ -11,6 +11,12 @@
   }
 }
 
+.checkbox-row--big {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
 .checkbox-row__label {
   @include typography(15px, 400, 1.33);
   color: #000000;
@@ -24,12 +30,12 @@
 }
 
 .checkbox-row__label--big {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   color: $button-text-color-dark;
 
   @media (min-width: $tablet-width) {
     @include typography(20px, 500, 1);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 }
 
@@ -60,12 +66,13 @@
     border: 1px solid #adb5bd;
     width: 26px;
     height: 26px;
-    margin-right: 16px;
+    margin-right: 12px;
 
     @media (min-width: $tablet-width) {
       width: 36px;
       height: 36px;
       background-size: 12px 12px;
+      margin-right: 22px;
     }
   }
 }
