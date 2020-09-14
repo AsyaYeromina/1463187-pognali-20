@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    padding-bottom: 56px;
   }
 }
 
@@ -20,7 +21,8 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding-top: 60px;
+    padding-top: 74px;
+    padding-left: 64px;
   }
 }
 
@@ -39,7 +41,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 30.5%;
     grid-column-gap: 140px;
   }
 }
@@ -66,7 +68,7 @@
     right: 0;
     width: 95px;
     height: 95px;
-    transform: translate(-330px, -150%);
+    transform: translate(-330px, -155%);
     z-index: 2;
   }
 }
@@ -93,7 +95,7 @@
     border-radius: 0;
     width: 190px;
     height: 190px;
-    transform: translate(-100px, -100%);
+    transform: translate(-95px, -100%);
     z-index: 2;
   }
 }
@@ -136,7 +138,8 @@
     right: 0;
     width: 190px;
     border-radius: 0 0 10px 10px;
-    transform: translateX(-100px);
+    transform: translateX(-95px);
+    padding: 14px;
   }
 }
 
@@ -183,6 +186,12 @@
     grid-column-end: 3;
     padding-top: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+    padding-top: 24px;
+    padding-bottom: 26px;
+  }
 }
 
 .user-settings__fieldset-name {
@@ -220,7 +229,7 @@ transform: translate(-50%, -50%);
 
   @media (min-width: $desktop-width) {
     left: 0;
-    transform: translate(20%, 50%);
+    transform: translate(20%, 10%);
   }
 }
 

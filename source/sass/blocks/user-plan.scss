@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     border-radius: 50px 50px 0 0;
     padding-bottom: 114px;
+    padding-top: 54px;
   }
 }
 
@@ -35,6 +36,10 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 6px;
   }
 }
 
@@ -71,7 +76,7 @@
 
     @media (min-width: $desktop-width) {
       font-size: 20px;
-      margin-right: 20px;
+      margin-right: 38px;
     }
   }
 
@@ -83,6 +88,7 @@
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
+    padding: 36px 40px 36px 42px;
   }
 }
 
@@ -104,6 +110,7 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
+    margin-bottom: 0;
   }
 }
 
@@ -131,7 +138,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 55%;
+    grid-template-columns: 30% 1fr 1fr;
   }
 }
 
