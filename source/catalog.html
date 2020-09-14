@@ -7,9 +7,11 @@
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   </head>
   <body class="page__body body body--header-collapsed">
-    <!-- Class "body--header-modal" should be added after JS is loaded -->
-    <!-- Class "body--header-collapsed" should be toggled after click on "header__burger-button" -->
-    <!-- Class "body--header-fixed" should be added after page scrolling -->
+    <!-- Body on other pages (not index) has body--header-collapsed -->
+    <!-- Class "body--header-modal" is added after JS is loaded if body doesn't have class "body--header-collapsed" -->
+    <!-- Class "body--header-collapsed" is toggled after click on "header__burger-button" -->
+    <!-- If body has class body--header-collapsed class body--header-modal is removed -->
+    <!-- Class "body--header-fixed" should be added after page scrolling down and removed after scrolling to the top-->
     <header class="header header--big">
       <div class="wrapper">
         <div class="header__logo-btn-nav-wrapper">

@@ -7,9 +7,11 @@
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   </head>
   <body class="page__body body body--header-collapsed">
-    <!-- Class "body--header-modal" should be added after JS is loaded -->
-    <!-- Class "body--header-collapsed" should be toggled after click on "header__burger-button" -->
-    <!-- Class "body--header-fixed" should be added after page scrolling -->
+    <!-- Body on other pages (not index) has body--header-collapsed -->
+    <!-- Class "body--header-modal" is added after JS is loaded if body doesn't have class "body--header-collapsed" -->
+    <!-- Class "body--header-collapsed" is toggled after click on "header__burger-button" -->
+    <!-- If body has class body--header-collapsed class body--header-modal is removed -->
+    <!-- Class "body--header-fixed" should be added after page scrolling down and removed after scrolling to the top-->
     <header class="header header--big">
       <div class="wrapper">
         <div class="header__logo-btn-nav-wrapper">
@@ -619,6 +621,7 @@
                         </button>
                       </div>
                       <div class="country-destinations__row country-destinations__row--empty drop-down-country-list">
+                        <!-- Click on drop-down-country-list__button toggles class drop-down-country-list--shown (in block drop-down-country-list) -->
                         <button class="country-destinations__choose-button country-destinations__choose-button--empty drop-down-country-list__button" type="button">
                           Выберите страну
                         </button>
@@ -1344,10 +1347,6 @@
                             </ul>
                           </div>
                         </div>
-                        <!-- When country-destinations__choose-button has modif. "country-destinations__choose-button--active"
-                        element with class "country-destinations__marker" should have class "country-destinations__marker--hidden" -->
-                        <!-- When country-destinations__choose-button has modif. "country-destinations__choose-button--active"
-                          country-destinations__del-button should have class "country-destinations__del-button--hidden" -->
                         <button class="country-destinations__del-button" type="button">
                           <span class="visuallyhidden">Убрать с маршрута</span>
                         </button>
