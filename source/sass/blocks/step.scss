@@ -14,8 +14,32 @@
   }
 }
 
-.step--2 {
-  padding-top: 22px;
+@media (max-width: $mobile-width-only) {
+  .step--2 {
+    padding-top: 22px;
+    padding-bottom: 6px;
+  }
+
+  .step--3 {
+    padding-bottom: 4px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .step--2 {
+    padding: 100px 160px 102px;
+  }
+
+  .step--3 {
+    padding: 100px 158px 102px;;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .step--2 {
+    margin-bottom: 48px;
+  }
 }
 
 .step__description-markers-wrapper {
@@ -27,7 +51,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 38px;
+    padding-bottom: 34px;
 
     &::after {
       content: " ";
@@ -48,6 +72,14 @@
     &::after {
       width: 96%;
     }
+  }
+}
+
+.step--3 .step__description-markers-wrapper {
+  padding-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 34px;
   }
 }
 
@@ -84,6 +116,12 @@
   }
 }
 
+.step--2 .step__subtitle {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+}
+
 .step__markers {
   @media (max-width: $tablet-width-only) {
     display: none;
@@ -97,8 +135,14 @@
   padding-right: 46px;
 
   @media (min-width: $desktop-width) {
-    padding-right: 84px;
+    padding-right: 48px;
     padding-top: 6px;
+  }
+}
+
+.step--1 .step__markers {
+  @media (min-width: $desktop-width) {
+    padding-right: 84px;
   }
 }
 
@@ -139,10 +183,39 @@
   padding: 0;
   padding-left: 5px;
   padding-right: 5px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.step--3 .step__fieldset {
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.step--2 .step__fieldset {
+  @media (min-width: $tablet-width) {
+    left: 6px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
   }
 }
 
@@ -240,15 +313,12 @@
 }
 
 .step__date-choice {
-  margin-bottom: 22px;
+  // margin-bottom: 22px;
   width: 100%;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
-  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
     padding-right: 40px;
   }
 }
@@ -297,9 +367,12 @@
 }
 
 .step__step-link--previous {
+  padding-top: 2px;
+
   @media (min-width: $tablet-width) {
     padding-right: 0;
     padding-left: 30px;
+    padding-top: 20px;
     min-width: auto;
 
     &::before {
@@ -313,6 +386,10 @@
       top: 50%;
       left: 0;
       transform: translateY(-50%);
+
+      @media (min-width: $desktop-width) {
+        left: -8px;
+      }
     }
   }
 }
@@ -325,20 +402,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 26px;
+    padding-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 80px;
   }
 }
 
 .step__textarea-list-item {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -346,7 +423,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 48px;
+    margin-bottom: 42px;
   }
 
   // Vertical line
@@ -354,12 +431,12 @@
     content: " ";
     position: absolute;
     width: 2px;
-    height: calc(100% + 26px);
+    height: calc(100% + 20px);
     // height of the element + bottom margin
     background-color: $button-text-color-dark;
     top: 0;
     left: 0;
-    transform: translate(-12px, 12px);
+    transform: translate(-12px, 9px);
 
     @media (min-width: $tablet-width) {
       height: calc(100% + 44px);
@@ -371,7 +448,7 @@
 
     @media (min-width: $desktop-width) {
       right: auto;
-      left: 780px;
+      left: 77.5%;
       transform: translate(-50%, 0);
     }
   }
@@ -387,7 +464,7 @@
 
 .step__textarea-label-icon-wrapper {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -395,6 +472,7 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 32px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -409,7 +487,7 @@
     height: 6px;
     background-color: $button-text-color-dark;
     border-radius: 50%;
-    top: 50%;
+    top: 35%;
     left: 0;
     transform: translateY(-50%);
 
@@ -423,7 +501,7 @@
 
     @media (min-width: $desktop-width) {
       right: auto;
-      left: 780px;
+      left: 77.5%;
       transform: translate(-50%, -50%);
     }
   }
@@ -435,7 +513,7 @@
     width: 12px;
     height: 2px;
     background-color: $button-text-color-dark;
-    top: 50%;
+    top: 35%;
     left: 0;
     transform: translate(-100%, -50%);
 
@@ -474,9 +552,15 @@
 }
 
 .step__textarea-icon {
+  transform: translateY(-5px);
+
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-5px, -5px);
   }
 }
 
@@ -484,7 +568,8 @@
   width: 100%;
   height: 220px;
   resize: none;
-  padding: 12px 34px 20px 14px;
+  padding: 12px 14px 12px 14px;
+  font-size: 16px;
   border-radius: 4px;
   border: 1px solid #cbced9;
   color: $text-color-dark;
@@ -495,12 +580,14 @@
     width: 500px;
     height: 142px;
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.1;
     padding: 18px 50px 50px 18px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 730px;
+    width: 73%;
+    padding: 24px;
+    padding-right: 22px;
   }
 }
 

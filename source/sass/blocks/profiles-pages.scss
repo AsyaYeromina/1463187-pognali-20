@@ -17,10 +17,10 @@
     font-size: 20px;
     line-height: 1;
     padding-left: 44px;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     transform: translateX(-34px);
     margin-bottom: 72px;
   }

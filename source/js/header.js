@@ -17,3 +17,18 @@ if (body !== null && header !== null && burgerButton !== null) {
     }
   });
 }
+
+
+
+
+
+// Body on other pages (not index) has "body--header-collapsed" class
+
+// Class "body--header-modal" is added after JS is loaded
+// if body doesn't have class "body--header-collapsed"
+
+// Class "body--header-collapsed" is toggled after click on "header__burger-button"
+
+// If body has class "body--header-collapsed" class "body--header-modal" is removed
+
+// ! Next task: Class "body--header-fixed" should be added after page scrolling down and removed after scrolling to the top
