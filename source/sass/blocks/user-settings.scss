@@ -1,10 +1,10 @@
 .user-settings {
-  padding-top: 40px;
+  padding-top: 24px;
   padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 50px;
+    padding-top: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,8 +14,8 @@
 
 .user-settings__content-wrapper {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,13 +100,14 @@
 
 .user-settings__user-pic-file {
   border-radius: inherit;
+  width: 100%;
+  object-fit: contain;
 }
 
 .user-settings__download-button {
   background-color: #dfe3f0;
   border: none;
   border-radius: 25px;
-  padding: 16px 20px 12px 20px;
   color: $button-text-color-darker;
   text-transform: uppercase;
   font-family: "Blogger Sans", "Arial", sans-serif;
@@ -117,6 +118,7 @@
   @media (max-width: $mobile-width-only) {
     grid-column: span 2;
     margin-bottom: 34px;
+    padding: 12px 20px 10px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -148,12 +150,12 @@
   margin: 0;
   border-radius: 10px;
   border: 1px solid #cbced9;
-  padding: 20px;
+  padding: 18px 24px;
   position: relative;
 
   @media (max-width: $mobile-width-only) {
     grid-column: span 2;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
   }
 }
 
@@ -162,6 +164,9 @@
 }
 
 .user-settings__fieldset--tags {
+  border: none;
+  padding: 0;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     order: 5;
     grid-column: span 3;
@@ -169,10 +174,14 @@
 }
 
 .user-settings__fieldset--transport {
+  padding-top: 4px;
+  padding-bottom: 16px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     order: 2;
     grid-column-start: 2;
     grid-column-end: 3;
+    padding-top: 22px;
   }
 }
 
@@ -197,6 +206,18 @@
 }
 
 .user-settings__fieldset--tags .user-settings__fieldset-name {
+position: absolute;
+left: 50%;
+top: 0;
+background-color: $main-background-color-light;
+transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+    top: auto;
+    transform: translate(-50%, 10%);
+  }
+
   @media (min-width: $desktop-width) {
     left: 0;
     transform: translate(20%, 50%);
@@ -206,20 +227,24 @@
 .user-settings__tags {
   @include typography(16px, 400, 1.12);
   background-color: transparent;
-  border: none;
   width: 100%;
   color: rgba($text-color-dark, 0.6);
   resize: none;
   font-family: "Blogger Sans", "Arial", sans-serif;
   padding: 0;
+  padding: 26px 24px 26px;
+  border-radius: 10px;
+  border: 1px solid #cbced9;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    padding: 34px 40px 14px;
   }
 }
 
 .user-settings__transport-list {
   margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
