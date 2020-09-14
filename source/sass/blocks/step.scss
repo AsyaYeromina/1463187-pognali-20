@@ -14,6 +14,10 @@
   }
 }
 
+.step--2 {
+  padding-top: 22px;
+}
+
 .step__description-markers-wrapper {
   position: relative;
   padding-bottom: 20px;
@@ -152,6 +156,12 @@
 
   @media (min-width: $desktop-width) {
     width: 95%;
+  }
+}
+
+.step__desc-text br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
@@ -305,6 +315,10 @@
       transform: translateY(-50%);
     }
   }
+}
+
+.step__country-destinations {
+  padding: 0;
 }
 
 .step__textarea-list {

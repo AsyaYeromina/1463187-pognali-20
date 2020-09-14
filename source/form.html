@@ -222,7 +222,7 @@
             </div>
             <form class="new-plan__form" action="https://echo.htmlacademy.ru/courses" method="GET">
               <ol class="new-plan__step-list plan-steps">
-                <li class="plan-steps__step step" id="step-1">
+                <li class="plan-steps__step step step--1" id="step-1">
                   <div class="step__description-markers-wrapper">
                     <div class="step__description">
                       <h3 class="step__title">Шаг 1.</h3>
@@ -571,7 +571,7 @@
                   </fieldset>
                   <a class="step__step-link page-accent-button" href="form.html#step-2">Следующий шаг</a>
                 </li>
-                <li class="plan-steps__step step" id="step-2">
+                <li class="plan-steps__step step step--2" id="step-2">
                   <div class="step__description-markers-wrapper">
                     <div class="step__description">
                       <h3 class="step__title">Шаг 2.</h3>
@@ -618,18 +618,11 @@
                           <span class="visuallyhidden">Убрать с маршрута</span>
                         </button>
                       </div>
-                      <!-- When country-destinations__row has class "country-destinations__row--empty"
-                        div.country-destinations__icon-wrapper should be hidden
-                        by adding class "country-destinations__icon-wrapper--hidden" -->
-                      <div class="country-destinations__row country-destinations__row--empty country-destinations__row--drop-down ">
-                        <!-- Click on button "country-destinations__choose-button" should toggle class
-                          "country-destinations__select-lists-wrapper--hidden" of "country-destinations__select-lists-wrapper" element -->
-                        <button class="country-destinations__choose-button country-destinations__choose-button--empty" type="button">
-                          <!-- ! -------------------  "country-destinations__choose-button--active" -->
+                      <div class="country-destinations__row country-destinations__row--empty drop-down-country-list">
+                        <button class="country-destinations__choose-button country-destinations__choose-button--empty drop-down-country-list__button" type="button">
                           Выберите страну
                         </button>
-                        <div class="country-destinations__select-lists-wrapper letter-countries-lists letter-countries-lists--mini country-destinations__select-lists-wrapper--hidden">
-                          <!-- ! class " country-destinations__select-lists-wrapper--hidden" is added after click on country-destinations__choose-button -->
+                        <div class="country-destinations__select-lists-wrapper letter-countries-lists letter-countries-lists--mini">
                           <ul class="letter-countries-lists__letter-list letter-countries-lists__letter-list--mini">
                             <li class="letter-countries-lists__letter-item letter-countries-lists__letter-item--selected letter-countries-lists__letter-item--mini">
                               <a class="letter-countries-lists__letter-for-country-list" href="#">А</a>
@@ -1355,13 +1348,11 @@
                         element with class "country-destinations__marker" should have class "country-destinations__marker--hidden" -->
                         <!-- When country-destinations__choose-button has modif. "country-destinations__choose-button--active"
                           country-destinations__del-button should have class "country-destinations__del-button--hidden" -->
-                        <button class="country-destinations__del-button country-destinations__del-button--hidden" type="button">
+                        <button class="country-destinations__del-button" type="button">
                           <span class="visuallyhidden">Убрать с маршрута</span>
                         </button>
                       </div>
                       <div class="country-destinations__row country-destinations__row--empty country-destinations__row--add">
-                        <!-- Click on button "country-destinations__choose-button" should toggle class
-                          "country-destinations__select-lists-wrapper--hidden" of "country-destinations__select-lists-wrapper" element -->
                         <button class="country-destinations__choose-button country-destinations__choose-button--empty country-destinations__choose-button--add" type="button">
                           Добавить страну
                         </button>
@@ -1373,7 +1364,7 @@
                     <a class="step__step-link step__step-link--previous" href="form.html#step-1">На шаг назад</a>
                   </div>
                 </li>
-                <li class="plan-steps__step step" id="step-3">
+                <li class="plan-steps__step step step--3" id="step-3">
                   <div class="step__description-markers-wrapper">
                     <div class="step__description">
                       <h3 class="step__title">Шаг 3.</h3>
@@ -1475,6 +1466,7 @@
       </div>
     </footer>
     <script src="js/header.js"></script>
+    <script src="js/country-drop-down.js"></script>
     <!-- SVG SPRITE -->
     <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="bike" viewBox="0 0 24 21">
       <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
