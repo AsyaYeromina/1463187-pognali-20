@@ -215,11 +215,11 @@
 }
 
 .user-settings__fieldset--tags .user-settings__fieldset-name {
-position: absolute;
-left: 50%;
-top: 0;
-background-color: $main-background-color-light;
-transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: $main-background-color-light;
+  transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
     bottom: 0;
@@ -240,7 +240,6 @@ transform: translate(-50%, -50%);
   color: rgba($text-color-dark, 0.6);
   resize: none;
   font-family: "Blogger Sans", "Arial", sans-serif;
-  padding: 0;
   padding: 26px 24px 26px;
   border-radius: 10px;
   border: 1px solid #cbced9;
