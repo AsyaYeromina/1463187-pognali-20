@@ -24,6 +24,21 @@
     font-weight: 400;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $main-accent-color-dark1;
+  }
+}
+
+.user-nav-list__link:active .user-nav-list__link-text {
+  opacity: 0.3;
 }
 
 .user-nav-list__link--promo {

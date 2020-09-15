@@ -33,6 +33,11 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: $button-text-color-dark;
+  overflow: hidden;
+  height: 1em;
+  display: inline-block;
+  outline: none;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -43,6 +48,30 @@
     line-height: 1;
     color: $text-color-light;
   }
+}
+
+.pages-list__link:hover .pages-list__link-text,
+.pages-list__link:focus .pages-list__link-text {
+  transform: translateY(-100%);
+}
+
+.pages-list__link:active {
+  opacity: 0.3;
+}
+
+.pages-list__link-text {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    // font-weight: 700;
+    transform: translate3d(0,0,0);
+    color: $main-accent-color;
+}
 }
 
 .header--fixed .pages-list__link {

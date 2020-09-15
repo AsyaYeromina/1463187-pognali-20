@@ -141,7 +141,17 @@
     transform: translateX(-95px);
     padding: 14px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #d1d7e9;
+  }
 }
+
+.user-settings__download-button:active .user-settings__download-text {
+  opacity: 0.3;
+}
+
 
 .user-settings__download-text--long {
   @media (min-width: $desktop-width) {
@@ -247,6 +257,16 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 34px 40px 14px;
+  }
+
+  &:hover {
+    border: 1px solid #aeb4cb;
+  }
+
+  &:focus {
+    border: 1px solid black;
+    color: $text-color-dark;
+    outline: none;
   }
 }
 

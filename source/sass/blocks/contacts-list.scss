@@ -83,21 +83,48 @@
 
 // Changing color and icons for contacts-list__item--main on desktop
 @media (min-width: $desktop-width) {
+  .contacts-list__item--main:first-child .contacts-list__item-link {
+    background-color: $main-accent-color-dark2;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $main-accent-color-dark3;
+    }
+  }
+
   .contacts-list__item--main:first-child .contacts-list__item-icon {
-    background-color: $main-accent-color-dark3;
     background-image: url("../img/topmenu-phone.svg");
     background-size: 18px 18px;
   }
 
-  .contacts-list__item--main:nth-child(2) .contacts-list__item-icon {
+  .contacts-list__item--main:nth-child(2) .contacts-list__item-link {
     background-color: $main-accent-color-dark1;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $main-accent-color-dark2;
+    }
+  }
+
+  .contacts-list__item--main:nth-child(2) .contacts-list__item-icon {
     background-image: url("../img/topmenu-mail.svg");
     background-size: 16px 14px;
   }
 
+  .contacts-list__item--main .contacts-list__item-link {
+    border-radius: 50%;
+  }
+
   .contacts-list__item--main .contacts-list__item-icon {
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+
+  .contacts-list__item-link:active .contacts-list__item-icon {
+    opacity: 0.3;
   }
 
   .contacts-list__item--main .contacts-list__item-svg {

@@ -180,4 +180,13 @@
     letter-spacing: 0.1em;
     text-align: right;
   }
+
+  &:hover,
+  &:focus {
+    color: rgba(#000000, 0.6);
+  }
+
+  &:active {
+    color: rgba(#000000, 0.1);
+  }
 }

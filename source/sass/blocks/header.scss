@@ -247,11 +247,16 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding: 0;
+    margin-top: 8px;
   }
 }
 
 .body--header-collapsed .header__main-nav {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+  }
 }
 
 .header__contacts-user-nav-wrapper {

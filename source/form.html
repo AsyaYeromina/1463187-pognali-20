@@ -138,7 +138,7 @@
               </label>
               <fieldset class="user-settings__fieldset user-settings__fieldset--tags">
                 <legend class="user-settings__fieldset-name">Тэги</legend>
-                <textarea class="user-settings__tags" id="tags-input" name="tags">#бургер #бар #футбол #концерт #крафт</textarea>
+                <textarea class="user-settings__tags" id="tags-input" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
                 <label for="tags-input" class="visuallyhidden">Поле ввода e-mail адреса</label>
               </fieldset>
               <fieldset class="user-settings__fieldset user-settings__fieldset--transport">
@@ -255,10 +255,10 @@
                         <p class="quantity-input__title">Ищу попутчиков:</p>
                         <label class="quantity-input__label" for="companions-quantity">чел.</label>
                         <div class="quantity-input__input-buttons-wrapper">
+                          <input class="quantity-input__input" type="number" id="companions-quantity" min="1" placeholder="2" required="required">
                           <button class="quantity-input__button quantity-input__button--minus" type="button">
                             <span class="visuallyhidden">-</span>
                           </button>
-                          <input class="quantity-input__input" type="number" id="companions-quantity" min="1" placeholder="2" required="required">
                           <button class="quantity-input__button quantity-input__button--plus" type="button">
                             <span class="visuallyhidden">+</span>
                           </button>
@@ -268,10 +268,10 @@
                         <p class="quantity-input__title">Длительность:</p>
                         <label class="quantity-input__label" for="days-quantity">дн.</label>
                         <div class="quantity-input__input-buttons-wrapper">
+                          <input class="quantity-input__input" type="number" id="days-quantity" min="1" placeholder="2" required="required">
                           <button class="quantity-input__button quantity-input__button--minus" type="button">
                             <span class="visuallyhidden">-</span>
                           </button>
-                          <input class="quantity-input__input" type="number" id="days-quantity" min="1" placeholder="2" required="required">
                           <button class="quantity-input__button quantity-input__button--plus" type="button">
                             <span class="visuallyhidden">+</span>
                           </button>
