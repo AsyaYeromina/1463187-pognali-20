@@ -48,6 +48,21 @@
   &::before {
     transform: translateY(-50%);
   }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .profiles-pages__pagination-wrapper {

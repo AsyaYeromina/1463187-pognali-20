@@ -27,6 +27,15 @@
   @media (min-width: $tablet-width) {
     @include typography(20px, 400, 1);
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .checkbox-row__label--big {
@@ -57,6 +66,12 @@
       width: 24px;
       height: 24px;
       background-size: 12px 12px;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #e2e5f1;
     }
   }
 }
@@ -90,30 +105,41 @@
   }
 }
 
-.checkbox-row__input--big:checked + .checkbox-row__label--big {
+.checkbox-row__input:checked + .checkbox-row__label {
   &::after {
     content: "";
     display: inline-block;
-    width: 26px;
-    height: 26px;
+    width: 16px;
+    height: 16px;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 9px 9px;
     transform: translate(0, -3px);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%23161c35' d='M12 0L3.8 8 0 4.3v4L3.8 12 12 4z'/%3E%3C/svg%3E");
+    background-image: url("../img/tick.svg");
 
     @media (min-width: $tablet-width) {
-      width: 36px;
-      height: 36px;
+      width: 26px;
+      height: 26px;
       background-size: 12px 12px;
-      margin-right: 22px;
     }
   }
 
   &:active {
     &::after {
       opacity: 0.5;
+    }
+  }
+}
+
+.checkbox-row__input--big:checked + .checkbox-row__label--big {
+  &::after {
+    width: 26px;
+    height: 26px;
+
+    @media (min-width: $tablet-width) {
+      width: 36px;
+      height: 36px;
     }
   }
 }

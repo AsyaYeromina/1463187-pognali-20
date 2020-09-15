@@ -922,7 +922,7 @@
                         <li class="transport-inputs__input-label-wrapper">
                           <label class="transport-inputs__label">
                             <input class="transport-inputs__input visuallyhidden" type="checkbox" checked>
-                            <svg class="transport-input__icon transport-input__icon--plane" width="15" height="15">
+                            <svg class="transport-inputs__icon transport-inputs__icon--plane" width="15" height="15">
                               <use xlink:href="#plane"></use>
                             </svg>
                             <span class="visuallyhidden">Самолет</span>
@@ -931,7 +931,7 @@
                         <li class="transport-inputs__input-label-wrapper">
                           <label class="transport-inputs__label">
                             <input class="transport-inputs__input visuallyhidden" type="checkbox" checked>
-                            <svg class="transport-input__icon transport-input__icon--bus" width="17" height="16">
+                            <svg class="transport-inputs__icon transport-inputs__icon--bus" width="17" height="16">
                               <use xlink:href="#bus"></use>
                             </svg>
                             <span class="visuallyhidden">Авто</span>
@@ -940,7 +940,7 @@
                         <li class="transport-inputs__input-label-wrapper">
                           <label class="transport-inputs__label">
                             <input class="transport-inputs__input visuallyhidden" type="checkbox">
-                            <svg class="transport-input__icon transport-input__icon--bike" width="15" height="12">
+                            <svg class="transport-inputs__icon transport-inputs__icon--bike" width="15" height="12">
                               <use xlink:href="#bike"></use>
                             </svg>
                             <span class="visuallyhidden">Велосипед</span>
@@ -949,7 +949,7 @@
                         <li class="transport-inputs__input-label-wrapper">
                           <label class="transport-inputs__label">
                             <input class="transport-inputs__input visuallyhidden" type="checkbox" checked>
-                            <svg class="transport-input__icon transport-input__icon--run" width="13" height="13">
+                            <svg class="transport-inputs__icon transport-inputs__icon--run" width="13" height="13">
                               <use xlink:href="#run"></use>
                             </svg>
                             <span class="visuallyhidden">Пешком</span>
@@ -1022,8 +1022,11 @@
                     <a class="user-full-card__button" href="#">Позвать!</a>
                     <div class="user-full-card__like-wrapper">
                       <button class="user-full-card__like-button user-full-card__like-button--on" aria-label="Лайкнуть">
-                        <svg class="user-full-card__like-svg" width="13" height="11" aria-hidden="true">
+                        <svg class="user-full-card__like-svg user-full-card__like-svg--off" width="13" height="11" aria-hidden="true">
                           <use xlink:href="#heart"></use>
+                        </svg>
+                        <svg class="user-full-card__like-svg user-full-card__like-svg--active" width="13" height="11" aria-hidden="true">
+                          <use xlink:href="#heart-active"></use>
                         </svg>
                       </button>
                       <span class="user-full-card__like-number">1,5 м</span>
@@ -1116,8 +1119,11 @@
                     <a class="user-full-card__button" href="#">Позвать!</a>
                     <div class="user-full-card__like-wrapper">
                       <button class="user-full-card__like-button" aria-label="Лайкнуть">
-                        <svg class="user-full-card__like-svg" width="13" height="11" aria-hidden="true">
+                        <svg class="user-full-card__like-svg user-full-card__like-svg--off" width="13" height="11" aria-hidden="true">
                           <use xlink:href="#heart"></use>
+                        </svg>
+                        <svg class="user-full-card__like-svg user-full-card__like-svg--active" width="13" height="11" aria-hidden="true">
+                          <use xlink:href="#heart-active"></use>
                         </svg>
                       </button>
                       <span class="user-full-card__like-number">1500</span>
@@ -1204,8 +1210,11 @@
                     <a class="user-full-card__button" href="#">Позвать!</a>
                     <div class="user-full-card__like-wrapper">
                       <button class="user-full-card__like-button" aria-label="Лайкнуть">
-                        <svg class="user-full-card__like-svg" width="13" height="11" aria-hidden="true">
+                        <svg class="user-full-card__like-svg user-full-card__like-svg--off" width="13" height="11" aria-hidden="true">
                           <use xlink:href="#heart"></use>
+                        </svg>
+                        <svg class="user-full-card__like-svg user-full-card__like-svg--active" width="13" height="11" aria-hidden="true">
+                          <use xlink:href="#heart-active"></use>
                         </svg>
                       </button>
                       <span class="user-full-card__like-number">170</span>
@@ -1298,8 +1307,11 @@
                     <a class="user-full-card__button" href="#">Позвать!</a>
                     <div class="user-full-card__like-wrapper">
                       <button class="user-full-card__like-button" aria-label="Лайкнуть">
-                        <svg class="user-full-card__like-svg" width="13" height="11" aria-hidden="true">
+                        <svg class="user-full-card__like-svg user-full-card__like-svg--off" width="13" height="11" aria-hidden="true">
                           <use xlink:href="#heart"></use>
+                        </svg>
+                        <svg class="user-full-card__like-svg user-full-card__like-svg--active" width="13" height="11" aria-hidden="true">
+                          <use xlink:href="#heart-active"></use>
                         </svg>
                       </button>
                       <span class="user-full-card__like-number">23</span>
@@ -1441,15 +1453,13 @@
             </a>
           </li>
         </ul>
-        <p class="footer__copyright">
+        <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="footer__copyright-text">Разработано</span>
-          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="footer__copyright-icon" width="27" height="33">
-              <use xlink:href="#htmlacademy"></use>
-            </svg>
-            <span class="visuallyhidden">Интенсив «Профессиональный HTML и CSS, уровень 2»</span>
-          </a>
-        </p>
+          <svg class="footer__copyright-icon" width="27" height="33">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+          <span class="visuallyhidden">Интенсив «Профессиональный HTML и CSS, уровень 2»</span>
+        </a>
       </div>
     </footer>
     <script src="js/header.js"></script>

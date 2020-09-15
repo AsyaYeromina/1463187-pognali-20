@@ -86,4 +86,22 @@
       right: 32px;
     }
   }
+
+  &:hover,
+  &:focus {
+    background-color: $main-background-color-dark;
+    color: $text-color-light;
+
+    &::after {
+      border-left: 12px solid $text-color-light;
+    }
+  }
+
+  &:active {
+    color: rgba($text-color-light, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }

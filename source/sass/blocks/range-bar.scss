@@ -27,8 +27,26 @@
   border: none;
   border-radius: 50%;
   left: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    width: 15px;
+    height: 15px;
+
+    @media (min-width: $tablet-width) {
+      width: 19px;
+      height: 19px;
+    }
+  }
 }
 
 .range-bar__toggle--min {

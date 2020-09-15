@@ -106,6 +106,7 @@
   background-color: #ffffff;
   color: $button-text-color-darker;
   text-transform: uppercase;
+  outline: none;
 
   @include typography(17px, 700, 1);
   font-family: inherit;
@@ -118,5 +119,15 @@
     font-size: 20px;
     padding-top: 16px;
     padding-bottom: 12px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: (0 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active {
+    background-color: #f3c72b;
+    color: rgba($button-text-color-darker, 0.3);
   }
 }

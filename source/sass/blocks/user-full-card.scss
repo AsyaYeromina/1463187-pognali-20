@@ -23,6 +23,11 @@
     padding: 45px 40px 40px 45px;
     min-height: 285px;
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: (0 4px 9px rgba(0, 0, 0, 0.16));
+  }
 }
 
 // Styles for 1st element
@@ -77,7 +82,7 @@
   }
 }
 
-.user-full-card__pic-wrapper:hover .user-full-card__pic-file {
+.user-full-card:hover .user-full-card__pic-file {
   transform: scale(1.05);
   transition-duration: 0.7s;
 }
@@ -119,6 +124,16 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $main-accent-color-dark1;
+  }
+
+  &:active {
+    color: rgba($button-text-color-darker, 0.3);
+  }
 }
 
 .user-full-card__like-wrapper {
@@ -131,10 +146,12 @@
 .user-full-card__like-button {
   width: 30px;
   height: 30px;
-  background-color: $main-background-color-light4;
+  background-color: $main-background-color-light;
   border: none;
   border-radius: 50%;
   position: relative;
+  cursor: pointer;
+  outline: none;
 
   @media (max-width: $mobile-width-only) {
     position: absolute;
@@ -147,23 +164,27 @@
     width: 50px;
     height: 50px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #e2e5f2;
+  }
 }
 
 .user-full-card__like-button--on {
   background-color: #f9eaea;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 11'%3E%3Cpath fill='%23f02323' d='M12 1a3.32 3.32 0 00-4.7 0l-.8.7-.8-.7A3.32 3.32 0 001 1a3.2 3.2 0 000 4.6l.8.8L6.5 11l4.7-4.6.8-.8A3.2 3.2 0 0012 1z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 13px 11px;
 
-  @media (min-width: $tablet-width) {
-    background-size: 20px 18px;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #f9d8d8;
   }
 }
 
 .user-full-card__like-svg {
   fill: $main-background-color-dark;
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
   top: 0;
   left: 0;
@@ -177,7 +198,38 @@
   }
 }
 
-.user-full-card__like-button--on .user-full-card__like-svg {
+.user-full-card__like-svg--active {
+  fill: #f02323;
+}
+
+.user-full-card__like-button:hover .user-full-card__like-svg,
+.user-full-card__like-button:focus .user-full-card__like-svg {
+  opacity: 0.5;
+}
+
+.user-full-card__like-button:active .user-full-card__like-svg {
+  opacity: 0.1;
+}
+
+.user-full-card__like-button--on:hover .user-full-card__like-svg,
+.user-full-card__like-button--on:focus .user-full-card__like-svg {
+  opacity: 1;
+}
+
+.user-full-card__like-button--on:active .user-full-card__like-svg {
+  opacity: 0.3;
+}
+
+.user-full-card__like-button .user-full-card__like-svg--active {
+  display: none;
+}
+
+.user-full-card__like-button--on .user-full-card__like-svg--active {
+  display: block;
+  opacity: 1;
+}
+
+.user-full-card__like-button--on .user-full-card__like-svg--off {
   display: none;
 }
 
@@ -205,6 +257,15 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

@@ -26,6 +26,17 @@
   position: relative;
 }
 
+.socials-list__item--color .socials-list__link {
+  background-color: $main-accent-color;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $main-accent-color-dark1;
+  }
+}
+
 .socials-list__svg {
   fill: $main-background-color-dark;
   position: absolute;
@@ -34,6 +45,10 @@
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+.socials-list__link:active .socials-list__svg {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
