@@ -5,6 +5,7 @@
     <title>Погнали? - Направление</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" as="style" href="css/styles.min.css">
+    <link rel="preload" as="font" crossorigin="anonymous" href="fonts/bloggersans.woff2">
     <link rel="preload" as="font" crossorigin="anonymous" href="fonts/bloggersans-bold.woff2">
     <link rel="preload" as="font" crossorigin="anonymous" href="fonts/bloggersans-medium.woff2">
     <link rel="preload" as="font" crossorigin="anonymous" href="fonts/bloggersans-light.woff2">
@@ -137,7 +138,8 @@
               </label>
               <fieldset class="user-settings__fieldset user-settings__fieldset--tags">
                 <legend class="user-settings__fieldset-name">Тэги</legend>
-                <textarea class="user-settings__tags" name="tags">#бургер #бар #футбол #концерт #крафт</textarea>
+                <textarea class="user-settings__tags" id="tags-input" name="tags">#бургер #бар #футбол #концерт #крафт</textarea>
+                <label for="tags-input" class="visuallyhidden">Поле ввода e-mail адреса</label>
               </fieldset>
               <fieldset class="user-settings__fieldset user-settings__fieldset--transport">
                 <legend class="user-settings__fieldset-name">Транспорт</legend>

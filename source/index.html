@@ -5,6 +5,7 @@
     <title>Погнали?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" as="style" href="css/styles.min.css">
+    <link rel="preload" as="font" crossorigin="anonymous" href="fonts/bloggersans.woff2">
     <link rel="preload" as="font" crossorigin="anonymous" href="fonts/bloggersans-bold.woff2">
     <link rel="preload" as="font" crossorigin="anonymous" href="fonts/bloggersans-medium.woff2">
     <link rel="preload" as="font" crossorigin="anonymous" href="fonts/bloggersans-light.woff2">
@@ -463,7 +464,8 @@
               <a class="registration__text-link" href="authorization.html"> авторизуйтесь.</a>
             </p>
             <form class="registration__form" action="https://echo.htmlacademy.ru/courses" method="get">
-              <input class="registration__input" type="email" placeholder="E-mail">
+              <input class="registration__input" type="email" placeholder="E-mail" id="email-input">
+              <label for="email-input" class="visuallyhidden">Поле ввода e-mail адреса</label>
               <button class="registration__input-button" type="submit">
                 <span class="registration__button-text">Регистрация</span>
                 <span class="visuallyhidden">Отправить данные</span>
@@ -524,7 +526,7 @@
       </section>
       <section class="map">
         <h2 class="visuallyhidden">Карта</h2>
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6206304047107!2d30.32150244626055!3d59.93843701433859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODY!5e0!3m2!1suk!2sua!4v1599821809041!5m2!1suk!2sua" width="768" height="424" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="map__iframe" title="Карта с отметкой по адресу ул. Большая Конюшенная, 19/8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6206304047107!2d30.32150244626055!3d59.93843701433859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODY!5e0!3m2!1suk!2sua!4v1599821809041!5m2!1suk!2sua" width="768" height="424" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
         <picture class="map__img">
           <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-with-marker-desktop@1x.webp 1x, img/map-with-marker-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/map-with-marker-tablet@1x.webp 1x, img/map-with-marker-tablet@2x.webp 2x">
