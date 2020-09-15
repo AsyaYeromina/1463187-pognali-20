@@ -68,10 +68,9 @@
     position: absolute;
     top: 100%;
     content: attr(data-hover);
-    // font-weight: 700;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     color: $main-accent-color;
-}
+  }
 }
 
 .header--fixed .pages-list__link {

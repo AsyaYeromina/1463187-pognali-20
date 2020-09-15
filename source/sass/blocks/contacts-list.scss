@@ -211,7 +211,7 @@
   color: $button-text-color-dark;
 }
 
-.contacts-list__item--contrast .contacts-list__item-text {
+.contacts-list__item--full-info .contacts-list__item-text {
   color: $main-accent-color;
 }
 
@@ -219,4 +219,23 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.contacts-list__item-link--full-info:hover .contacts-list__item-text,
+.contacts-list__item-link--full-info:focus .contacts-list__item-text {
+  color: $main-accent-color-dark1;
+}
+
+.contacts-list__item-link--full-info:hover .contacts-list__item-svg,
+.contacts-list__item-link--full-info:focus .contacts-list__item-svg {
+  fill: $main-accent-color-dark1;
+}
+
+
+.contacts-list__item-link--full-info:active .contacts-list__item-svg {
+  opacity: 0.3;
+}
+
+.contacts-list__item-link--full-info:active .contacts-list__item-text {
+  opacity: 0.3;
 }

@@ -143,6 +143,7 @@
   height: 100%;
   display: block;
   border: 1px solid #cbced9;
+  position: relative;
 
   @include typography(14px, 500, 1.29);
   color: $button-text-color-dark;
@@ -161,6 +162,25 @@
     padding-left: 16px;
     padding-bottom: 16px;
     text-align: left;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      content: " ";
+      width: 104%;
+      height: 104%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      border: 2px solid #ff5c23;
+      z-index: 2;
+
+      @media (min-width: $tablet-width) {
+        border: 4px solid #ff5c23;
+      }
+    }
   }
 }
 
@@ -184,6 +204,10 @@
   color: rgba($text-color-dark, 0.3);
   font-weight: 400;
   background-color: #ffffff;
+
+  &::before {
+    display: none;
+  }
 }
 
 .calendar__day-input:checked + .calendar__day-label {

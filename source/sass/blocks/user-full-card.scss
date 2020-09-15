@@ -77,6 +77,11 @@
   }
 }
 
+.user-full-card__pic-wrapper:hover .user-full-card__pic-file {
+  transform: scale(1.05);
+  transition-duration: 0.7s;
+}
+
 .user-full-card__button-like-wrapper {
   display: flex;
   align-items: flex-start;

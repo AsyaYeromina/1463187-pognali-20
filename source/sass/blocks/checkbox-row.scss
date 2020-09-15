@@ -76,13 +76,13 @@
     }
   }
 
-  &:hover{
+  &:hover {
     &::before {
       border: 1px solid #959bb2;
     }
   }
 
-  &:active{
+  &:active {
     &::before {
       border: 1px solid #e2e5f1;
       background-color: #e2e5f1;

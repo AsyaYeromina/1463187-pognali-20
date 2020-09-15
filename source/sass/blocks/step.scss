@@ -392,6 +392,15 @@
       }
     }
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .step__country-destinations {
@@ -575,9 +584,9 @@
   color: $text-color-dark;
   font-family: inherit;
   line-height: 1.37;
+  outline: none;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
     height: 142px;
     font-size: 20px;
     line-height: 1.1;
@@ -585,9 +594,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 73%;
     padding: 24px;
     padding-right: 22px;
+  }
+
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:focus {
+    border: 1px solid black;
   }
 }
 
@@ -598,5 +614,46 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.15;
+  }
+}
+
+.step__textarea-input-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 83%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 73%;
+  }
+}
+
+.step__textarea-input--required {
+  border: 1px solid #f47e7e;
+}
+
+.step__textarea-input-invalid {
+  display: none;
+}
+
+.step__textarea-input--required ~ .step__textarea-input-invalid {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  min-height: 50px;
+  font-size: 14px;
+  color: #ff0000;
+  background-color: #ffefef;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }

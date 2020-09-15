@@ -629,7 +629,7 @@
                       <div class="country-destinations__row country-destinations__row--empty drop-down-country-list">
                         <!-- Click on drop-down-country-list__button toggles class drop-down-country-list--shown (in block drop-down-country-list) -->
                         <button class="country-destinations__choose-button country-destinations__choose-button--empty drop-down-country-list__button" type="button">
-                          Выберите страну
+                          <span class="country-destinations__choose-button-text">Выберите страну</span>
                         </button>
                         <div class="country-destinations__select-lists-wrapper letter-countries-lists letter-countries-lists--mini">
                           <ul class="letter-countries-lists__letter-list letter-countries-lists__letter-list--mini">
@@ -1359,7 +1359,7 @@
                       </div>
                       <div class="country-destinations__row country-destinations__row--empty country-destinations__row--add">
                         <button class="country-destinations__choose-button country-destinations__choose-button--empty country-destinations__choose-button--add" type="button">
-                          Добавить страну
+                          <span class="country-destinations__choose-button-text">Добавить страну</span>
                         </button>
                       </div>
                     </div>
@@ -1397,7 +1397,13 @@
                             <use xlink:href="#flag-bosnia"></use>
                           </svg>
                         </div>
-                        <textarea class="step__textarea-input" id="first-destination-plan" rows="9" name="tags" placeholder="План действий"></textarea>
+                        <div class="step__textarea-input-wrapper">
+                          <textarea class="step__textarea-input" id="first-destination-plan" rows="9" name="tags" placeholder="План действий"></textarea>
+                          <!-- Class step__textarea-input--required  should be added when user missed the input -->
+                          <div class="step__textarea-input-invalid">
+                            Это поле должно быть заполнено
+                          </div>
+                        </div>
                       </li>
                       <li class="step__textarea-list-item">
                         <div class="step__textarea-label-icon-wrapper">
@@ -1406,7 +1412,13 @@
                             <use xlink:href="#flag-czech"></use>
                           </svg>
                         </div>
-                        <textarea class="step__textarea-input" id="second-destination-plan" rows="9" name="tags" placeholder="План действий">Пить пиво и&nbsp;лазить по&nbsp;старым замкам, наслаждаться архитектурой и&nbsp;вот это все.</textarea>
+                        <div class="step__textarea-input-wrapper">
+                          <textarea class="step__textarea-input" id="second-destination-plan" rows="9" name="tags" placeholder="План действий">Пить пиво и&nbsp;лазить по&nbsp;старым замкам, наслаждаться архитектурой и&nbsp;вот это все.</textarea>
+                          <!-- Class step__textarea-input--required  should be added when user missed the input -->
+                          <div class="step__textarea-input-invalid">
+                            Это поле должно быть заполнено
+                          </div>
+                        </div>
                       </li>
                     </ul>
                   </fieldset>

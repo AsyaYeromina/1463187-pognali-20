@@ -26,4 +26,18 @@
       right: 38px;
     }
   }
+
+  &:hover,
+  &:focus {
+    background-color: $main-accent-color-dark1;
+  }
+
+  &:active {
+    background-color: $main-accent-color-dark1;
+    color: rgba($button-text-color-dark, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }

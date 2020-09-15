@@ -75,4 +75,14 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 42px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    background-color: #edeff6;
+    color: rgba($button-text-color-dark, 0.3);
+  }
 }
