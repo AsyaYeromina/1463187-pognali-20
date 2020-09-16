@@ -103,10 +103,6 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html));
 }
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
-
 // Copy to build
 const copy = () => {
   return gulp.src([
