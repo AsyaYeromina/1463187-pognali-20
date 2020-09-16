@@ -83,7 +83,6 @@
 .range-filter__input::placeholder {
   @include typography(14px, 500, 0.93);
   color: $button-text-color-dark;
-  transform: translate(10px, 2px);
 
   @media (min-width: $tablet-width) {
     @include typography(20px, 500, 1);
@@ -106,6 +105,5 @@
     order: -1;
     width: 280px;
     margin-left: 16px;
-    // margin-bottom: 20px;
   }
 }

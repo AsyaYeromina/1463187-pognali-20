@@ -121,7 +121,6 @@
 
 .registration__input-button {
   position: absolute;
-  transform: translateX(-100%);
   border: none;
   background-color: $main-accent-color;
   border-radius: 0 10px 10px 0;
@@ -129,6 +128,8 @@
   width: 60px;
   cursor: pointer;
   outline: none;
+  right: 0;
+  bottom: 0;
 
   @media (min-width: $tablet-width) {
     width: 80px;
