@@ -145,39 +145,39 @@
                 <legend class="user-settings__fieldset-name">Транспорт</legend>
                 <ul class="user-settings__transport-list transport-inputs">
                   <li class="transport-inputs__input-label-wrapper">
-                    <label class="transport-inputs__label">
-                      <input class="transport-inputs__input visuallyhidden" type="checkbox" checked>
-                      <svg class="transport-inputs__icon" width="15" height="15">
+                    <input class="transport-inputs__input visuallyhidden" type="checkbox" checked id="transport-plane">
+                    <label class="transport-inputs__label" for="transport-plane">
+                      <span class="visuallyhidden">Самолет</span>
+                      <svg class="transport-inputs__icon transport-inputs__icon--plane" width="15" height="15">
                         <use xlink:href="#plane"></use>
                       </svg>
-                      <span class="visuallyhidden">Самолет</span>
                     </label>
                   </li>
                   <li class="transport-inputs__input-label-wrapper">
-                    <label class="transport-inputs__label">
-                      <input class="transport-inputs__input visuallyhidden" type="checkbox" checked>
-                      <svg class="transport-inputs__icon" width="17" height="17">
+                    <input class="transport-inputs__input visuallyhidden" type="checkbox" checked id="transport-bus">
+                    <label class="transport-inputs__label" for="transport-bus">
+                      <span class="visuallyhidden">Авто</span>
+                      <svg class="transport-inputs__icon transport-inputs__icon--bus" width="17" height="16">
                         <use xlink:href="#bus"></use>
                       </svg>
-                      <span class="visuallyhidden">Авто</span>
                     </label>
                   </li>
                   <li class="transport-inputs__input-label-wrapper">
-                    <label class="transport-inputs__label">
-                      <input class="transport-inputs__input visuallyhidden" type="checkbox">
-                      <svg class="transport-inputs__icon" width="15" height="13">
+                    <input class="transport-inputs__input visuallyhidden" type="checkbox" id="transport-bike">
+                    <label class="transport-inputs__label" for="transport-bike">
+                      <span class="visuallyhidden">Велосипед</span>
+                      <svg class="transport-inputs__icon transport-inputs__icon--bike" width="15" height="12">
                         <use xlink:href="#bike"></use>
                       </svg>
-                      <span class="visuallyhidden">Велосипед</span>
                     </label>
                   </li>
                   <li class="transport-inputs__input-label-wrapper">
-                    <label class="transport-inputs__label">
-                      <input class="transport-inputs__input visuallyhidden" type="checkbox" checked>
-                      <svg class="transport-inputs__icon" width="14" height="13">
+                    <input class="transport-inputs__input visuallyhidden" type="checkbox" checked id="transport-run">
+                    <label class="transport-inputs__label" for="transport-run">
+                      <span class="visuallyhidden">Пешком</span>
+                      <svg class="transport-inputs__icon transport-inputs__icon--run" width="13" height="13">
                         <use xlink:href="#run"></use>
                       </svg>
-                      <span class="visuallyhidden">Пешком</span>
                     </label>
                   </li>
                 </ul>
@@ -255,7 +255,7 @@
                         <p class="quantity-input__title">Ищу попутчиков:</p>
                         <label class="quantity-input__label" for="companions-quantity">чел.</label>
                         <div class="quantity-input__input-buttons-wrapper">
-                          <input class="quantity-input__input" type="number" id="companions-quantity" min="1" placeholder="2" required="required">
+                          <input class="quantity-input__input" type="text" id="companions-quantity" min="1" placeholder="2" required="required">
                           <button class="quantity-input__button quantity-input__button--minus" type="button">
                             <span class="visuallyhidden">-</span>
                           </button>
@@ -268,7 +268,7 @@
                         <p class="quantity-input__title">Длительность:</p>
                         <label class="quantity-input__label" for="days-quantity">дн.</label>
                         <div class="quantity-input__input-buttons-wrapper">
-                          <input class="quantity-input__input" type="number" id="days-quantity" min="1" placeholder="2" required="required">
+                          <input class="quantity-input__input" type="text" id="days-quantity" min="1" placeholder="2" required="required">
                           <button class="quantity-input__button quantity-input__button--minus" type="button">
                             <span class="visuallyhidden">-</span>
                           </button>
