@@ -76,6 +76,10 @@
   }
 }
 
+.checkbox-row__input:focus + .checkbox-row__label {
+  opacity: 0.6;
+}
+
 .checkbox-row__input--big + .checkbox-row__label--big {
   &::before {
     border: 1px solid #adb5bd;
@@ -102,6 +106,13 @@
       border: 1px solid #e2e5f1;
       background-color: #e2e5f1;
     }
+  }
+}
+
+.checkbox-row__input--big:focus + .checkbox-row__label--big {
+  &::before {
+    border: 1px solid #e2e5f1;
+    background-color: #e2e5f1;
   }
 }
 
