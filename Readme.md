@@ -1,11 +1,18 @@
-# Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Погнали»
+<!-- [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] -->
 
 * Студент: [Анастасия Ерёмина](https://up.htmlacademy.ru/adaptive/20/user/1463187).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+Данный репозиторий для всех файлов проекта
+
+Финальная собранная версия [тут](https://github.com/AsyaYeromina/HTML-CSS-3-Pognali)
+
+[Демка на github pages](https://asyayeromina.github.io/HTML-CSS-3-Pognali/)
+
+<!-- **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
 Полезный файл:
 
@@ -57,4 +64,4 @@ git clone SSH-адрес_вашего_форка
 [travis-image]: https://travis-ci.com/htmlacademy-adaptive/1463187-pognali-20.svg?branch=master
 [travis-url]: https://travis-ci.com/htmlacademy-adaptive/1463187-pognali-20
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/1463187-pognali-20/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/1463187-pognali-20?type=dev
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/1463187-pognali-20?type=dev -->
